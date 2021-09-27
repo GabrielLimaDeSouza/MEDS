@@ -77,17 +77,17 @@ Ocupação: Enfermeiro <br />
 	
 ### Persona 1:
 	
-Alberto Alves
- Idade: 32
- Ocupação: Comerciante
+Alberto Alves <br />
+Idade: 32 <br />
+Ocupação: Comerciante <br />
 
- **Razões para usar nosso produto**
- - Gostaria de marcar minhas consultas sem perder tempo ligando para clínica
- - Gostaria que tivesse um intervalo maior entre minha consulta e do próximo paciente para evitar possível atraso
- -	Gostaria de ter o resultado de meus exames de forma mais rápida
- -	Não gostaria de ter que ir na clínica ou hospital buscar exames.
+**Razões para usar nosso produto**
+- Gostaria de marcar minhas consultas sem perder tempo ligando para clínica
+- Gostaria que tivesse um intervalo maior entre minha consulta e do próximo paciente para evitar possível atraso
+-	Gostaria de ter o resultado de meus exames de forma mais rápida
+-	Não gostaria de ter que ir na clínica ou hospital buscar exames.
 	
- **Hobbies e Curiosidades**
+**Hobbies e Curiosidades**
 -	Facilidade no uso de aplicativos
 
 **Frustações**
@@ -108,9 +108,9 @@ Alberto Alves
 	
 ### Persona 1:
 	
-Vanessa Cristina
-Idade: 30
-Ocupação: Advogada
+Vanessa Cristina <br />
+Idade: 30 <br />
+Ocupação: Advogada <br />
 
 **Razões para usar nosso produto**
 -	Facilidade em agendar visitas
