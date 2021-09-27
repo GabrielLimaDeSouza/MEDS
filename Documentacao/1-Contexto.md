@@ -17,7 +17,7 @@ O problema que necessita ser resolvido nesse projeto consiste, necessariamente, 
 
 ## Objetivos
 
-Objetivo geral:
+Objetivo geral: \
 Deverá ser desenvolvido um software com a finalidade de erradicar ou minimizar o problema descritos acima, de forma a facilitar o trabalho de profissionais da saúde e agregar 
 
 Objetivos específicos:
