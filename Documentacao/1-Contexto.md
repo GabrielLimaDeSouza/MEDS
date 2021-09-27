@@ -17,15 +17,15 @@
 
 ## Objetivos
 
-Objetivo geral: \
+Objetivo geral: 
 - Deverá ser desenvolvido um software com a finalidade de erradicar ou minimizar o problema descritos acima, de forma a facilitar o trabalho de profissionais da saúde e agregar 
 
-Objetivos específicos: \
-- Permitir o acompanhamento de pacientes de forma eficiente. \
-- Facilitar o processo de agendamento de consultas. \
-- Ajudar na comunicação entre os funcionários hospitalares. \
-- Auxiliar na organização de históricos médicos. \
-- Facilitar a marcação de visitas a pessoas internadas. \
+Objetivos específicos: 
+- Permitir o acompanhamento de pacientes de forma eficiente. 
+- Facilitar o processo de agendamento de consultas. 
+- Ajudar na comunicação entre os funcionários hospitalares. 
+- Auxiliar na organização de históricos médicos. 
+- Facilitar a marcação de visitas a pessoas internadas. 
 >
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
