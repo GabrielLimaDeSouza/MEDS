@@ -6,33 +6,33 @@
 
 ## Personas
 
-# Trabalhadores da saúde
+### Trabalhadores da saúde
 	
- 	João Carlos
-	Idade: 35
-	Ocupação: Cirurgião
+João Carlos
+Idade: 35
+Ocupação: Cirurgião
 	
-  	** Razões para usar nosso produto **
-  	-	Acompanhar o estado de todos os pacientes do hospital, para verificar o estado da sua recuperação
- 	-	Facilitar a comunicação interna, desde o atendimento até os enfermeiros
-  	-	Receber atualizações sobre o estado do paciente na enfermaria
+** Razões para usar nosso produto **
+ -	Acompanhar o estado de todos os pacientes do hospital, para verificar o estado da sua recuperação
+ -	Facilitar a comunicação interna, desde o atendimento até os enfermeiros
+ -	Receber atualizações sobre o estado do paciente na enfermaria
 	
-	** Hobbies e Curiosidades **
-	-	Familiarizado com sistemas hospitalares
+** Hobbies e Curiosidades **
+-	Familiarizado com sistemas hospitalares
 
-	** Frustações **
-	-	Me sinto: Perdido
-	-	Quando: Não tenho conhecimento do estado atual dos meus pacientes
-	-	Hoje eu resolvo isso com: Perguntando ao enfermeiro chefe, o qual não          possui muito tempo
+** Frustações **
+-	Me sinto: Perdido
+-	Quando: Não tenho conhecimento do estado atual dos meus pacientes
+-	Hoje eu resolvo isso com: Perguntando ao enfermeiro chefe, o qual não          possui muito tempo
 
-	-	Me sinto: Frustrado
-	-	Quando: Um paciente tem uma piora que poderia ter sido resolvido com um aviso interno
-	-	Hoje eu resolvo isso com: Cobrando atenção do enfermeiros sobre um determinado paciente
+-	Me sinto: Frustrado
+-	Quando: Um paciente tem uma piora que poderia ter sido resolvido com um aviso interno
+-	Hoje eu resolvo isso com: Cobrando atenção do enfermeiros sobre um determinado paciente
 
 	
-	** Escalas de Atribuição **
-	-	Proximidade com tecnologia: 4 de 5
-	-	Preocupação com o estado dos pacientes: 5 de 5
+** Escalas de Atribuição **
+-	Proximidade com tecnologia: 4 de 5
+-	Preocupação com o estado dos pacientes: 5 de 5
 	
 
 	
