@@ -160,9 +160,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |João Carlos         | Acompanhar o estado de todos       | Ter maior controle gerencial dos <br />|
-	             | todos os pacientes do              | dos meus pacientes <br />              |
-		     | hospital, para verificar <br />    |                                        |
-		     | o estado da sua recuperação <br /> |                                        |
+|	             | todos os pacientes do              | dos meus pacientes <br />              |
+|		     | hospital, para verificar <br />    |                                        |
+|		     | o estado da sua recuperação <br /> |                                        |
 |--------------------|------------------------------------|----------------------------------------|
 |Juliano Moura       | Alterar permissões                 | Permitir que possam administrar contas |
 |Alberto Alves       | Alterar permissões                 | Permitir que possam administrar contas |
