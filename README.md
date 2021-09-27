@@ -6,9 +6,9 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 ## Alunos integrantes da equipe
 
 * Gabriel Lima de Souza
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Marcus Vinicius Pinto Viana Filho
+* Gabriel de Souza
+* Tarcísio Ney  Martins Filho
 
 ## Professores responsáveis
 
