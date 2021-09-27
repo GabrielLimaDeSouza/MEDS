@@ -6,9 +6,11 @@
 
 ## Personas
 
-### Trabalhadores da saúde
-	
-João Carlos <br />
+## Trabalhadores da saúde
+
+### Persona 1:
+
+**João Carlos** <br />
 Idade: 35 <br />
 Ocupação: Cirurgião <br />
 	
@@ -35,96 +37,103 @@ Ocupação: Cirurgião <br />
 -	Preocupação com o estado dos pacientes: 5 de 5
 	
 
+### Persona 2:
+
+Juliano Moura <br />
+Idade: 27 <br />
+Ocupação: Enfermeiro <br />
+
+**Razões para usar nosso produto**
+-	Gostaria de receber mais informações vindas dos outros profissionais
+-	Gostaria de organizar a recepção dos pacientes para evitar os atrasos
+-	Gostaria de saber como está o andamento do tratamento daquele paciente para não repetir os protocolos
+-	Gostaria de ter informações dos horários dos medicamentos do paciente
+
 	
+**Hobbies e Curiosidades**
+-	Cuidar de pessoas
 
-  Juliano Moura
-	Idade: 27
-	Ocupação: Enfermeiro
+**Frustações**
+-	Me sinto: Perdido
+-	Quando: Fico sem informações do andamento do tratamento
+-	Hoje eu resolvo isso com: Comunicação com os profissionais
 
-  Razões para usar nosso produto
-  -	Gostaria de receber mais informações vindas dos outros profissionais
-  -	Gostaria de organizar a recepção dos pacientes para evitar os atrasos
-  -	Gostaria de saber como está o andamento do tratamento daquele paciente para não repetir os protocolos
-  -	Gostaria de ter informações dos horários dos medicamentos do paciente
-
+-	Me sinto: Tenso
+- Quando:Há uma emergência
+-	Hoje eu resolvo isso com: Comunicamos pessoalmente
 	
-  Hobbies e Curiosidades
-	-	Cuidar de pessoas
-
-	Frustações
-	-	Me sinto: Perdido
-	-	Quando: Fico sem informações do andamento do tratamento
-	-	Hoje eu resolvo isso com: Comunicação com os profissionais
-
-	-	Me sinto: Tenso
-	- Quando:Há uma emergência
-	-	Hoje eu resolvo isso com: Comunicamos pessoalmente
+**Escalas de Atribuição**
+-	Frequência da visita aos pacientes: 3 de 5
+-	Compromisso com horários: 4 de 5
+-	Relacionamento hospitalar: 2 de 5
 	
-	Escalas de Atribuição
-  -	Frequência da visita aos pacientes: 3 de 5
-	-	Compromisso com horários: 4 de 5
-	-	Relacionamento hospitalar: 2 de 5
+**Informações Extras**
+ -	Realiza muitas visitas durante os plantões
+ -	Faz plantão na parte da manhã e tarde
+ -	Se perde nos horários de aplicar remédios
+
+
+## Pacientes
 	
-	Informações Extras
-  -	Realiza muitas visitas durante os plantões
-  -	Faz plantão na parte da manhã e tarde
-  -	Se perde nos horários de aplicar remédios
-
-
-	- Pacientes
-	Alberto Alves
-  Idade: 32
-  Ocupação: Comerciante
-
-  Razões para usar nosso produto
-  - Gostaria de marcar minhas consultas sem perder tempo ligando para clínica
-  - Gostaria que tivesse um intervalo maior entre minha consulta e do próximo paciente para evitar possível atraso
-  -	Gostaria de ter o resultado de meus exames de forma mais rápida
-  -	Não gostaria de ter que ir na clínica ou hospital buscar exames.
+### Persona 1:
 	
-  Hobbies e Curiosidades
-	-	Facilidade no uso de aplicativos
+Alberto Alves
+ Idade: 32
+ Ocupação: Comerciante
 
-	Frustações
-	-	Me sinto: Irritado
-	-	Quando: Tento agendar minha consulta e não consigo
-	-	Hoje eu resolvo isso com: Gasto bastante tempo tentando ligar para o    hospital	
-	-	Me sinto: Impaciente
-	-	Quando: O atendimento demora mais do que o planejado
-	-	Hoje eu resolvo isso com: Reclamando com a administração do hospital
+ **Razões para usar nosso produto**
+ - Gostaria de marcar minhas consultas sem perder tempo ligando para clínica
+ - Gostaria que tivesse um intervalo maior entre minha consulta e do próximo paciente para evitar possível atraso
+ -	Gostaria de ter o resultado de meus exames de forma mais rápida
+ -	Não gostaria de ter que ir na clínica ou hospital buscar exames.
 	
-	-	Me sinto: Irritado
-	-	Quando: Tenho que me deslocar para saber o resultado de exames
-	-	Hoje eu resolvo isso com: Procrastinando a ida ao local
+ **Hobbies e Curiosidades**
+-	Facilidade no uso de aplicativos
 
-
-- Visitantes
-	Vanessa Cristina
-  Idade: 30
-  Ocupação: Advogada
-
-  Razões para usar nosso produto
-  -	Facilidade em agendar visitas
-  -	Necessidade de ter informações sobre meu parente
-  -	Ter contato direto com o hospital
-
-  Hobbies e Curiosidades
-	-	Irmão do paciente
-	-	Facilidade no uso de tecnologias
-
-	Frustações
-	-	Me sinto: Irritada
-	-	Quando: Tento agendar a visita e não consigo
-	-	Hoje eu resolvo isso com: Dedico o dia só para realizar a visita
-
-	-	Me sinto: Preocupada
-	-	Quando: Fico sem informações sobre meu irmão
-	-	Hoje eu resolvo isso com: Vou ao hospital presencialmente
+**Frustações**
+-	Me sinto: Irritado
+-	Quando: Tento agendar minha consulta e não consigo
+-	Hoje eu resolvo isso com: Gasto bastante tempo tentando ligar para o hospital	
 	
-	Escalas de Atribuição
-  -	Informações sobre o estado de saúde do meu irmão: 2 de 5
-	-	Proximidade com o paciente: 5 de 5
-	-	Necessidade de contato: 5 de 5
+-	Me sinto: Impaciente
+-	Quando: O atendimento demora mais do que o planejado
+-	Hoje eu resolvo isso com: Reclamando com a administração do hospital
+	
+-	Me sinto: Irritado
+-	Quando: Tenho que me deslocar para saber o resultado de exames
+-	Hoje eu resolvo isso com: Procrastinando a ida ao local
+
+
+## Visitantes
+	
+### Persona 1:
+	
+Vanessa Cristina
+Idade: 30
+Ocupação: Advogada
+
+**Razões para usar nosso produto**
+-	Facilidade em agendar visitas
+-	Necessidade de ter informações sobre meu parente
+-	Ter contato direto com o hospital
+
+**Hobbies e Curiosidades**
+-	Irmão do paciente
+-	Facilidade no uso de tecnologias
+
+**Frustações**
+-	Me sinto: Irritada
+-	Quando: Tento agendar a visita e não consigo
+-	Hoje eu resolvo isso com: Dedico o dia só para realizar a visita
+
+-	Me sinto: Preocupada
+-	Quando: Fico sem informações sobre meu irmão
+-	Hoje eu resolvo isso com: Vou ao hospital presencialmente
+	
+**Escalas de Atribuição**
+-	Informações sobre o estado de saúde do meu irmão: 2 de 5
+-	Proximidade com o paciente: 5 de 5
+-	Necessidade de contato: 5 de 5
 
 
 
