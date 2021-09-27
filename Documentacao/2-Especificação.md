@@ -8,9 +8,9 @@
 
 ### Trabalhadores da saúde
 	
-João Carlos
-Idade: 35
-Ocupação: Cirurgião
+João Carlos <br />
+Idade: 35 <br />
+Ocupação: Cirurgião <br />
 	
 **Razões para usar nosso produto**
  -	Acompanhar o estado de todos os pacientes do hospital, para verificar o estado da sua recuperação
