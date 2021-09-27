@@ -17,21 +17,23 @@ O problema que necessita ser resolvido nesse projeto consiste, necessariamente, 
 
 ## Objetivos
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
+>Objetivo geral:
+> Deverá ser desenvolvido um software com a finalidade de erradicar ou minimizar o problema descrito acima
 > 
+>Objetivos específicos:
+>Permitir o acompanhamento de pacientes de forma eficiente.
+>Facilitar o processo de agendamento de consultas.
+>Ajudar na comunicação entre os funcionários hospitalares.
+>Auxiliar na organização de históricos médicos. 
+>Facilitar a marcação de visitas a pessoas internadas. 
+>
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
+> Pelo fato de os sistemas atuais serem de difícil acesso, seja pelo preço ou pela complexidade de suas funcionalidades, além de muitos desses sofrerem com a falta de 
+> funcionalidades básicas em seu escopo. Diante disso se torna necessário um sistema que preencha os requisitos que os demais falham em executar.
 > 
 > O grupo de trabalho pode fazer uso de questionários, entrevistas e
 > dados estatísticos, que podem ser apresentados, com o objetivo de
@@ -42,12 +44,7 @@ O problema que necessita ser resolvido nesse projeto consiste, necessariamente, 
 
 ## Público-Alvo
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
+> O público alvo desse projeto pode ser descrito como profissionais da saúde, de todas as faixas etárias,  que precisam de uma ferramenta que os ajudem a organizar seus >pacientes e mantenham os mesmos bem informados a respeito de sua saúde. Bem como os próprios pacientes e a família desses, que necessitam desse tipo de sistema para acompanhar >seus familiares no momento de internação.
 >
 > Adicione informações sobre o público-alvo por meio de uma descrição
 > textual, ou diagramas de personas, mapa de stakeholders, ou como o
