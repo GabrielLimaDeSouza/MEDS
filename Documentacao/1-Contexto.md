@@ -46,7 +46,7 @@ funcionalidades básicas em seu escopo. Diante disso se torna necessário um sis
 
 ## Público-Alvo
 
- O público alvo desse projeto pode ser descrito como profissionais da saúde, de todas as faixas etárias,  que precisam de uma ferramenta que os ajudem a organizar seus pacientes e mantenham os mesmos bem informados a respeito de sua saúde. Bem como os próprios pacientes e a família desses, que necessitam desse tipo de sistema para acompanhar >seus familiares no momento de internação.
+ O público alvo desse projeto pode ser descrito como profissionais da saúde, de todas as faixas etárias,  que precisam de uma ferramenta que os ajudem a organizar seus pacientes e mantenham os mesmos bem informados a respeito de sua saúde. Bem como os próprios pacientes e a família desses, que necessitam desse tipo de sistema para acompanhar seus familiares no momento de internação.
 >
 > Adicione informações sobre o público-alvo por meio de uma descrição
 > textual, ou diagramas de personas, mapa de stakeholders, ou como o
