@@ -6,11 +6,127 @@
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em
-se desenvolver profissionalmente através de um mestrado fora do país,
-pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está
-buscando uma agência que o ajude a encontrar universidades na Europa
-que aceitem alunos estrangeiros.
+  #Trabalhadores da saúde
+	
+  João Carlos
+	Idade: 35
+	Ocupação: Cirurgião
+	
+  ## Razões para usar nosso produto
+  -	Acompanhar o estado de todos os pacientes do hospital, para verificar o estado da sua recuperação
+  -	Facilitar a comunicação interna, desde o atendimento até os enfermeiros
+  -	Receber atualizações sobre o estado do paciente na enfermaria
+	
+	## Hobbies e Curiosidades
+	-	Familiarizado com sistemas hospitalares
+
+	## Frustações
+	-	Me sinto: Perdido
+	-	Quando: Não tenho conhecimento do estado atual dos meus pacientes
+	-	Hoje eu resolvo isso com: Perguntando ao enfermeiro chefe, o qual não          possui muito tempo
+
+	-	Me sinto: Frustrado
+	-	Quando: Um paciente tem uma piora que poderia ter sido resolvido com um aviso interno
+	-	Hoje eu resolvo isso com: Cobrando atenção do enfermeiros sobre um determinado paciente
+
+	
+	## Escalas de Atribuição
+	-	Proximidade com tecnologia: 4 de 5
+	-	Preocupação com o estado dos pacientes: 5 de 5
+	
+
+	
+
+  Juliano Moura
+	Idade: 27
+	Ocupação: Enfermeiro
+
+  Razões para usar nosso produto
+  -	Gostaria de receber mais informações vindas dos outros profissionais
+  -	Gostaria de organizar a recepção dos pacientes para evitar os atrasos
+  -	Gostaria de saber como está o andamento do tratamento daquele paciente para não repetir os protocolos
+  -	Gostaria de ter informações dos horários dos medicamentos do paciente
+
+	
+  Hobbies e Curiosidades
+	-	Cuidar de pessoas
+
+	Frustações
+	-	Me sinto: Perdido
+	-	Quando: Fico sem informações do andamento do tratamento
+	-	Hoje eu resolvo isso com: Comunicação com os profissionais
+
+	-	Me sinto: Tenso
+	- Quando:Há uma emergência
+	-	Hoje eu resolvo isso com: Comunicamos pessoalmente
+	
+	Escalas de Atribuição
+  -	Frequência da visita aos pacientes: 3 de 5
+	-	Compromisso com horários: 4 de 5
+	-	Relacionamento hospitalar: 2 de 5
+	
+	Informações Extras
+  -	Realiza muitas visitas durante os plantões
+  -	Faz plantão na parte da manhã e tarde
+  -	Se perde nos horários de aplicar remédios
+
+
+	- Pacientes
+	Alberto Alves
+  Idade: 32
+  Ocupação: Comerciante
+
+  Razões para usar nosso produto
+  - Gostaria de marcar minhas consultas sem perder tempo ligando para clínica
+  - Gostaria que tivesse um intervalo maior entre minha consulta e do próximo paciente para evitar possível atraso
+  -	Gostaria de ter o resultado de meus exames de forma mais rápida
+  -	Não gostaria de ter que ir na clínica ou hospital buscar exames.
+	
+  Hobbies e Curiosidades
+	-	Facilidade no uso de aplicativos
+
+	Frustações
+	-	Me sinto: Irritado
+	-	Quando: Tento agendar minha consulta e não consigo
+	-	Hoje eu resolvo isso com: Gasto bastante tempo tentando ligar para o    hospital	
+	-	Me sinto: Impaciente
+	-	Quando: O atendimento demora mais do que o planejado
+	-	Hoje eu resolvo isso com: Reclamando com a administração do hospital
+	
+	-	Me sinto: Irritado
+	-	Quando: Tenho que me deslocar para saber o resultado de exames
+	-	Hoje eu resolvo isso com: Procrastinando a ida ao local
+
+
+- Visitantes
+	Vanessa Cristina
+  Idade: 30
+  Ocupação: Advogada
+
+  Razões para usar nosso produto
+  -	Facilidade em agendar visitas
+  -	Necessidade de ter informações sobre meu parente
+  -	Ter contato direto com o hospital
+
+  Hobbies e Curiosidades
+	-	Irmão do paciente
+	-	Facilidade no uso de tecnologias
+
+	Frustações
+	-	Me sinto: Irritada
+	-	Quando: Tento agendar a visita e não consigo
+	-	Hoje eu resolvo isso com: Dedico o dia só para realizar a visita
+
+	-	Me sinto: Preocupada
+	-	Quando: Fico sem informações sobre meu irmão
+	-	Hoje eu resolvo isso com: Vou ao hospital presencialmente
+	
+	Escalas de Atribuição
+  -	Informações sobre o estado de saúde do meu irmão: 2 de 5
+	-	Proximidade com o paciente: 5 de 5
+	-	Necessidade de contato: 5 de 5
+
+
 
 
 > Enumere e detalhe as personas da sua solução. Para
