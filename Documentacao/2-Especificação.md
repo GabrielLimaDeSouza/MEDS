@@ -12,15 +12,15 @@ João Carlos
 Idade: 35
 Ocupação: Cirurgião
 	
-** Razões para usar nosso produto **
+**Razões para usar nosso produto**
  -	Acompanhar o estado de todos os pacientes do hospital, para verificar o estado da sua recuperação
  -	Facilitar a comunicação interna, desde o atendimento até os enfermeiros
  -	Receber atualizações sobre o estado do paciente na enfermaria
 	
-** Hobbies e Curiosidades **
+**Hobbies e Curiosidades**
 -	Familiarizado com sistemas hospitalares
 
-** Frustações **
+**Frustações**
 -	Me sinto: Perdido
 -	Quando: Não tenho conhecimento do estado atual dos meus pacientes
 -	Hoje eu resolvo isso com: Perguntando ao enfermeiro chefe, o qual não          possui muito tempo
@@ -30,7 +30,7 @@ Ocupação: Cirurgião
 -	Hoje eu resolvo isso com: Cobrando atenção do enfermeiros sobre um determinado paciente
 
 	
-** Escalas de Atribuição **
+**Escalas de Atribuição**
 -	Proximidade com tecnologia: 4 de 5
 -	Preocupação com o estado dos pacientes: 5 de 5
 	
