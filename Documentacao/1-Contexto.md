@@ -1,13 +1,11 @@
 # Introdução
+ Com o avanço da tecnologia nessas últimas décadas muitas atividades foram simplificadas com a adesão da mesma. Uma das áreas que vem se modernizando é a da saúde, porém ainda há muito a ser melhorado na mesma, uma vez que se trata de uma parte tão importante na sociedade.
+ É possível identificar que as pessoas cada vez têm menos tempo e necessitam de realizar suas atividades mais rapidamente, com isso as questões relacionadas à saúde acabam sendo deixadas um pouco de lado, mesmo com a importância que ela representa. Além disso, olhando menos para a parte do paciente e mais para o profissional da saúde, é necessário agilizar e facilitar o gerenciamento e o acesso a informações de seus pacientes. Bem como, é importante que o acompanhamento por parte dos familiares dos pacientes, principalmente internados, deve ser facilitado para que aqueles tenham mais informações de forma rápida a respeito da sua família. 
+
 
 ## Problema
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
+O problema que necessita ser resolvido nesse projeto consiste, necessariamente, na agilização de processos atrelados ao dia a dia dos hospitais, postos de saúde e etc. Seja dos pacientes ou dos profissionais relacionados à saúde
+
 > Nesse momento, o grupo pode optar por fazer uso
 > de ferramentas como Design Thinking, que permite um olhar de ponta a
 > ponta para o problema.
