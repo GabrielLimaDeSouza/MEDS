@@ -136,7 +136,11 @@ Ocupação: Advogada <br />
 -	Necessidade de contato: 5 de 5
 
 
+![Mapa de Empatia - Pacientes](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Mapa%20de%20Empatia%20-%20Pacientes.jpg)
 
+![Mapa de Empatia - Profissionais da Saúde](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Mapa%20de%20Empatia%20-%20Profissionais%20da%20Sa%C3%BAde.jpg)
+
+![Mapa de Empatia - Visitantes](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Mapa%20de%20Empatia%20-%20Visitantes.jpg)
 
 > Enumere e detalhe as personas da sua solução. Para
 > tanto, baseie-se tanto nos documentos disponibilizados na disciplina
