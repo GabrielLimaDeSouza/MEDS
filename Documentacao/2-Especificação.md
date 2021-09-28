@@ -172,14 +172,43 @@ A partir da compreensão do dia a dia das personas identificadas para o projeto,
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Para a efetivação do projeto devem ser definidos os requisitos funcionais que se referem a parte interativa com todas as funcionalidades que o projeto deverá apresentar, os requisitos não funcionais deverá definir restrições sobre como o sistema deverá ser apresentado. Seguem os requisitos definidos:
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+Os requisitos funcionais são apresentados, seguindo a prioridade de entrega definida pela equipe:
+
+- RF01 - Cadastro de paciente
+O site deve possibilitar o paciente fazer seu cadastro e acessar as funcionalidades destinadas a ele
+Prioridade: Essencial
+
+- RF02 - Cadastro de médico
+O site deve possibilitar os médicos a fazerem seu cadastro e acessar as funcionalidades do Portal do Médico
+Prioridade: Essencial
+
+- RF03 - Agendamento de consultas
+O site deve apresentar para usuários cadastrados como pacientes, uma opção para o agendamento de suas consultas
+Prioridade: Essencial
+
+- RF04 - Informações para os familiares
+O site deve possuir uma área onde os médicos atualizam as últimas informações sobre os pacientes, que deverão ser destinadas aos seus familiares para possibilitar um acompanhamento adjunto
+Prioridade: Importante
+
+- RF05 - Comunicação entre as equipes
+O site deve permitir a comunicação rápida e fluida entre todas as equipes médicas envolvidas no tratamento do paciente
+Prioridade: Essencial
+
+- RF06 - Marcação de exames
+O site deve permitir ao paciente o agendamento de seus exames de acompanhamento
+Prioridade: Importante
+
+- RF07 - Resultados de exames
+O site deve permitir ao paciente o acesso aos seus resultados de exames
+Prioridade: Importante
+
+- RF08 - Histórico médico
+O site deve possibilitar o médico fazer anotações sobre o atendimento e,posteriormente,nas próximas consultas, poder acessar o histórico médico de cada paciente
+Prioridade: Essencial
 
 
 ### Requisitos não Funcionais
