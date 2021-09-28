@@ -39,7 +39,7 @@ Ocupação: Cirurgião <br />
 
 ### Persona 2:
 
-Juliano Moura <br />
+**Juliano Moura** <br />
 Idade: 27 <br />
 Ocupação: Enfermeiro <br />
 
@@ -77,7 +77,7 @@ Ocupação: Enfermeiro <br />
 	
 ### Persona 1:
 	
-Alberto Alves <br />
+**Alberto Alves** <br />
 Idade: 32 <br />
 Ocupação: Comerciante <br />
 
@@ -108,7 +108,7 @@ Ocupação: Comerciante <br />
 	
 ### Persona 1:
 	
-Vanessa Cristina <br />
+**Vanessa Cristina** <br />
 Idade: 30 <br />
 Ocupação: Advogada <br />
 
