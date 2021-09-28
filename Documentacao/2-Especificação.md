@@ -157,13 +157,7 @@ Ocupação: Advogada <br />
 
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários:
 
-
-EU COMO ...           ...quero/desejo...                                          ...para... <br />
-[PERSONA]             [O QUE]                                                     [POR QUE]  <br />
-João Carlos           Acompanhar o estado de todos os pacientes do hospital,      Ter maior controle gerencial dos 
-                      para verificar o estado da sua recuperação                  meus pacientes
-                     
-
+![Histórias de usuários](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Hist%C3%B3rias%20de%20usu%C3%A1rios.png)
 
 > Apresente aqui as histórias de usuário que são relevantes para o
 > projeto de sua solução. As Histórias de Usuário consistem em uma
