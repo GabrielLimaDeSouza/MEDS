@@ -20,7 +20,7 @@
 ## Objetivos
 
 Objetivo geral: 
-- Deverá ser desenvolvido um software com a finalidade de erradicar ou minimizar o problema descrits acima, de forma a facilitar o trabalho de profissionais da saúde e agregar valor aos pacientes e visitantes. 
+- Deverá ser desenvolvido um software com a finalidade de erradicar ou minimizar o problema descrito acima, de forma a facilitar o trabalho de profissionais da saúde e agregar valor aos pacientes e visitantes. 
 
 Objetivos específicos: 
 - Permitir o acompanhamento de pacientes de forma eficiente. 
