@@ -158,9 +158,9 @@ Ocupação: Advogada <br />
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários:
 
 
-EU COMO ...    | ...quero/desejo...
-[PERSONA]      | [O QUE]
-               |
+EU COMO ...  <br />  | ...quero/desejo... <br />|
+[PERSONA]    <br />  | [O QUE]  <br />          |
+                     |                          |
 
 
 > Apresente aqui as histórias de usuário que são relevantes para o
