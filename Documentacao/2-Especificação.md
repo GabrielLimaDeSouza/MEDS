@@ -213,10 +213,23 @@ Prioridade: Essencial
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+Os requisitos não funcionais que deverão ser atendidos são:
+
+NF01 - Interface <br />
+O site deve possuir uma interface com um acesso ágil,simples e amigável para facilitar o uso de todas as funcionalidades por parte de médicos e pacientes <br />
+Prioridade: Importante
+ 
+NF02 - Responsividade <br />
+O site deverá ser responsivo possibilitando o acesso em diferentes dispositivos <br />
+Prioridade: Essencial
+
+NF03 - Disponibilidade <br /> 
+O site deverá estar disponível em 99% do tempo para evitar acidentes e imprevistos <br />
+Prioridade: Essencial
+
+NF04 - Sigilo <br />
+As informações dos usuários devem ser sigilosas, respeitando o sigilo médico <br />
+Prioridade: Essencial
 
 > Com base nas Histórias de Usuário, enumere os requisitos da sua
 > solução. Classifique esses requisitos em dois grupos:
