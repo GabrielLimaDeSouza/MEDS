@@ -155,7 +155,8 @@ Ocupação: Advogada <br />
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários:
+
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
@@ -164,7 +165,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |		     | hospital, para verificar <br />    |                                        |
 |		     | o estado da sua recuperação <br /> |                                        |
 |--------------------|------------------------------------|----------------------------------------|
-|Juliano Moura       | Alterar permissões                 | Permitir que possam administrar contas |
+|Juliano Moura       | Gostaria de saber como está <br /> | Evitar erros na realização de <br />   |
+|                    | o andamento do tratamento <br />   | tratamentos e procedimentos  <br />    | 
+|                    | daquele paciente para não <br />   | feitos por cada profissional de  <br />|
+|                    | repetir os protocolos e de <br />  | saúde <br />                           |
+|                    | ter informações dos horários <br />|                                        |
+|                    | dos medicamentos do paciente <br />|                                        |
+|--------------------|------------------------------------|----------------------------------------|
 |Alberto Alves       | Alterar permissões                 | Permitir que possam administrar contas |
 |Vanessa Cristina    | Alterar permissões                 | Permitir que possam administrar contas |
 
