@@ -158,10 +158,10 @@ Ocupação: Advogada <br />
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários:
 
 
-EU COMO ...           ...quero/desejo...                                          ...para...
-[PERSONA]             [O QUE]                                                     [POR QUE]
-João Carlos           Acompanhar o estado de todos os pacientes do hospital,      Ter maior controle gerencial dos meus pacientes
-                      para verificar o estado da sua recuperação
+EU COMO ...           ...quero/desejo...                                          ...para... <br />
+[PERSONA]             [O QUE]                                                     [POR QUE]  <br />
+João Carlos           Acompanhar o estado de todos os pacientes do hospital,      Ter maior controle gerencial dos 
+                      para verificar o estado da sua recuperação                  meus pacientes
                      
 
 
