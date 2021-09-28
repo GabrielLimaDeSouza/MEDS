@@ -160,8 +160,8 @@ A partir da compreensão do dia a dia das personas identificadas para o projeto,
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|João Carlos         | Acompanhar o estado de todos <br />| Ter maior controle gerencial dos <br />|
-|	             | todos os pacientes do <br />       | dos meus pacientes <br />              |
+|João Carlos         | Acompanhar o estado de todos       | Ter maior controle gerencial dos       |
+|	             | todos os pacientes do              | dos meus pacientes                     |
 |		     | hospital, para verificar <br />    |                                        |
 |		     | o estado da sua recuperação <br /> |                                        |
 |--------------------|------------------------------------|----------------------------------------|
