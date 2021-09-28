@@ -4,7 +4,7 @@
 
 
 ## Problema
- O problema que necessita ser resolvido nesse projeto consiste, necessariamente, na agilização de processos atrelados ao dia a dia dos hospitais, postos de saúde e clínicas. Seja do lado dos pacientes ou dos profissionais da área da saúde.
+ O problema que necessita ser resolvido nesse projeto consiste, necessariamente, na agilização de processos atrelados ao dia a dia dos hospitais, postos de saúde e clínicas. Seja do lado dos pacientes e seus familiares ou dos profissionais da área da saúde.
 
 > Nesse momento, o grupo pode optar por fazer uso
 > de ferramentas como Design Thinking, que permite um olhar de ponta a
