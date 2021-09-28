@@ -251,12 +251,13 @@ Prioridade: Essencial
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As restrições são regras que devem ser seguidas obrigatoriamente para se concluir o desenvolvimento do projeto, elas são apresentadas a seguir:
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+- RE01 - O projeto deverá ser entregue no final do semestre, não podendo ultrapassar a data limite
+
+- RE02 - A equipe não poderá contar com ajuda de terceiros para o desenvolvimento do trabalho
+
+- RE03 - A aplicação deverá ser realizada utilizando as tecnologias vistas na disciplina Desenvolvimento de Interfaces WEB
 
 
 > Enumere as restrições à sua solução. Lembre-se de que as restrições
