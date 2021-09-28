@@ -179,35 +179,35 @@ Para a efetivação do projeto devem ser definidos os requisitos funcionais que 
 Os requisitos funcionais são apresentados, seguindo a prioridade de entrega definida pela equipe:
 
 - RF01 - Cadastro de paciente <br />
-O site deve possibilitar o paciente fazer seu cadastro e acessar as funcionalidades destinadas a ele
+O site deve possibilitar o paciente fazer seu cadastro e acessar as funcionalidades destinadas a ele <br />
 Prioridade: Essencial
 
 - RF02 - Cadastro de médico <br />
-O site deve possibilitar os médicos a fazerem seu cadastro e acessar as funcionalidades do Portal do Médico
+O site deve possibilitar os médicos a fazerem seu cadastro e acessar as funcionalidades do Portal do Médico <br />
 Prioridade: Essencial
 
 - RF03 - Agendamento de consultas <br />
-O site deve apresentar para usuários cadastrados como pacientes, uma opção para o agendamento de suas consultas
+O site deve apresentar para usuários cadastrados como pacientes, uma opção para o agendamento de suas consultas <br />
 Prioridade: Essencial
 
 - RF04 - Informações para os familiares <br />
-O site deve possuir uma área onde os médicos atualizam as últimas informações sobre os pacientes, que deverão ser destinadas aos seus familiares para possibilitar um acompanhamento adjunto
+O site deve possuir uma área onde os médicos atualizam as últimas informações sobre os pacientes, que deverão ser destinadas aos seus familiares para possibilitar um acompanhamento adjunto <br />
 Prioridade: Importante
 
 - RF05 - Comunicação entre as equipes <br />
-O site deve permitir a comunicação rápida e fluida entre todas as equipes médicas envolvidas no tratamento do paciente
-Prioridade: Essencial
+O site deve permitir a comunicação rápida e fluida entre todas as equipes médicas envolvidas no tratamento do paciente <br />
+Prioridade: Essencial 
 
 - RF06 - Marcação de exames <br />
-O site deve permitir ao paciente o agendamento de seus exames de acompanhamento
+O site deve permitir ao paciente o agendamento de seus exames de acompanhamento <br />
 Prioridade: Importante
 
 - RF07 - Resultados de exames <br />
-O site deve permitir ao paciente o acesso aos seus resultados de exames
+O site deve permitir ao paciente o acesso aos seus resultados de exames <br />
 Prioridade: Importante
 
 - RF08 - Histórico médico <br />
-O site deve possibilitar o médico fazer anotações sobre o atendimento e,posteriormente,nas próximas consultas, poder acessar o histórico médico de cada paciente
+O site deve possibilitar o médico fazer anotações sobre o atendimento e,posteriormente,nas próximas consultas, poder acessar o histórico médico de cada paciente <br />
 Prioridade: Essencial
 
 
