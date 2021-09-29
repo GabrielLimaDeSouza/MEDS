@@ -2,6 +2,11 @@
 
 Para a compreensão completa do problema, foi realizada pela equipe entrevistas qualitativas com potenciais usuários, para estudo das principais dores enfrentadas pelo usuário na hora de utilizarem sistemas hospitalares. Os resultados foram agrupados e foram geradas as personas e as histórias de usuários:
 
+As entrevistas foram realizadas de maneira presencial e virtual, as respostas foram agrupadas no Google Forms. <br />
+Entrevista destinada a pacientes e visitantes: https://docs.google.com/forms/d/1iPV3tx6offCLAxV7niM50LCxU3VyUN_tudA0FQ2feKk/edit <br />
+Entrevista destinada a profissionais da saúde: https://docs.google.com/forms/d/1TFyPE8RkIfQYX616z6qga84h5HrjM7_kDqHZrX1dAUQ/edit <br />
+
+
 # Personas
 
 As personas foram criadas em subdivisões: Trabalhadores da saúde, Pacientes e Visitantes.
