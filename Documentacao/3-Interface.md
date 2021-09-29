@@ -20,3 +20,7 @@ Para o desenvolvimento do protótipo final, foram realizados diversos estudos co
 
 ![WireFrame Portal do Médico](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/WireFrame%20Portal%20do%20M%C3%A9dico.jpg)
 
+## Protótipo Interativo:
+
+https://www.figma.com/proto/rLNA7dIsmdDKxKtnMkOuvc/TIAW-MEDS?node-id=3%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2
+
