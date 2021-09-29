@@ -2,7 +2,7 @@
 
 Para a compreensão completa do problema, foi realizada pela equipe entrevistas qualitativas com potenciais usuários, para estudo das principais dores enfrentadas pelo usuário na hora de utilizarem sistemas hospitalares. Os resultados foram agrupados e foram geradas as personas e as histórias de usuários:
 
-## Personas
+# Personas
 
 ## Trabalhadores da saúde
 
@@ -155,7 +155,7 @@ Ocupação: Advogada <br />
 > Lembre-se que você deve ser enumerar e descrever precisamente e
 > personalizada todos os clientes ideais que sua solução almeja.
 
-## Histórias de Usuários
+# Histórias de Usuários
 
 A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários:
 
