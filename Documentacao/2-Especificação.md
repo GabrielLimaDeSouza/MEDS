@@ -1,8 +1,6 @@
 # Especificações Do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Contexto.md"> Documentação de Contexto</a></span>
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+Para a compreensão completa do problema, foi realizada pela equipe entrevistas qualitativas com potenciais usuários, para estudo das principais dores enfrentadas pelo usuário na hora de utilizarem sistemas hospitalares. Os resultados foram agrupados e foram geradas as personas e as histórias de usuários:
 
 ## Personas
 
