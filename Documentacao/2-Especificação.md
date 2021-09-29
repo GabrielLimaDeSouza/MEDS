@@ -4,7 +4,7 @@ Para a compreensão completa do problema, foi realizada pela equipe entrevistas 
 
 # Personas
 
-As personas foram criadas em subdivisões: Trabalhadores da saúde, Pacientes e Visitantes
+As personas foram criadas em subdivisões: Trabalhadores da saúde, Pacientes e Visitantes.
 
 ## Trabalhadores da saúde
 
