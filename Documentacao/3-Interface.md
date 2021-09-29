@@ -15,7 +15,10 @@
 
 ## Wireframes
 
-![Exemplo de Wireframe](images/wireframe-example.png)
+### Tela Inicial
+
+![User Flow](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/USER%20FLOW%20MEDS.png)
+
 
 > São protótipos usados em design de interface para sugerir a
 > estrutura de um site web e seu relacionamentos entre suas
