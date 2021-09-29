@@ -10,7 +10,7 @@
 
 ## User Flow
 
-![User Flow]()
+![User Flow](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/USER%20FLOW%20MEDS.png)
 
 
 ## Wireframes
