@@ -199,7 +199,7 @@ O site deve possibilitar o médico fazer anotações sobre o atendimento e,poste
 Prioridade: Essencial
 
 
-### Requisitos não Funcionais
+### Requisitos Não Funcionais
 
 Os requisitos não funcionais que deverão ser atendidos são:
 
