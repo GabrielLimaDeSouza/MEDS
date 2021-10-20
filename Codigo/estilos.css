@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
     overflow-x: hidden;
     overflow-y: scroll;
@@ -46,3 +47,36 @@ input {
 .text-info {
     color: black !important;
 }
+=======
+.container {
+    margin:0 !important;
+    border:0 !important; 
+    padding:0 !important;
+    max-width: 100% !important;
+}
+
+.form_area {
+    color: white;
+    border-radius: 20px;
+    background-color: #369C90;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: white;
+    padding-top: 2%;
+    padding-left: 2%;
+    margin-top: 15%;
+}
+
+input {
+    width: 70%;
+    border-radius: 69px;
+}
+
+#submit {
+    background-color: #124A44;
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 25%;
+}
+>>>>>>> login_MEDS
