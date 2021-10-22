@@ -1,0 +1,122 @@
+
+.logo
+{
+    max-width: 40%;
+}
+
+.header
+{
+    background-color:  #369c90;
+    padding: 1%;
+}
+
+.top
+{
+    background-color: #2CBCAB;
+    margin-top: 1%;
+    padding: 10px;
+    padding-left: 20px;
+}
+.form-floating
+{
+    max-width: 20%;
+    margin: 1%;
+    margin-left: -12%;
+    display: inline-block;
+    border: 0px;
+}
+.letra
+{
+    color: black;
+}
+.form-floating1
+{
+    display: inline-block;
+    margin-left: -50%;
+    margin-top: 10px;
+}
+.form-floating2
+{
+    display: inline-block;
+    margin-left: -70%;
+    margin-top: 10px;
+}
+
+
+.form-select
+{
+    border-radius: 20px;
+}
+
+.form-control
+{
+    border-radius: 20px;
+}
+
+.global
+{
+    background-color: #2CBCAB;
+    margin-bottom: -13px;
+}
+.meio
+{
+    padding: 2%;
+    background-color: #D7FFFA;
+}
+.esse
+{
+    background-color: white;
+    text-align: center;
+    margin-left:40%;
+    margin-right: 40%;
+    border-radius: 30px;
+}
+.conj
+{
+    
+    padding-bottom: 1%;
+    text-align: center;
+}
+.btn-primary
+{
+    margin-left: 2%;
+    border-radius: 20px;
+    background-color: #369C90;
+    border-color: #369C90;
+    margin: 0.62%;
+}
+.footer
+{
+    background-color: #2CBCAB;
+    
+}
+
+.btn-sm
+{
+    background-color: white ;
+    border-radius: 10px;
+    color: black;
+    border-color: white;
+}
+.btn-sm1
+{
+
+    background-color: #124A44 !important;
+    border-radius: 20px !important;
+    margin-right: 40%;
+}
+.btn-sm2
+{
+    background-color: #124A44 !important;
+    border-radius: 20px !important;
+    
+}
+.botoes
+{
+    text-align: center;
+    padding-top: 2%;
+}
+.horarios
+{
+    margin-bottom: 2%;
+}

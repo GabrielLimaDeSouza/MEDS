@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Marcar consulta</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="consulta_interface.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    <header class="container header">
+        <div class="col-12">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/ficheiro.img.png" class="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+     <section class="row global">
+            <div class="row">
+                <div class="col-12 body_area">
+                    <div class="row">
+                        <div class="col-2 letra">
+                           <b>Tipo: </b> 
+                        </div>
+                        <div class="form-floating">
+                            
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Selecione o tipo</option>
+                              <option value="1">Particular</option>
+                              <option value="2">Convênio</option>
+                              <option value="3">outro</option>
+                            </select>
+                            <label for="floatingSelect">Tipo de consulta</label>
+                        </div> 
+                        <div class="col-2 letra">
+                          <b>Especialiade: </b>  
+                        </div>
+                            <div class="col-2 nome">
+                              <div class="form-floating1">
+                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="Ex:Cardiologista" value="">
+                                <label for="floatingInputGrid"></label>
+                              </div>
+                            </div>
+                            <div class="col-2 letra">
+                              <b>Hospital: </b>
+                            </div>
+                                <div class="col-2 nome">
+                                  <div class="form-floating2">
+                                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="Ex:Santa Casa" value="">
+                                    <label for="floatingInputGrid"></label>
+                                  </div>
+                                </div>
+                            </div>             
+                        </div> 
+                        <div class="col-2 letra">
+                          <b>Médico:</b>
+                        </div>
+                            <div class="col-2 nome">
+                              <div class="form-floating2">
+                                <input type="email" class="form-control" id="floatingInputGrid" placeholder="Ex:Talita de Souza" value="">
+                                <label for="floatingInputGrid"></label>
+                              </div>
+                            </div>
+                </div>
+            </div>       
+     </section>
+
+     <section class="row meio2">
+         <div class="col-12 meio">
+            <div class="d-grid gap-2 d-md-block esse">
+                        <p><button type="button" class="btn btn-secondary btn-sm"> < </button>
+                            data: 20/20/20 <button type="button" class="btn btn-secondary btn-sm">></button></p>
+                   </div>
+                   <div class="d-grid gap-2 d-md-block conj">
+                       <div class="horarios">Horarios disponiveis</div>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block conj">
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block conj">
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                    <button class="btn btn-primary" type="button">12:30</button>
+                  </div>
+                  <div class="col-12 botoes">
+                    <button type="button" class="btn btn-primary btn-sm1">VOLTAR</button>
+                    <button type="button" class="btn btn-secondary btn-sm2">MARCAR CONSULTA</button>
+                  </div>
+                  
+         </div>    
+     </section>
+
+
+    </main>
+     
+     
+     
+     
+
+   
+    <footer class="container footer">
+        Todos os direitos reservados por Med's 
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+</body>
+</html>
