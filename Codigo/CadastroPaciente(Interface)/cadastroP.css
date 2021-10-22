@@ -1,0 +1,86 @@
+html
+{
+    max-height: 100%;
+}
+.header_area
+{
+    background-color: #369c90;
+}
+img{
+    max-width: 40%;
+    display: inline;
+}
+.texto
+{
+    font-size: 16px;
+    padding-top: 20px;
+    margin-bottom: -10px;
+}
+.header
+{
+    text-align: center;
+}
+
+.main_area
+{
+    padding-top: 1%;
+    background-color: #D7FFFA;
+    padding-bottom: 0.9%;
+}
+.video
+{
+    text-align: center;
+}
+h1{
+    font-size: 14px;
+}
+
+.cadastro
+{
+    padding-top: 1%;
+}
+.input-group
+{
+    
+    padding-left: 10%;
+    padding-right: 10%; 
+    margin-top: 1.95%;
+}
+.mb-3
+{
+    margin-bottom: 1% !important;  
+}
+.form-control
+{
+    border-radius: 10px !important;
+}
+.input-group-text
+{
+    border-radius: 10px !important;
+    background-color: #D7FFFA;
+    color: black;
+    border-color: #D7FFFA;
+}
+.btn-sm1
+{
+
+    background-color: #124A44 !important;
+    border-radius: 20px !important;
+    margin-right: 40%;
+}
+.btn-sm2
+{
+    background-color: #124A44 !important;
+    border-radius: 20px !important;
+    
+}
+.botoes
+{
+    text-align: center;
+    padding: 2.47%;
+}
+.footer
+{
+    background-color: #369c90;
+    padding-bottom: 0%;
+}
