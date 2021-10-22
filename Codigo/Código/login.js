@@ -12,7 +12,7 @@ onload = () => {
         // Valida login e se estiver ok, redireciona para tela inicial da aplicação
         resultadoLogin = loginUser (username, password);
         if (resultadoLogin) {
-            window.location.href = 'index.html';
+            window.location.href = "index.html";
         }
         else { // Se login falhou, avisa ao usuário
             alert ('Usuário ou senha incorretos');
@@ -35,8 +35,24 @@ onload = () => {
     }
 
     // Adiciona o usuário no banco de dados
-    addUser (nome, login, senha, email);
-    alert ('Usuário salvo com sucesso. Faça o login para acessar o MEDS!!!');
+    if (login != 0)
+    {
+        if (nome != 0)
+        {
+            if (email != 0)
+            {
+                if (senha != 0)
+                {
+                    if(senha2 != 0)
+                    {
+                        addUser (nome, login, senha, email);
+                        alert ('Usuário salvo com sucesso. Faça o login para acessar o MEDS!!!');
+                    }
+                }
+            }
+        }
+    }
+
 
     // Oculta a div modal do login
     //document.getElementById ('loginModal').style.display = 'none';
@@ -103,7 +119,7 @@ onload = () => {
         if (!usuariosJSON) {  // Se NÃO há dados no localStorage
             
             // Informa sobre localStorage vazio e e que serão carregados os dados iniciais
-            alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');
+            alert('Dados de usuários não encontrados\n -----> Recarregando a página');
 
             // Copia os dados iniciais para o banco de dados 
             db_usuarios = dadosIniciais;
@@ -150,15 +166,14 @@ onload = () => {
     function logoutUser () {
         usuarioCorrente = {};
         sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
-        window.location = LOGIN_URL;
+        window.location = "login.html";
     }
 
     function addUser (nome, login, senha, email) {
-        
         // Cria um objeto de usuario para o novo usuario 
         let newId = generateUUID ();
         let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email };
-        
+                            
         // Inclui o novo usuario no banco de dados baseado em JSON
         db_usuarios.usuarios.push (usuario);
 
@@ -172,4 +187,91 @@ onload = () => {
 
     // Inicializa as estruturas utilizadas pelo LoginApp
     initLoginApp ();
+
+    //Validando a entrada de Usuário
+    function validaUsuario(){
+        if (usuario_cadastro.value.length == 0)
+        {
+            alert("Por favor, digite um nome de usuário!");
+        }
+    }  
+
+    //Validando a entrada do Nome Completo
+    function validaNome(){
+        if (nome_cadastro.value.length == 0)
+        {
+            alert("Por favor, digite seu nome completo!");
+        }
+    }   
+    
+    // Validando a entrada de email no cadastro
+    function validaEmail(){
+        if (email_cadastro.value.length == 0 || email_cadastro.value.indexOf('@')==-1 || email_cadastro.value.indexOf('.')==-1 )
+        {
+            alert("Por favor, informe um endereço de email válido!");
+        }
+    }  
+
+    // Validando a entrada de senha no cadastro
+    function validaSenha(){
+         if (senha_cadastro.value.length == 0)
+        {
+             alert("Por favor, informe uma senha!");
+        }
+    }
+
+    // Validando a entrada da confirmação de senha no cadastro
+    function validaConfirmacaoSenha(){
+        if (senha_confirmacao_cadastro.value.length == 0)
+        {
+            alert("Por favor, confirme sua senha!");
+        }
+    }
+    
+
+
+    // Chamando a função validaUsuario,validaNome,validaEmail,validaSenha e validaConfirmacaoSenha
+    document.getElementById ('btn_salvar').addEventListener ('click', validaUsuario);
+    document.getElementById ('btn_salvar').addEventListener ('click', validaNome);
+    document.getElementById ('btn_salvar').addEventListener ('click', validaEmail);
+    document.getElementById ('btn_salvar').addEventListener ('click', validaSenha);
+    document.getElementById ('btn_salvar').addEventListener ('click', validaConfirmacaoSenha);
+
+
+    // Selecionando o campo de cadastro de usuário
+    let usuariocadastroInput = document.querySelector('#usuario_cadastro');
+
+    // Função que bloqueia caracteres especiais no campo de cadastro de usuário
+    usuariocadastroInput.addEventListener("keypress", function(e) {
+        if(!checkChar(e)){
+            e.preventDefault();
+        }
+    });
+
+    //Função que confere se o caractere digitado não contém dígitos especiais
+    function checkChar(e){
+        let char = String.fromCharCode(e.keyCode);
+        let caracteresPermitidos = '[a-zA-Z0-9_]';
+        if (char.match(caracteresPermitidos)){
+            return true;
+        }
+    }
+
+    // Selecionando o campo de Nome Completo
+    let nomeInput = document.querySelector('#nome_cadastro');
+
+    function checkChar2(e){
+        let char = String.fromCharCode(e.keyCode);
+        let caracteresPermitidos = '[a-zA-Z ]';
+        if (char.match(caracteresPermitidos)){
+            return true;
+        }
+    }
+
+    // Função que bloqueia caracteres especiais e números no campo de Nome Completo
+    nomeInput.addEventListener("keypress", function(e) {
+        if(!checkChar2(e)){
+            e.preventDefault();
+        }
+    });
 }
