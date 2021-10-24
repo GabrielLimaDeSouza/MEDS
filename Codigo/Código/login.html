@@ -16,7 +16,7 @@
         <div class="container">
           <div class="row">
             <div class="col-3 form_area">
-              <form id="login-form">
+              <form form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
                 <p>
                   <label for="username">Usuário:</label>
                   <input type="text" id="username" name="username" autocomplete="off" required="required">
@@ -47,7 +47,7 @@
             </div>
             <div class="modal-body">
                 <div id="login-box" class="col-md-12">
-                    <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                    <form id="login-modal" class="form" method="post" onsubmit="loginUser (this)">
                         <h3 class="text-center text-info">Novo usuário</h3>
                         <div class="form-group">
                             <label for="login" class="text-info">Usuário</label><br>
@@ -80,6 +80,161 @@
         </div>
       </div>
     </main>
+    <script src="login.js"></script>
+    <script>
+        // Declara uma função para processar o formulário de login
+        function processaFormLogin (event) {                
+          // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+          event.preventDefault ();
+
+          // Obtem os dados de login e senha a partir do formulário de login
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+
+          // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+          resultadoLogin = loginUser (username, password);
+          if (resultadoLogin) {
+              window.location.href = "index.html";
+          }
+          else { // Se login falhou, avisa ao usuário
+              alert ('Usuário ou senha incorretos');
+          }
+        }
+
+        function salvaLogin (event) {
+            // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+            event.preventDefault ();
+
+            // Obtem os dados do formulário
+            let login  = document.getElementById('usuario_cadastro').value;
+            let nome   = document.getElementById('nome_cadastro').value;
+            let email  = document.getElementById('email_cadastro').value;
+            let senha  = document.getElementById('senha_cadastro').value;
+            let senha2 = document.getElementById('senha_confirmacao_cadastro').value;
+            if (senha != senha2) {
+                alert ('As senhas informadas não conferem.');
+                return
+            }
+
+            // Adiciona o usuário no banco de dados
+            if (login != 0)
+            {
+                if (nome != 0)
+                {
+                    if (!(email_cadastro.value.length == 0 || email_cadastro.value.indexOf('@')==-1 || email_cadastro.value.indexOf('.')==-1))
+                    {
+                        if (senha != 0)
+                        {
+                            if(senha2 != 0)
+                            {
+                                addUser (nome, login, senha, email);
+                                alert ('Usuário salvo com sucesso. Faça o login para acessar o MEDS!!!');
+                            }
+                        }
+                    }
+                }
+            }
+
+
+          // Oculta a div modal do login
+          //document.getElementById ('loginModal').style.display = 'none';
+          $('#loginModal').modal('hide');
+        }
+
+        // Associa a funçao processaFormLogin  formulário adicionado um manipulador do evento submit
+        document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+
+        // Associar salvamento ao botao
+        document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);    
+
+        //Validando a entrada de Usuário
+        function validaUsuario(){
+            if (usuario_cadastro.value.length == 0)
+            {
+                alert("Por favor, digite um nome de usuário!");
+            }
+        }  
+
+        //Validando a entrada do Nome Completo
+        function validaNome(){
+            if (nome_cadastro.value.length == 0)
+            {
+                alert("Por favor, digite seu nome completo!");
+            }
+        }   
+
+        // Validando a entrada de email no cadastro
+        function validaEmail(){
+            if (email_cadastro.value.length == 0 || email_cadastro.value.indexOf('@')==-1 || email_cadastro.value.indexOf('.')==-1)
+            {
+                alert("Por favor, informe um endereço de email válido!");
+                return false;
+            }
+        }  
+
+        // Validando a entrada de senha no cadastro
+        function validaSenha(){
+                if (senha_cadastro.value.length == 0)
+                {
+                    alert("Por favor, informe uma senha!");
+                }
+        }
+
+        // Validando a entrada da confirmação de senha no cadastro
+        function validaConfirmacaoSenha(){
+            if (senha_confirmacao_cadastro.value.length == 0)
+            {
+                alert("Por favor, confirme sua senha!");
+            }
+        }
+
+
+
+        // Chamando a função validaUsuario,validaNome,validaEmail,validaSenha e validaConfirmacaoSenha
+        document.getElementById ('btn_salvar').addEventListener ('click', validaUsuario);
+        document.getElementById ('btn_salvar').addEventListener ('click', validaNome);
+        document.getElementById ('btn_salvar').addEventListener ('click', validaEmail);
+        document.getElementById ('btn_salvar').addEventListener ('click', validaSenha);
+        document.getElementById ('btn_salvar').addEventListener ('click', validaConfirmacaoSenha);
+
+
+        // Selecionando o campo de cadastro de usuário
+        let usuariocadastroInput = document.querySelector('#usuario_cadastro');
+
+        // Função que bloqueia caracteres especiais no campo de cadastro de usuário
+        usuariocadastroInput.addEventListener("keypress", function(e) {
+            if(!checkChar(e)){
+                e.preventDefault();
+            }
+        });
+
+        //Função que confere se o caractere digitado não contém dígitos especiais
+        function checkChar(e){
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[a-zA-Z0-9_]';
+            if (char.match(caracteresPermitidos)){
+                return true;
+            }
+        }
+
+        // Selecionando o campo de Nome Completo
+        let nomeInput = document.querySelector('#nome_cadastro');
+
+        function checkChar2(e){
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[a-zA-Z ]';
+            if (char.match(caracteresPermitidos)){
+                return true;
+            }
+        }
+
+        // Função que bloqueia caracteres especiais e números no campo de Nome Completo
+        nomeInput.addEventListener("keypress", function(e) {
+            if(!checkChar2(e)){
+                e.preventDefault();
+            }
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
