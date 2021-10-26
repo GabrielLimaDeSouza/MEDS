@@ -50,7 +50,7 @@
                     <form id="login-modal" class="form" method="post" onsubmit="loginUser (this)">
                         <h3 class="text-center text-info">Novo usuário</h3>
                         <div class="form-group">
-                            <label for="login" class="text-info">Usuário</label><br>
+                            <label for="login" class="text-info">Nome de Usuário</label><br>
                             <input type="text" name="usuario_cadastro" id="usuario_cadastro" class="form-control" placeholder="Ex: João_Augusto" autocomplete="off">
                         </div>
                         <div class="form-group">
@@ -112,7 +112,7 @@
             let senha  = document.getElementById('senha_cadastro').value;
             let senha2 = document.getElementById('senha_confirmacao_cadastro').value;
             if (senha != senha2) {
-                alert ('As senhas informadas não conferem.');
+                alert ('As senhas informadas não conferem!');
                 return
             }
 
@@ -121,7 +121,7 @@
             {
                 if (nome != 0)
                 {
-                    if (!(email_cadastro.value.length == 0 || email_cadastro.value.indexOf('@')==-1 || email_cadastro.value.indexOf('.')==-1))
+                    if (!(email_cadastro.value.length < 6 || email_cadastro.value.indexOf('@')==-1 || email_cadastro.value.indexOf('.')==-1))
                     {
                         if (senha != 0)
                         {
@@ -130,9 +130,29 @@
                                 addUser (nome, login, senha, email);
                                 alert ('Usuário salvo com sucesso. Faça o login para acessar o MEDS!!!');
                             }
+                            else
+                            {
+                                alert("Confirme sua senha!");
+                            }
+                        }
+                        else
+                        {
+                            alert("Digite uma senha!");
                         }
                     }
+                    else
+                    {
+                        alert("Digite um email válido!");
+                    }
                 }
+                else 
+                {
+                    alert("Digite seu nome completo!");
+                }
+            }
+            else
+            {
+                alert ("Digite um nome de usuário!");
             }
 
 
@@ -147,55 +167,6 @@
         // Associar salvamento ao botao
         document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);    
 
-        //Validando a entrada de Usuário
-        function validaUsuario(){
-            if (usuario_cadastro.value.length == 0)
-            {
-                alert("Por favor, digite um nome de usuário!");
-            }
-        }  
-
-        //Validando a entrada do Nome Completo
-        function validaNome(){
-            if (nome_cadastro.value.length == 0)
-            {
-                alert("Por favor, digite seu nome completo!");
-            }
-        }   
-
-        // Validando a entrada de email no cadastro
-        function validaEmail(){
-            if (email_cadastro.value.length == 0 || email_cadastro.value.indexOf('@')==-1 || email_cadastro.value.indexOf('.')==-1)
-            {
-                alert("Por favor, informe um endereço de email válido!");
-                return false;
-            }
-        }  
-
-        // Validando a entrada de senha no cadastro
-        function validaSenha(){
-                if (senha_cadastro.value.length == 0)
-                {
-                    alert("Por favor, informe uma senha!");
-                }
-        }
-
-        // Validando a entrada da confirmação de senha no cadastro
-        function validaConfirmacaoSenha(){
-            if (senha_confirmacao_cadastro.value.length == 0)
-            {
-                alert("Por favor, confirme sua senha!");
-            }
-        }
-
-
-
-        // Chamando a função validaUsuario,validaNome,validaEmail,validaSenha e validaConfirmacaoSenha
-        document.getElementById ('btn_salvar').addEventListener ('click', validaUsuario);
-        document.getElementById ('btn_salvar').addEventListener ('click', validaNome);
-        document.getElementById ('btn_salvar').addEventListener ('click', validaEmail);
-        document.getElementById ('btn_salvar').addEventListener ('click', validaSenha);
-        document.getElementById ('btn_salvar').addEventListener ('click', validaConfirmacaoSenha);
 
 
         // Selecionando o campo de cadastro de usuário

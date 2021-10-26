@@ -1,7 +1,4 @@
 
-// Página inicial de Login
-const LOGIN_URL = "login.html";
-
 // Objeto para o banco de dados de usuários baseado em JSON
 var db_usuarios = {};
 
@@ -30,8 +27,8 @@ function generateUUID() { // Public Domain/MIT
 // Dados de usuários para serem utilizados como carga inicial
 const dadosIniciais = {
     usuarios: [
-        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com"},
-        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com"},
+        { "id": generateUUID (), "login": "adminMEDS", "senha": "meds123", "nome": "Administrador do Sistema MEDS", "email": "admin@abc.com"},
+        { "id": generateUUID (), "login": "userMEDS", "senha": "meds123", "nome": "Usuario Comum MEDS", "email": "user@abc.com"},
     ]
 };
 
