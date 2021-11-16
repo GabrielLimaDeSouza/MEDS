@@ -1,0 +1,56 @@
+.container {
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  margin-bottom: 1%;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+h1 {
+  border-bottom: 1px solid rgba(192, 192, 192, 0.667);
+}
+
+.dados_medicos .form-group {
+  display: inline;
+}
+
+.form-group {
+  max-width: 30%;
+  margin-left: 2%;
+}
+
+.btn_submit {
+  margin-top: 10%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.remedio,
+.alergia,
+.deficiencia {
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+#textarea_alergiacampo,
+#textarea_remediocampo,
+#textarea_deficienciacampo {
+  display: block;
+  margin-bottom: 2%;
+}
+
+#inputalergia,
+#inputremedio,
+#inputdeficiencia {
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+.form-control {
+  margin-bottom: 2%;
+}
