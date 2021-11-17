@@ -34,8 +34,8 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-5">
-                    <label for="inputTelefone">Data de Nascimento (*)</label>
-                    <input type="date" class="form-control" id="inputTelefone" required>
+                    <label for="inputNascimento">Data de Nascimento (*)</label>
+                    <input type="date" class="form-control" id="inputNascimento" required>
                 </div>
                 <div class="col-sm-7">
                     <label for="exampleFormControlSelect1">Tipo sanguíneo</label>
@@ -55,7 +55,7 @@
             <div class="form-group row">
                 <div class="col-sm-5">
                     <label for="inputTelefone">Telefone (*)</label>
-                    <input type="text" class="form-control" id="inputTelefone" required placeholder="Telefone">
+                    <input type="number" class="form-control" id="inputTelefone" required placeholder="Telefone">
                 </div>
                 <div class="col-sm-7">
                     <label for="inputEmail">Observações(*)</label>
@@ -74,9 +74,13 @@
                 </div>
             </div>
             <div class="form-group row">
-                <div class="col-sm-12">
-                    <label for="inputSite">Web Site (*)</label>
-                    <input type="text" class="form-control" id="inputSite" required placeholder="Web Site">
+                <div class="col-sm-6">
+                    <label for="inputSite">Possui alguma deficiência? (*)</label>
+                    <input type="text" class="form-control" id="inputSite" required placeholder="Se sim, qual?">
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputRemedio">Uso de remédio controlado? (*)</label>
+                    <input type="text" class="form-control" id="inputRemedio" required placeholder="Se sim, qual?">
                 </div>
             </div>
             <div class="form-group row">
@@ -114,7 +118,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Nome</th>
                             <th scope="col">Telefone</th>
-                            <th scope="col">E-mail</th>
+                            <th scope="col">Observações</th>
                             <th scope="col">Cidade</th>
                             <th scope="col">Categoria</th>
                             <th scope="col">Site</th>
@@ -265,8 +269,6 @@
                 $("#inputCidade").val(colunas[4].innerText);
                 $("#inputCategoria").val(colunas[5].innerText);
                 $("#inputSite").val(colunas[6].innerText);
-                $("#inputDataEntrada").val(colunas[7].innerText);
-                $("#inputHorarioEntrada").val(colunas[8].innerText);
             });
 
             exibeContatos();
