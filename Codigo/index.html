@@ -80,6 +80,16 @@
                 </div>
             </div>
             <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputTelefone">Data de Entrada (*)</label>
+                    <input type="date" class="form-control" id="inputTelefone" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputNome">Horário de Entrada (*)</label>
+                    <input type="time" class="form-control" id="inputTelefone" required>
+                </div>
+            </div>
+            <div class="form-group row">
                 <div class="col-sm-4">
                     <small>(*) Campos obrigatórios</small>
                 </div>
@@ -186,7 +196,7 @@
                 // Obtem os valores dos campos do formulário
                 let campoId = $("#inputId").val();
                 if (campoId == "") {
-                    displayMessage("Selecione um contato para ser alterado.");
+                    displayMessage("Selecione uma internação para alterar.");
                     return;
                 }
                 let campoNome = $("#inputNome").val();
@@ -217,7 +227,7 @@
             $("#btnDelete").click(function () {
                 let campoId = $("#inputId").val();
                 if (campoId == "") {
-                    displayMessage("Selecione um contato a ser excluído.");
+                    displayMessage("Selecione um internado a ser excluído.");
                     return;
                 }
                 deleteContato(parseInt(campoId));
@@ -255,6 +265,8 @@
                 $("#inputCidade").val(colunas[4].innerText);
                 $("#inputCategoria").val(colunas[5].innerText);
                 $("#inputSite").val(colunas[6].innerText);
+                $("#inputDataEntrada").val(colunas[7].innerText);
+                $("#inputHorarioEntrada").val(colunas[8].innerText);
             });
 
             exibeContatos();
