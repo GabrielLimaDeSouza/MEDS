@@ -64,15 +64,17 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inputCidade">Cidade</label>
-                    <input type="text" class="form-control" id="inputCidade" placeholder="Informe a cidade do contato">
+                    <label for="inputCidade">Cidade (*)</label>
+                    <input type="text" class="form-control" id="inputCidade" required
+                        placeholder="Informe a cidade do contato">
                 </div>
                 <div class="col-sm-6">
-                    <label for="inputCategoria">Categoria</label>
-                    <select class="form-control" id="inputCategoria">
+                    <label for="inputCategoria">Classificação de Risco (*)</label>
+                    <select class="form-control" id="inputCategoria" required>
                         <option>Vermelho</option>
-                        <option>Verde</option>
+                        <option>Laranja</option>
                         <option>Amarelo</option>
+                        <option>Verde</option>
                         <option>Azul</option>
                     </select>
                 </div>
