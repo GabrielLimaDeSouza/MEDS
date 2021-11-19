@@ -114,6 +114,7 @@ function insertContato(contato) {
         "id": novoId,
         "nome": contato.nome,
         "email" : contato.email,
+        "sangue": contato.sangue,
         "telefone": contato.telefone,
         "cidade" : contato.cidade,
         "categoria": contato.categoria,
@@ -136,6 +137,7 @@ function updateContato(id, contato) {
     db.data[index].nome = contato.nome,
     db.data[index].email = contato.email,
     db.data[index].telefone = contato.telefone,
+    db.data[index].sangue = contato.sangue,
     db.data[index].cidade = contato.cidade,
     db.data[index].categoria = contato.categoria,
     db.data[index].website = contato.website

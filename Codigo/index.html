@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-sm-7">
                     <label for="exampleFormControlSelect1">Tipo sanguíneo</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="inputSangue">
                         <option>A+</option>
                         <option>A-</option>
                         <option>B+</option>
@@ -81,22 +81,43 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inputSite">Possui alguma deficiência? (*)</label>
-                    <input type="text" class="form-control" id="inputSite" required placeholder="Se sim, qual?">
+                    <label for="inpuDeficiencia">Possui alguma necessidade especial? (*)</label>
+                    <input type="radio" name="inputDeficiencia" id="inputDeficienciaS">Sim
+                    <input type="radio" name="inputDeficiencia" id="inputDeficienciaN">Não
+                    <div>
+                        <label for="inputDeficienciaTextArea">Qual?</label>
+                        <input type="text" name="inputDeficienciaTextArea" id="inputDeficienciaTextArea">
+                    </div>
                 </div>
                 <div class="col-sm-6">
                     <label for="inputRemedio">Uso de remédio controlado? (*)</label>
-                    <input type="text" class="form-control" id="inputRemedio" required placeholder="Se sim, qual?">
+                    <input type="radio" name="inputRemedio" id="inputRemedioS">Sim
+                    <input type="radio" name="inputRemedio" id="inputRemedioN">Não
+                    <div>
+                        <label for="inputRemedioTextArea">Qual remédio?</label>
+                        <input type="text" name="inputRemedioTextArea" id="inputRemedioTextArea">
+                    </div>
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inputTelefone">Data de Entrada (*)</label>
-                    <input type="date" class="form-control" id="inputTelefone" required>
+                    <label for="inpuAlergia">Possui alguma alergia? (*)</label>
+                    <input type="radio" name="inputAlergia" id="inputAlergiaS">Sim
+                    <input type="radio" name="inputAlergia" id="inputAlergiaN">Não
+                    <div>
+                        <label for="inputAlergiaTextArea">Qual?</label>
+                        <input type="text" name="inputAlergiaTextArea" id="inputAlergiaTextArea">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputDataEntrada">Data de Entrada (*)</label>
+                    <input type="date" class="form-control" id="inputDataEntrada" required>
                 </div>
                 <div class="col-sm-6">
-                    <label for="inputNome">Horário de Entrada (*)</label>
-                    <input type="time" class="form-control" id="inputTelefone" required>
+                    <label for="inputHorarioEntrada">Horário de Entrada (*)</label>
+                    <input type="time" class="form-control" id="inputHorarioEntrada" required>
                 </div>
             </div>
             <div class="form-group row">
@@ -123,10 +144,10 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nome</th>
-                            <th scope="col">Telefone</th>
+                            <th scope="col">Tipo Sanguíneo</th>
                             <th scope="col">Observações</th>
                             <th scope="col">Cidade</th>
-                            <th scope="col">Categoria</th>
+                            <th scope="col">Risco</th>
                             <th scope="col">Site</th>
                         </tr>
                     </thead>
@@ -158,7 +179,7 @@
                 let contato = db.data[i];
                 $("#table-contatos").append(`<tr><td scope="row">${contato.id}</td>
                                                 <td>${contato.nome}</td>
-                                                <td>${contato.telefone}</td>
+                                                <td>${contato.sangue}</td>
                                                 <td>${contato.email}</td>
                                                 <td>${contato.cidade}</td>
                                                 <td>${contato.categoria}</td>
@@ -179,6 +200,7 @@
                 // Obtem os valores dos campos do formulário
                 let campoNome = $("#inputNome").val();
                 let campoTelefone = $("#inputTelefone").val();
+                let campoSangue = $("#inputSangue").val();
                 let campoEmail = $('#inputEmail').val();
                 let campoCidade = $("#inputCidade").val();
                 let campoCategoria = $('#inputCategoria').val();
@@ -186,6 +208,7 @@
                 let contato = {
                     nome: campoNome,
                     telefone: campoTelefone,
+                    sangue: campoSangue,
                     email: campoEmail,
                     cidade: campoCidade,
                     categoria: campoCategoria,
@@ -215,9 +238,11 @@
                 let campoCidade = $("#inputCidade").val();
                 let campoCategoria = $("#inputCategoria").val();
                 let campoSite = $('#inputSite').val();
+                let campoSangue = $("#inputSangue").val();
                 let contato = {
                     nome: campoNome,
                     telefone: campoTelefone,
+                    sangue: campoSangue,
                     email: campoEmail,
                     cidade: campoCidade,
                     categoria: campoCategoria,
@@ -279,6 +304,43 @@
 
             exibeContatos();
         }
+
+        // Bloqueia e desbloqueia o campo de medicamentos dependendo da seleção
+        let campo_remedio = document.getElementById('inputRemedioTextArea');
+        let remedioN = document.getElementById('inputRemedioN');
+        campo_remedio.disabled = true;
+        remedioN.addEventListener('change', function () {
+            campo_remedio.disabled = true;
+        })
+        let remedioS = document.getElementById('inputRemedioS');
+        remedioS.addEventListener('change', function () {
+            campo_remedio.disabled = false;
+        })
+
+        // Bloqueia e desbloqueia o campo de deficiência dependendo da seleção
+        let campo_deficiencia = document.getElementById('inputDeficienciaTextArea');
+        let deficienciaN = document.getElementById('inputDeficienciaN');
+        campo_deficiencia.disabled = true;
+        deficienciaN.addEventListener('change', function () {
+            campo_deficiencia.disabled = true;
+        })
+        let deficienciaS = document.getElementById('inputDeficienciaS');
+        deficienciaS.addEventListener('change', function () {
+            campo_deficiencia.disabled = false;
+        })
+
+        // Bloqueia e desbloqueia o campo de alergias dependendo da seleção
+        let campo = document.getElementById('inputAlergiaTextArea');
+        let alergiaN = document.getElementById('inputAlergiaN');
+        campo.disabled = true;
+        alergiaN.addEventListener('change', function () {
+            campo.disabled = true;
+        })
+        let alergia = document.getElementById('inputAlergiaS');
+        alergia.addEventListener('change', function () {
+            campo.disabled = false;
+        })
+
     </script>
 </body>
 
