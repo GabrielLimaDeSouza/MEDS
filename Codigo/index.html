@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cadastro de Internados</title>
+    <title>Cadastro de Internações MEDS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -101,7 +101,7 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inpuAlergia">Possui alguma alergia? (*)</label>
+                    <label for="inpuAlergia">Possui alguma alergia? </label>
                     <input type="radio" name="inputAlergia" id="inputAlergiaS">Sim
                     <input type="radio" name="inputAlergia" id="inputAlergiaN">Não
                     <div>
@@ -146,9 +146,9 @@
                             <th scope="col">Nome</th>
                             <th scope="col">Tipo Sanguíneo</th>
                             <th scope="col">Observações</th>
-                            <th scope="col">Cidade</th>
+                            <th scope="col">Remédios</th>
                             <th scope="col">Risco</th>
-                            <th scope="col">Site</th>
+                            <th scope="col">Alergias</th>
                         </tr>
                     </thead>
                     <tbody id="table-contatos">
@@ -181,9 +181,9 @@
                                                 <td>${contato.nome}</td>
                                                 <td>${contato.sangue}</td>
                                                 <td>${contato.email}</td>
-                                                <td>${contato.cidade}</td>
+                                                <td>${contato.remedio}</td>
                                                 <td>${contato.categoria}</td>
-                                                <td>${contato.website}</td>
+                                                <td>${contato.alergia}</td>
                                             </tr>`);
             }
         }
@@ -204,7 +204,8 @@
                 let campoEmail = $('#inputEmail').val();
                 let campoCidade = $("#inputCidade").val();
                 let campoCategoria = $('#inputCategoria').val();
-                let campoSite = $('#inputSite').val();
+                let campoAlergia = $('#inputAlergiaTextArea').val();
+                let campoRemedio = $('#inputRemedioTextArea').val();
                 let contato = {
                     nome: campoNome,
                     telefone: campoTelefone,
@@ -212,7 +213,8 @@
                     email: campoEmail,
                     cidade: campoCidade,
                     categoria: campoCategoria,
-                    website: campoSite
+                    remedio: campoRemedio,
+                    alergia: campoAlergia
                 };
 
                 insertContato(contato);
@@ -237,7 +239,7 @@
                 let campoEmail = $("#inputEmail").val();
                 let campoCidade = $("#inputCidade").val();
                 let campoCategoria = $("#inputCategoria").val();
-                let campoSite = $('#inputSite').val();
+                let campoAlergia = $('#inputAlergiaTextArea').val();
                 let campoSangue = $("#inputSangue").val();
                 let contato = {
                     nome: campoNome,
@@ -246,7 +248,8 @@
                     email: campoEmail,
                     cidade: campoCidade,
                     categoria: campoCategoria,
-                    website: campoSite
+                    remedio: campoRemedio,
+                    alergia: campoAlergia
                 };
 
                 updateContato(parseInt(campoId), contato);
@@ -299,7 +302,7 @@
                 $("#inputEmail").val(colunas[3].innerText);
                 $("#inputCidade").val(colunas[4].innerText);
                 $("#inputCategoria").val(colunas[5].innerText);
-                $("#inputSite").val(colunas[6].innerText);
+                $("#inputAlergiaTextArea").val(colunas[6].innerText);
             });
 
             exibeContatos();

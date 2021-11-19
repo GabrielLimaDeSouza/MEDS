@@ -118,7 +118,8 @@ function insertContato(contato) {
         "telefone": contato.telefone,
         "cidade" : contato.cidade,
         "categoria": contato.categoria,
-        "website": contato.website
+        "remedio": contato.remedio,
+        "alergia": contato.alergia
     };
 
     // Insere o novo objeto no array
@@ -140,7 +141,8 @@ function updateContato(id, contato) {
     db.data[index].sangue = contato.sangue,
     db.data[index].cidade = contato.cidade,
     db.data[index].categoria = contato.categoria,
-    db.data[index].website = contato.website
+    db.data[index].remedio = contato.remedio,
+    db.data[index].alergia = contato.alergia
 
     displayMessage("Internado alterado com sucesso");
 
