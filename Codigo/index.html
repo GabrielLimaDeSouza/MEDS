@@ -16,11 +16,11 @@
     <div class="container">
         <div class="row">
             <div id="msg" class="col-sm-10 offset-sm-1 ">
-                <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+                <!--<div class="alert alert-warning">internado não encontrado.</div>-->
             </div>
         </div>
 
-        <form id="form-contato">
+        <form id="form-internado">
             <div class="form-group row">
                 <div class="col-sm-4">
                     <label for="inputId">Id</label>
@@ -29,7 +29,7 @@
                 <div class="col-sm-8">
                     <label for="inputNome">Nome (*)</label>
                     <input type="text" class="form-control" id="inputNome" required
-                        placeholder="Informe o nome do contato">
+                        placeholder="Informe o nome do internado">
                 </div>
             </div>
             <div class="form-group row">
@@ -58,15 +58,15 @@
                     <input type="number" class="form-control" id="inputTelefone" required placeholder="Telefone">
                 </div>
                 <div class="col-sm-7">
-                    <label for="inputEmail">Observações(*)</label>
-                    <input type="text" class="form-control" id="inputEmail" required placeholder="Observações">
+                    <label for="inputObservacoes">Observações(*)</label>
+                    <input type="text" class="form-control" id="inputObservacoes" required placeholder="Observações">
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm-6">
                     <label for="inputCidade">Cidade (*)</label>
                     <input type="text" class="form-control" id="inputCidade" required
-                        placeholder="Informe a cidade do contato">
+                        placeholder="Informe a cidade do internado">
                 </div>
                 <div class="col-sm-6">
                     <label for="inputCategoria">Classificação de Risco (*)</label>
@@ -131,15 +131,15 @@
                     <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
                     <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
                     <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
-                    <a href="lista_contatos.html"><input type="button" class="btn btn-warning" id="btnClear"
-                            value="Pesquisar Contatos"></a>
+                    <a href="lista_internados.html"><input type="button" class="btn btn-warning" id="btnClear"
+                            value="Pesquisar internados"></a>
                 </div>
             </div>
         </form>
 
         <div class="row">
             <div class="col-sm-12">
-                <table id="grid-contatos" class="table table-striped">
+                <table id="grid-internados" class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -151,7 +151,7 @@
                             <th scope="col">Alergias</th>
                         </tr>
                     </thead>
-                    <tbody id="table-contatos">
+                    <tbody id="table-internados">
                         <tr>
                             <td scope="row">1</td>
                             <td></td>
@@ -170,20 +170,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="app.js"></script>
     <script>
-        function exibeContatos() {
+        function exibeinternados() {
             // Remove todas as linhas do corpo da tabela
-            $("#table-contatos").html("");
+            $("#table-internados").html("");
 
             // Popula a tabela com os registros do banco de dados
             for (i = 0; i < db.data.length; i++) {
-                let contato = db.data[i];
-                $("#table-contatos").append(`<tr><td scope="row">${contato.id}</td>
-                                                <td>${contato.nome}</td>
-                                                <td>${contato.sangue}</td>
-                                                <td>${contato.email}</td>
-                                                <td>${contato.remedio}</td>
-                                                <td>${contato.categoria}</td>
-                                                <td>${contato.alergia}</td>
+                let internado = db.data[i];
+                $("#table-internados").append(`<tr><td scope="row">${internado.id}</td>
+                                                <td>${internado.nome}</td>
+                                                <td>${internado.sangue}</td>
+                                                <td>${internado.observacoes}</td>
+                                                <td>${internado.remedio}</td>
+                                                <td>${internado.categoria}</td>
+                                                <td>${internado.alergia}</td>
                                             </tr>`);
             }
         }
@@ -192,7 +192,7 @@
             // Adiciona funções para tratar os eventos 
             $("#btnInsert").click(function () {
                 // Verfica se o formulário está preenchido corretamente
-                if (!$('#form-contato')[0].checkValidity()) {
+                if (!$('#form-internado')[0].checkValidity()) {
                     displayMessage("Preencha o formulário corretamente.");
                     return;
                 }
@@ -202,28 +202,30 @@
                 let campoTelefone = $("#inputTelefone").val();
                 let campoSangue = $("#inputSangue").val();
                 let campoEmail = $('#inputEmail').val();
+                let campoObservacoes = $('#inputObservacoes').val();
                 let campoCidade = $("#inputCidade").val();
                 let campoCategoria = $('#inputCategoria').val();
                 let campoAlergia = $('#inputAlergiaTextArea').val();
                 let campoRemedio = $('#inputRemedioTextArea').val();
-                let contato = {
+                let internado = {
                     nome: campoNome,
                     telefone: campoTelefone,
                     sangue: campoSangue,
                     email: campoEmail,
                     cidade: campoCidade,
+                    observacoes: campoObservacoes,
                     categoria: campoCategoria,
                     remedio: campoRemedio,
                     alergia: campoAlergia
                 };
 
-                insertContato(contato);
+                insertinternado(internado);
 
-                // Reexibe os contatos
-                exibeContatos();
+                // Reexibe os internados
+                exibeinternados();
 
                 // Limpa o formulario
-                $("#form-contato")[0].reset();
+                $("#form-internado")[0].reset();
             });
 
             // Intercepta o click do botão Alterar
@@ -240,25 +242,27 @@
                 let campoCidade = $("#inputCidade").val();
                 let campoCategoria = $("#inputCategoria").val();
                 let campoAlergia = $('#inputAlergiaTextArea').val();
+                let campoObservacoes = $('#inputObservacoes').val();
                 let campoSangue = $("#inputSangue").val();
-                let contato = {
+                let internado = {
                     nome: campoNome,
                     telefone: campoTelefone,
                     sangue: campoSangue,
                     email: campoEmail,
+                    observacoes: campoObservacoes,
                     cidade: campoCidade,
                     categoria: campoCategoria,
                     remedio: campoRemedio,
                     alergia: campoAlergia
                 };
 
-                updateContato(parseInt(campoId), contato);
+                updateinternado(parseInt(campoId), internado);
 
-                // Reexibe os contatos
-                exibeContatos();
+                // Reexibe os internados
+                exibeinternados();
 
                 // Limpa o formulario
-                $("#form-contato")[0].reset();
+                $("#form-internado")[0].reset();
             });
 
             // Intercepta o click do botão Excluir
@@ -268,18 +272,18 @@
                     displayMessage("Selecione um internado a ser excluído.");
                     return;
                 }
-                deleteContato(parseInt(campoId));
+                deleteinternado(parseInt(campoId));
 
-                // Reexibe os contatos
-                exibeContatos();
+                // Reexibe os internados
+                exibeinternados();
 
                 // Limpa o formulario
-                $("#form-contato")[0].reset();
+                $("#form-internado")[0].reset();
             });
 
-            // Intercepta o click do botão Listar Contatos
+            // Intercepta o click do botão Listar internados
             $("#btnClear").click(function () {
-                $("#form-contato")[0].reset();
+                $("#form-internado")[0].reset();
             });
 
             // Oculta a mensagem de aviso após alguns segundos
@@ -292,9 +296,9 @@
             });
 
             // Preenche o formulário quando o usuario clicar em uma linha da tabela 
-            $("#grid-contatos").on("click", "tr", function (e) {
-                let linhaContato = this;
-                colunas = linhaContato.querySelectorAll("td");
+            $("#grid-internados").on("click", "tr", function (e) {
+                let linhainternado = this;
+                colunas = linhainternado.querySelectorAll("td");
 
                 $("#inputId").val(colunas[0].innerText);
                 $("#inputNome").val(colunas[1].innerText);
@@ -305,7 +309,7 @@
                 $("#inputAlergiaTextArea").val(colunas[6].innerText);
             });
 
-            exibeContatos();
+            exibeinternados();
         }
 
         // Bloqueia e desbloqueia o campo de medicamentos dependendo da seleção
