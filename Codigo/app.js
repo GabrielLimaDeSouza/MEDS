@@ -6,9 +6,8 @@ var db_contatos_inicial = {
             "nome": "Carlos Almeida",
             "sangue": "A+",
             "observacoes": "Febre e dor na região do estômago",
-            "email": "carlosalmeida@gmail.com",
-            "telefone": "31987848487",
             "categoria": "Verde",
+            "idade": "36",
             "remedio": "Propanolol 10mg (2 vezes ao dia)",
             "alergia": ""
         },
@@ -17,9 +16,8 @@ var db_contatos_inicial = {
             "nome": "João Augusto",
             "sangue": "B-",
             "observacoes": "Fortes dores de cabeça",
-            "email": "joaoaugusto@gmail.com",
-            "telefone": "3194394852",
             "categoria": "Laranja",
+            "idade": "50",
             "remedio": "",
             "alergia": "Frutos do mar"
         },
@@ -28,11 +26,20 @@ var db_contatos_inicial = {
             "nome": "Julia Maria",
             "sangue": "O+",
             "observacoes": "Princípio de intoxicação alimentar",
-            "email": "julia4545@outlook.com",
-            "telefone": "3194092934",
             "categoria": "Verde",
+            "idade": "28",
             "remedio": "Lorazepam 5 mg (1 vez ao dia)",
             "alergia": "Amendoim"
+        },
+        {
+            "id": 4,
+            "nome": "Eduarda Carvalho",
+            "sangue": "Não identificado",
+            "observacoes": "Sintomas de gripe",
+            "categoria": "Azul",
+            "idade": "15",
+            "remedio": "",
+            "alergia": ""
         }
     ]
 }
@@ -58,10 +65,9 @@ function insertContato(contato) {
         "nome": contato.nome,
         "email" : contato.email,
         "sangue": contato.sangue,
-        "telefone": contato.telefone,
-        "cidade" : contato.cidade,
         "categoria": contato.categoria,
         "remedio": contato.remedio,
+        "observacoes": contato.observacoes,
         "alergia": contato.alergia
     };
 
@@ -79,12 +85,10 @@ function updateContato(id, contato) {
 
     // Altera os dados do objeto no array
     db.data[index].nome = contato.nome,
-    db.data[index].email = contato.email,
-    db.data[index].telefone = contato.telefone,
     db.data[index].sangue = contato.sangue,
-    db.data[index].cidade = contato.cidade,
     db.data[index].categoria = contato.categoria,
     db.data[index].remedio = contato.remedio,
+    db.data[index].observacoes = contato.observacoes,
     db.data[index].alergia = contato.alergia
 
     displayMessage("Internado alterado com sucesso");
