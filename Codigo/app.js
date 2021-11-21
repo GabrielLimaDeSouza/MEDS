@@ -1,5 +1,5 @@
-// declara um conjunto inicial de internados
-var db_internados_inicial = {
+// declara um conjunto inicial de contatos
+var db_contatos_inicial = {
     "data": [
         {
             "id": 1,
@@ -38,9 +38,9 @@ var db_internados_inicial = {
 }
 
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
-var db = JSON.parse(localStorage.getItem('db_internado'));
+var db = JSON.parse(localStorage.getItem('db_contato'));
 if (!db) {
-    db = db_internados_inicial
+    db = db_contatos_inicial
 };
 
 // Exibe mensagem em um elemento de ID msg
@@ -48,59 +48,57 @@ function displayMessage(msg) {
     $('#msg').html('<div class="alert alert-warning">' + msg + '</div>');
 }
 
-function insertinternado(internado) {
+function insertContato(contato) {
     // Calcula novo Id a partir do último código existente no array (PODE GERAR ERRO SE A BASE ESTIVER VAZIA)
     let novoId = 1;
     if (db.data.length != 0) 
       novoId = db.data[db.data.length - 1].id + 1;
-    let novointernado = {
+    let novoContato = {
         "id": novoId,
-        "nome": internado.nome,
-        "email" : internado.email,
-        "sangue": internado.sangue,
-        "observacoes": internado.observacoes,
-        "telefone": internado.telefone,
-        "cidade" : internado.cidade,
-        "categoria": internado.categoria,
-        "remedio": internado.remedio,
-        "alergia": internado.alergia
+        "nome": contato.nome,
+        "email" : contato.email,
+        "sangue": contato.sangue,
+        "telefone": contato.telefone,
+        "cidade" : contato.cidade,
+        "categoria": contato.categoria,
+        "remedio": contato.remedio,
+        "alergia": contato.alergia
     };
 
     // Insere o novo objeto no array
-    db.data.push(novointernado);
+    db.data.push(novoContato);
     displayMessage("Internado inserido com sucesso");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('db_internado', JSON.stringify(db));
+    localStorage.setItem('db_contato', JSON.stringify(db));
 }
 
-function updateinternado(id, internado) {
+function updateContato(id, contato) {
     // Localiza o indice do objeto a ser alterado no array a partir do seu ID
     let index = db.data.map(obj => obj.id).indexOf(id);
 
     // Altera os dados do objeto no array
-    db.data[index].nome = internado.nome,
-    db.data[index].email = internado.email,
-    db.data[index].telefone = internado.telefone,
-    db.data[index].sangue = internado.sangue,
-    db.data[index].cidade = internado.cidade,
-    db.data[index].categoria = internado.categoria,
-    db.data[index].remedio = internado.remedio,
-    db.data[index].observacoes = internado.observacoes,
-    db.data[index].alergia = internado.alergia
+    db.data[index].nome = contato.nome,
+    db.data[index].email = contato.email,
+    db.data[index].telefone = contato.telefone,
+    db.data[index].sangue = contato.sangue,
+    db.data[index].cidade = contato.cidade,
+    db.data[index].categoria = contato.categoria,
+    db.data[index].remedio = contato.remedio,
+    db.data[index].alergia = contato.alergia
 
     displayMessage("Internado alterado com sucesso");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('db_internado', JSON.stringify(db));
+    localStorage.setItem('db_contato', JSON.stringify(db));
 }
 
-function deleteinternado(id) {    
+function deleteContato(id) {    
     // Filtra o array removendo o elemento com o id passado
     db.data = db.data.filter(function (element) { return element.id != id });
 
     displayMessage("Internado removido com sucesso");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('db_internado', JSON.stringify(db));
+    localStorage.setItem('db_contato', JSON.stringify(db));
 }

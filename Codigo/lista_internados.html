@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cadastro de internados</title>
+    <title>Cadastro de Contatos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="Listainterados()">
+<body onload="ListaContatos()">
     <h1>Listagem de Internados</h1>
 
     <div class="container">
         <div class="row">
             <div id="msg" class="col-sm-10 offset-sm-1 ">
-                <!--<div class="alert alert-warning">interado não encontrado.</div>-->
+                <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
             </div>
         </div>
 
@@ -26,10 +26,10 @@
             </div>
         </div>
 
-        <form id="form-interado">
+        <form id="form-contato">
             <div class="form-group row">
                 <div class="col-sm-4">
-                    <select name="filtro_cidade" id="filtro_cidade" onchange="Listainterados()" class="form-control">
+                    <select name="filtro_cidade" id="filtro_cidade" onchange="ListaContatos()" class="form-control">
                         <option value="">Selecione a Cidade</option>
                         <option value="Betim">Betim</option>
                         <option value="Belo Horizonte">Belo Horizonte</option>
@@ -39,12 +39,13 @@
                     </select>
                 </div>
                 <div class="col-sm-8">
-                    <select name="filtro_categoria" id="filtro_categoria" onchange="Listainterados()"
+                    <select name="filtro_categoria" id="filtro_categoria" onchange="ListaContatos()"
                         class="form-control">
                         <option value="">Selecione a Classificação de Risco</option>
                         <option value="Vermelho">Vermelho</option>
-                        <option value="Verde">Verde</option>
+                        <option value="Laranja">Laranja</option>
                         <option value="Amarelo">Amarelo</option>
+                        <option value="Verde">Verde</option>
                         <option value="Azul">Azul</option>
                     </select>
                 </div>
@@ -54,7 +55,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <table id="grid-interados" class="table table-striped">
+                <table id="grid-contatos" class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -66,7 +67,7 @@
                             <th scope="col">Site</th>
                         </tr>
                     </thead>
-                    <tbody id="table-interados">
+                    <tbody id="table-contatos">
                     </tbody>
                 </table>
             </div>
@@ -76,32 +77,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="app.js"></script>
     <script>
-        // função para listar na tabela os interados que estão associados aos filtros 
-        function Listainterados() {
+        // função para listar na tabela os contatos que estão associados aos filtros 
+        function ListaContatos() {
 
             // Obtem os dados informados pelo usuário nos filtros
             let fc = document.getElementById('filtro_cidade').value;
             let fcg = document.getElementById('filtro_categoria').value;
 
-            // limpa a lista de interados apresentados
-            $("#table-interados").empty();
+            // limpa a lista de contatos apresentados
+            $("#table-contatos").empty();
 
             // Popula a tabela com os registros do banco de dados
             for (let index = 0; index < db.data.length; index++) {
-                const interado = db.data[index];
+                const contato = db.data[index];
 
-                // Verifica se os dados do interado batem com os filtros
-                if (((interado.cidade == fc) || (fc == '')) &&
-                    ((interado.categoria == fcg) || (fcg == ''))) {
+                // Verifica se os dados do contato batem com os filtros
+                if (((contato.cidade == fc) || (fc == '')) &&
+                    ((contato.categoria == fcg) || (fcg == ''))) {
 
-                    // Inclui o interado na tabela    
-                    $("#table-interados").append(`<tr><td scope="row">${interado.id}</td>
-                                                    <td>${interado.nome}</td>
-                                                    <td>${interado.telefone}</td>
-                                                    <td>${interado.email}</td>
-                                                    <td>${interado.cidade}</td>
-                                                    <td>${interado.categoria}</td>
-                                                    <td>${interado.website}</td>
+                    // Inclui o contato na tabela    
+                    $("#table-contatos").append(`<tr><td scope="row">${contato.id}</td>
+                                                    <td>${contato.nome}</td>
+                                                    <td>${contato.telefone}</td>
+                                                    <td>${contato.email}</td>
+                                                    <td>${contato.cidade}</td>
+                                                    <td>${contato.categoria}</td>
+                                                    <td>${contato.website}</td>
                                                 </tr>`);
                 }
             }
