@@ -50,7 +50,7 @@
             </div>
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <label for="inputEmail">Observações(*)</label>
+                    <label for="inputObservacoes">Observações(*)</label>
                     <input type="text" class="form-control" id="inputObservacoes" required placeholder="Observações">
                 </div>
                 <div class="col-sm-6">
@@ -138,11 +138,13 @@
                             <th scope="col">Remédios</th>
                             <th scope="col">Risco</th>
                             <th scope="col">Alergias</th>
+                            <th scope="col">Idade</th>
                         </tr>
                     </thead>
                     <tbody id="table-contatos">
                         <tr>
                             <td scope="row">1</td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -173,6 +175,7 @@
                                                 <td>${contato.remedio}</td>
                                                 <td>${contato.categoria}</td>
                                                 <td>${contato.alergia}</td>
+                                                <td>${contato.idade}</td>
                                             </tr>`);
             }
         }
@@ -193,12 +196,14 @@
                 let campoObservacoes = $('#inputObservacoes').val();
                 let campoAlergia = $('#inputAlergiaTextArea').val();
                 let campoRemedio = $('#inputRemedioTextArea').val();
+                let campoIdade = $('#inputIdade').val();
                 let contato = {
                     nome: campoNome,
                     sangue: campoSangue,
                     categoria: campoCategoria,
                     remedio: campoRemedio,
                     observacoes: campoObservacoes,
+                    idade: campoIdade,
                     alergia: campoAlergia
                 };
 
@@ -224,6 +229,7 @@
                 let campoAlergia = $('#inputAlergiaTextArea').val();
                 let campoSangue = $("#inputSangue").val();
                 let campoRemedio = $('#inputRemedioTextArea').val();
+                let campoIdade = $('#inputIdade').val();
                 let campoObservacoes = $('#inputObservacoes').val();
                 let contato = {
                     nome: campoNome,
@@ -231,6 +237,7 @@
                     categoria: campoCategoria,
                     remedio: campoRemedio,
                     observacoes: campoObservacoes,
+                    idade: campoIdade,
                     alergia: campoAlergia
                 };
 
@@ -285,6 +292,7 @@
                 $("#inputRemedioTextArea").val(colunas[4].innerText);
                 $("#inputCategoria").val(colunas[5].innerText);
                 $("#inputAlergiaTextArea").val(colunas[6].innerText);
+                $("#inputIdade").val(colunas[7].innerText);
             });
 
             exibeContatos();

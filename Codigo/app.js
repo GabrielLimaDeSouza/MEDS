@@ -68,6 +68,7 @@ function insertContato(contato) {
         "categoria": contato.categoria,
         "remedio": contato.remedio,
         "observacoes": contato.observacoes,
+        "idade": contato.idade,
         "alergia": contato.alergia
     };
 
@@ -89,6 +90,7 @@ function updateContato(id, contato) {
     db.data[index].categoria = contato.categoria,
     db.data[index].remedio = contato.remedio,
     db.data[index].observacoes = contato.observacoes,
+    db.data[index].idade = contato.idade,
     db.data[index].alergia = contato.alergia
 
     displayMessage("Internado alterado com sucesso");
