@@ -1,77 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal MEDS</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Login MEDS</title>
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
-    <script>
-        // Verifica se o usuário já esta logado e se negativo, redireciona para tela de login        
-        if (!usuarioCorrente.login) {
-            window.location.href = "index.html";
-        }
-
-        function exibeUsuarios() {
-            
-            // Popula a tabela com os registros do banco de dados
-            let listaUsuarios = '';
-            for (i = 0; i < db_usuarios.usuarios.length; i++) {
-                let usuario = db_usuarios.usuarios[i];
-                listaUsuarios += `<tr><td scope="row">${usuario.nome}</td><td>${usuario.login}</td><td>${usuario.email}</td></tr>`;
-            }
-
-            // Substitui as linhas do corpo da tabela
-            document.getElementById("table-usuarios").innerHTML = listaUsuarios
-
-        }
-
-        function initPage() {
-
-            // Associa a função de logout ao botão
-            document.getElementById('btn_logout').addEventListener('click', logoutUser);
-
-            // Informa o nome do usuário logado
-            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
-
-            // Lista os usuários 
-            exibeUsuarios ();
-        }
-
-        // Associa ao evento de carga da página a função para verificar se o usuário está logado
-        window.addEventListener('load', initPage);        
-    </script>>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Olá <span id="nomeUsuario"></span>, seja bem-vindo ao MEDS!</h1>
-    <button id="btn_logout">Efetuar Logout</button>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <table id="grid-usuarios" class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Nome</th>
-                            <th scope="col">login</th>
-                            <th scope="col">E-mail</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-usuarios">
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+    <main>
+      <div id='login'>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 form_area">
+              <form form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                <p>
+                  <label for="username">Usuário:</label>
+                  <input type="text" id="username" name="username" autocomplete="off" required="required">
+                </p>
+                <p>
+                  <label for="password">Senha:</label>
+                  <input type="password" id="password" name="password" required="required">
+                </p>
+                <button type="submit" name="submit" value="submit" class="btn btn-primary" id="submit">Entrar</button>
+              </form>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-info novo_usuario_botao" data-toggle="modal" data-target="#loginModal">Novo Usuário</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Cadastro de Usuário MEDS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-modal" class="form" method="post" onsubmit="loginUser (this)">
+                        <h3 class="text-center text-info">Novo usuário</h3>
+                        <div class="form-group">
+                            <label for="login" class="text-info">Nome de Usuário</label><br>
+                            <input type="text" name="usuario_cadastro" id="usuario_cadastro" class="form-control" placeholder="Ex: João_Augusto" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="nome" class="text-info">Nome Completo</label><br>
+                            <input type="text" name="nome_cadastro" id="nome_cadastro" class="form-control" placeholder="Ex: João Augusto da Silva Lopes" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-info">Email</label><br>
+                            <input type="email" name="email_cadastro" id="email_cadastro" class="form-control" placeholder="Ex: joaoaugusto2@gmail.com" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="senha" class="text-info">Senha</label><br>
+                            <input type="password" name="senha_cadastro" id="senha_cadastro" class="form-control" placeholder="Crie uma senha" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="senha2" class="text-info">Confirmação de Senha</label><br>
+                            <input type="password" name="senha_confirmacao_cadastro" id="senha_confirmacao_cadastro" class="form-control" placeholder="Confirme sua senha" autocomplete="off">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" id="btn_salvar" class="btn btn-info">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="login.js"></script>
+    <script>
+        // Declara uma função para processar o formulário de login
+        function processaFormLogin (event) {                
+          // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+          event.preventDefault ();
+
+          // Obtem os dados de login e senha a partir do formulário de login
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('password').value;
+
+          // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+          resultadoLogin = loginUser (username, password);
+          if (resultadoLogin) {
+              window.location.href = "index.html";
+          }
+          else { // Se login falhou, avisa ao usuário
+              alert ('Usuário ou senha incorretos');
+          }
+        }
+
+        function salvaLogin (event) {
+            // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+            event.preventDefault ();
+
+            // Obtem os dados do formulário
+            let login  = document.getElementById('usuario_cadastro').value;
+            let nome   = document.getElementById('nome_cadastro').value;
+            let email  = document.getElementById('email_cadastro').value;
+            let senha  = document.getElementById('senha_cadastro').value;
+            let senha2 = document.getElementById('senha_confirmacao_cadastro').value;
+            if (senha != senha2) {
+                alert ('As senhas informadas não conferem!');
+                return
+            }
+
+            // Adiciona o usuário no banco de dados
+            if (login != 0)
+            {
+                if (nome != 0)
+                {
+                    if (!(email_cadastro.value.length < 6 || email_cadastro.value.indexOf('@')==-1 || email_cadastro.value.indexOf('.')==-1))
+                    {
+                        if (senha != 0)
+                        {
+                            if(senha2 != 0)
+                            {
+                                addUser (nome, login, senha, email);
+                                alert ('Usuário salvo com sucesso. Faça o login para acessar o MEDS!!!');
+                            }
+                            else
+                            {
+                                alert("Confirme sua senha!");
+                            }
+                        }
+                        else
+                        {
+                            alert("Digite uma senha!");
+                        }
+                    }
+                    else
+                    {
+                        alert("Digite um email válido!");
+                    }
+                }
+                else 
+                {
+                    alert("Digite seu nome completo!");
+                }
+            }
+            else
+            {
+                alert ("Digite um nome de usuário!");
+            }
+
+
+          // Oculta a div modal do login
+          //document.getElementById ('loginModal').style.display = 'none';
+          $('#loginModal').modal('hide');
+        }
+
+        // Associa a funçao processaFormLogin  formulário adicionado um manipulador do evento submit
+        document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+
+        // Associar salvamento ao botao
+        document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);    
+
+
+
+        // Selecionando o campo de cadastro de usuário
+        let usuariocadastroInput = document.querySelector('#usuario_cadastro');
+
+        // Função que bloqueia caracteres especiais no campo de cadastro de usuário
+        usuariocadastroInput.addEventListener("keypress", function(e) {
+            if(!checkChar(e)){
+                e.preventDefault();
+            }
+        });
+
+        //Função que confere se o caractere digitado não contém dígitos especiais
+        function checkChar(e){
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[a-zA-Z0-9_]';
+            if (char.match(caracteresPermitidos)){
+                return true;
+            }
+        }
+
+        // Selecionando o campo de Nome Completo
+        let nomeInput = document.querySelector('#nome_cadastro');
+
+        function checkChar2(e){
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[a-zA-Z ]';
+            if (char.match(caracteresPermitidos)){
+                return true;
+            }
+        }
+
+        // Função que bloqueia caracteres especiais e números no campo de Nome Completo
+        nomeInput.addEventListener("keypress", function(e) {
+            if(!checkChar2(e)){
+                e.preventDefault();
+            }
+        });
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>     
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
