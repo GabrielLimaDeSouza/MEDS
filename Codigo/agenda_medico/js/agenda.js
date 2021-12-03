@@ -4,42 +4,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var db_horarios = {
     "data": [
-      {
-          "nome": "João Marcelo da Silva",
-          "horario": [
-            {
-              "data": [
-                "2021-12-03"
-              ]
-              "hora": [
-                [
-                  "14:30",
-                  "15:00"
-                ]
-              ]
-            }
-          ]
-      },
-      {
-        "nome": "Frederico Alberto dos Santos",
-        "data": "2021-11-08",
-        "horario": [
-          {
-            "hora": "10:00",
-            "hora": "11:00"
-          }
-        ]
-      },
-      {
-        "nome": "Julia de Souza Mendes",
-        "data": "2021-11-30",
-        "horario": [
-          {
-            "hora": "16:00",
-            "hora": "17:00"
-          }
-        ]
-      }
+        {
+            "nome": "João Marcelo da Silva",
+            "data": "2021-12-01",
+            "horario": "08:00",
+            "inicio": "2021-12-01T08:00"
+        },
+        {
+            "nome": "Isabel Lopes dos Reis",
+            "data": "2021-11-01",
+            "horario": "15:00",
+            "inicio": "2021-11-01T15:00"
+        },
+        {
+            "nome": "Julia de Souza Mendes",
+            "data": "2021-10-15",
+            "horario": "17:00",
+            "inicio": "2021-10-15T17:00"
+        }
     ]
   }
 
@@ -70,22 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
           if (!isNaN(date.valueOf())) { 
             calendar.addEvent({
               title: 'Horario disponível',
+              date: dateStr,
               start: dateStr+"T"+horas
             });
             
             var novoHorario = {
               medico: document.getElementById("medico").value,
               data: dateStr,
-              horario: [
-                {
-                  horas
-                }
-              ],
+              horario: horas,
               inicio: dateStr+"T"+horas
             };
 
-            medico[0].pessoa[0].horario.data.push(dateStr);
-            medico[0].pessoa[0].horario.horas[0].push(horas);
             var db = JSON.parse(localStorage.getItem("horario"));
             if (db)
             {
