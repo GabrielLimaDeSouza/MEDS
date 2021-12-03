@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Internações MEDS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="internacoes.css">
+</head>
+
+<body onload="init()">
+    <h1>Cadastro de Internações (CRUD)</h1>
+
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">internado não encontrado.</div>-->
+            </div>
+        </div>
+
+        <form id="form-internado">
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <label for="inputId">Id</label>
+                    <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                </div>
+                <div class="col-sm-8">
+                    <label for="inputNome">Nome (*)</label>
+                    <input type="text" class="form-control" id="inputNome" required
+                        placeholder="Informe o nome do internado" autocomplete="off">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <label for="exampleFormControlSelect1">Tipo sanguíneo</label>
+                    <select class="form-control" id="inputSangue">
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>Não identificado</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputObservacoes">Observações(*)</label>
+                    <input type="text" class="form-control" id="inputObservacoes" required placeholder="Observações"
+                        autocomplete="off">
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputIdade">Idade (*)</label>
+                    <input type="number" class="form-control" id="inputIdade" required placeholder="Idade">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputRemedio">Faz uso de remédio controlado? (*)</label>
+                    <input type="radio" name="inputRemedio" id="inputRemedioS">Sim
+                    <input type="radio" name="inputRemedio" id="inputRemedioN" checked>Não
+                    <div>
+                        <label for="inputRemedioTextArea">Qual remédio?</label>
+                        <input type="text" name="inputRemedioTextArea" id="inputRemedioTextArea">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <label for="inpuAlergia">Possui alguma alergia? </label>
+                    <input type="radio" name="inputAlergia" id="inputAlergiaS">Sim
+                    <input type="radio" name="inputAlergia" id="inputAlergiaN" checked>Não
+                    <div>
+                        <label for="inputAlergiaTextArea">Qual?</label>
+                        <input type="text" name="inputAlergiaTextArea" id="inputAlergiaTextArea">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <label for="inputCategoria">Classificação de Risco (*)</label>
+                    <select class="form-control" id="inputCategoria" required>
+                        <option>Vermelho</option>
+                        <option>Laranja</option>
+                        <option>Amarelo</option>
+                        <option>Verde</option>
+                        <option>Azul</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <small>(*) Campos obrigatórios</small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                    <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+                    <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+                    <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
+                    <a href="lista_internados.html"><input type="button" class="btn btn-warning" id="btnClear"
+                            value="Pesquisar internados"></a>
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <table id="grid-internados" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Idade</th>
+                            <th scope="col">Tipo Sanguíneo</th>
+                            <th scope="col">Observações</th>
+                            <th scope="col">Remédios</th>
+                            <th scope="col">Alergias</th>
+                            <th scope="col">Risco</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-internados">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="internacoes.js"></script>
+    <script>
+
+        function exibeinternados() {
+            // Remove todas as linhas do corpo da tabela
+            $("#table-internados").html("");
+
+            // Popula a tabela com os registros do banco de dados
+            for (i = 0; i < db.data.length; i++) {
+                let internado = db.data[i];
+                $("#table-internados").append(`<tr><td scope="row">${internado.id}</td>
+                                                <td>${internado.nome}</td>
+                                                <td>${internado.idade}</td>
+                                                <td>${internado.sangue}</td>
+                                                <td>${internado.observacoes}</td>
+                                                <td>${internado.remedio}</td>
+                                                <td>${internado.alergia}</td>
+                                                <td>${internado.categoria}</td>
+                                            </tr>`);
+            }
+        }
+
+        function init() {
+            // Adiciona funções para tratar os eventos 
+            $("#btnInsert").click(function () {
+                // Verfica se o formulário está preenchido corretamente
+                if (!$('#form-internado')[0].checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoNome = $("#inputNome").val();
+                let campoSangue = $("#inputSangue").val();
+                let campoCategoria = $('#inputCategoria').val();
+                let campoObservacoes = $('#inputObservacoes').val();
+                let campoAlergia = $('#inputAlergiaTextArea').val();
+                let campoRemedio = $('#inputRemedioTextArea').val();
+                let campoIdade = $('#inputIdade').val();
+                let internado = {
+                    nome: campoNome,
+                    sangue: campoSangue,
+                    categoria: campoCategoria,
+                    remedio: campoRemedio,
+                    observacoes: campoObservacoes,
+                    idade: campoIdade,
+                    alergia: campoAlergia
+                };
+
+                insertinternado(internado);
+
+                // Reexibe os internados
+                exibeinternados();
+
+                // Limpa o formulario
+                $("#form-internado")[0].reset();
+            });
+
+            // Intercepta o click do botão Alterar
+            $("#btnUpdate").click(function () {
+                // Obtem os valores dos campos do formulário
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione uma internação para alterar.");
+                    return;
+                }
+                let campoNome = $("#inputNome").val();
+                let campoCategoria = $("#inputCategoria").val();
+                let campoAlergia = $('#inputAlergiaTextArea').val();
+                let campoSangue = $("#inputSangue").val();
+                let campoRemedio = $('#inputRemedioTextArea').val();
+                let campoIdade = $('#inputIdade').val();
+                let campoObservacoes = $('#inputObservacoes').val();
+                let internado = {
+                    nome: campoNome,
+                    sangue: campoSangue,
+                    categoria: campoCategoria,
+                    remedio: campoRemedio,
+                    observacoes: campoObservacoes,
+                    idade: campoIdade,
+                    alergia: campoAlergia
+                };
+
+                updateinternado(parseInt(campoId), internado);
+
+                // Reexibe os internados
+                exibeinternados();
+
+                // Limpa o formulario
+                $("#form-internado")[0].reset();
+            });
+
+            // Intercepta o click do botão Excluir
+            $("#btnDelete").click(function () {
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um internado a ser excluído.");
+                    return;
+                }
+                deleteinternado(parseInt(campoId));
+
+                // Reexibe os internados
+                exibeinternados();
+
+                // Limpa o formulario
+                $("#form-internado")[0].reset();
+            });
+
+            // Intercepta o click do botão Listar internados
+            $("#btnClear").click(function () {
+                $("#form-internado")[0].reset();
+            });
+
+            // Oculta a mensagem de aviso após alguns segundos
+            $('#msg').bind("DOMSubtreeModified", function () {
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 5000);
+            });
+
+            // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+            $("#grid-internados").on("click", "tr", function (e) {
+                let linhainternado = this;
+                colunas = linhainternado.querySelectorAll("td");
+
+                $("#inputId").val(colunas[0].innerText);
+                $("#inputNome").val(colunas[1].innerText);
+                $("#inputIdade").val(colunas[2].innerText);
+                $("#inputSangue").val(colunas[3].innerText);
+                $("#inputObservacoes").val(colunas[4].innerText);
+                $("#inputRemedioTextArea").val(colunas[5].innerText);
+                $("#inputAlergiaTextArea").val(colunas[6].innerText);
+                $("#inputCategoria").val(colunas[7].innerText);
+            });
+
+            exibeinternados();
+        }
+
+        // Bloqueia e desbloqueia o campo de medicamentos dependendo da seleção
+        let campo_remedio = document.getElementById('inputRemedioTextArea');
+        let remedioN = document.getElementById('inputRemedioN');
+        campo_remedio.disabled = true;
+        remedioN.addEventListener('change', function () {
+            campo_remedio.disabled = true;
+        })
+        let remedioS = document.getElementById('inputRemedioS');
+        remedioS.addEventListener('change', function () {
+            campo_remedio.disabled = false;
+        })
+
+        // Bloqueia e desbloqueia o campo de alergias dependendo da seleção
+        let campo = document.getElementById('inputAlergiaTextArea');
+        let alergiaN = document.getElementById('inputAlergiaN');
+        campo.disabled = true;
+        alergiaN.addEventListener('change', function () {
+            campo.disabled = true;
+        })
+        let alergia = document.getElementById('inputAlergiaS');
+        alergia.addEventListener('change', function () {
+            campo.disabled = false;
+        })
+
+        // Selecionando o campo Nome
+        let campoNomeBlock = document.querySelector('#inputNome');
+
+        // Função que bloqueia caracteres especiais no campo Nome
+        campoNomeBlock.addEventListener("keypress", function (e) {
+            if (!checkChar(e)) {
+                e.preventDefault();
+            }
+        });
+
+        //Função que confere se o caractere digitado não contém dígitos especiais e números
+        function checkChar(e) {
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[a-zA-Z ]';
+            if (char.match(caracteresPermitidos)) {
+                return true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
