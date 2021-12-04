@@ -1,0 +1,74 @@
+html {
+    min-height: 100vh !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+}
+.main {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+.container{
+    margin: 0% !important;
+    border: 0% !important;
+    max-width: 100% !important;
+    max-width: 100% !important;
+    padding: 0% !important;
+}
+.logo
+{
+    max-width: 40%;
+}
+.logoR
+{
+    max-width: 21%;
+}
+
+
+.header
+{
+    background-color:  #369c90;
+    padding: 1%;
+}
+
+.btn
+{
+    width: 200px;
+    text-align: center;
+}
+
+.meio
+{
+    background-color: #D7FFFA;
+    padding: 3%;
+    text-align: center !important;
+}
+
+.dois{
+ padding-bottom: 100px;
+}
+.btn-primary
+{
+    margin-left: 2%;
+    border-radius: 20px;
+    background-color: #369C90;
+    border-color: #369C90;
+    margin: 0.62%;
+}
+.junto1{
+    margin-right: 100px;
+}
+.footer
+{
+    background-color: #2CBCAB;
+    position: sticky !important;
+    margin: 0% !important;
+    border: 0% !important;
+    max-width: 100% !important;
+    max-width: 100% !important;
+    padding: 0% !important;
+    
+
+}
+p{
+    font-size: 30px;
+}
