@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="histórico.css">
+    <script type="text/javascript" src="testepdf.js"></script>
+    <script type="text/javascript" src="  https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body onload="init()">
+        <header class="container header">
+            <div class="col-12">
+                <div class="col-12 header_area">
+                        <div class="col-2">
+                            <img src="img/meds-removebg-preview_1 (1).png" class="logo">
+                        </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container main">
+            <div class="col-12 main2">
+                <div class="col-12 main_area">
+                        <div class="col-4 titulo">
+                            <h1>Histórico dos Pacientes</h1>
+                        </div>
+                </div>
+               
+            </div>
+
+            <label for="campopaciente"><b>Paciente:</b> </label>
+        <select class="form-select" id="campopaciente" name="campopaciente" aria-label="Floating label select example">
+            <option selected>Selecione o nome</option>
+        </select> <br><br>
+            <table class="tabela" cellspacing="20">
+                <thead>
+                    <tr class="claro">
+                    <td class="pr" id="nome"> <b>Carlos Alberto</b> </td>
+                    <td class="pr2" id="idade"><b>IDADE: 45 anos</b></td>
+                    <td class="pr1" id="CPF"><b>CPF: xxx.xxx.xxx.xx</b></td>
+                </tr>
+                </thead>
+                
+                <tr class="escuro">
+                    <td class="borda"><b>TIPO SANGUINEO:</b></td>
+                    <td class="duplo" colspan="2"><b>A+</b></td>
+                    
+                </tr>
+                <tr class="escuro">
+                    <td class="borda"><b>ALTURA:</b></td>
+                    <td class="duplo" colspan="2"><b>1,75m</b></td>
+                </tr>
+                <tr class="escuro ultimo">
+                    <td class="borda"><b>PESO:</b></td>
+                    <td class="duplo" colspan="2"><b>75kg</b></td>
+                </tr>
+            </table>
+            
+            <table class="atabela" cellspacing="20">
+                <thead>
+                    <tr class="aclaro">
+                    <td class="apr"> <b>Data</b> </td>
+                    <td class="apr2"><b>Resumo do documento</b></td>
+                    <td class="apr1"><b>PDF</b></td>
+                </tr>
+                </thead>
+                <tbody id="modifica">
+                    
+                    <tr class="aescuro aultimo">
+                        <td class="aborda"><b><input type="text" id="campodata"></b></td>
+                        <td class="aduplo" colspan="0"><input type="text" id="camporesumo"></td>
+    
+                        
+                        <td class="pdf"><label for="inputFile"><i><img src="img/pngegg (1).png" alt=""></i></label>
+                            <input id="inputFile" type="file" style="display: none; visibility: none;" required accept="application/pdf" onchange="convertToBase64();" /></td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            
+            <button onclick="baixar(),salvar()"><b>Confirmar</b> </button><br><br>
+
+            <button onclick="demo1()"><b>Visualizar o PDF</b> </button>
+        </main>
+       <button onclick="criaTabela()">Criar</button>
+       <footer class="container footer">
+           <div class="col-12"></div>
+        Todos os direitos reservados por Med's 
+    </footer>
+</body>
+
+</html>
