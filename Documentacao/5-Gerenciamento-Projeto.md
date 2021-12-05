@@ -29,12 +29,18 @@
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
+### Editor de código
+- Visual Studio Code
+#
+### Controle de Versão
+- GitHub
+#
 - Ferramentas de comunicação
 - Ferramentas de diagramação
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
+O Visual Studio Code foi escolhido como editor de código porque ele possui
+um ambiente favorável ao desenvolvimento além de integração com o
+sistema de versão(Git). As ferramentas de comunicação utilizadas possuem
 integração semelhante e por isso foram selecionadas. Por fim, para criar
 diagramas utilizamos essa ferramenta por melhor captar as
 necessidades da nossa solução.

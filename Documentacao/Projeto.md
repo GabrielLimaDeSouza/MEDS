@@ -1,19 +1,19 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+`Sistema Hospitalar MEDS`  
 
 Trabalho Interdisciplinar - Aplicacões Web
 
-`CURSO`
+`Engenharia de Software - PUC Minas`
 
-`SEMESTRE`
+`1º período`
 
 ## Participantes
 
 Os membros do grupo são: 
-- Fulano da Silva
-- Ciclano Albuquerque
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
+- Gabriel Lima de Souza
+- Marcus Vinicius Pinto Viana Filho
+- Gabriel de Souza
+- Tarcísio Ney Martins Filho
 
 # Estrutura do Documento
 
