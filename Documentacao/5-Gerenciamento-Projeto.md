@@ -29,7 +29,12 @@
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
+### Editor de código
+- Visual Studio Code
+#
+### Controle de Versão
+- GitHub
+#
 - Ferramentas de comunicação
 - Ferramentas de diagramação
 
