@@ -7,9 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login do Paciente</title>
-    <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
+    <title>Login do Médico</title>
+    <link rel="stylesheet" href="loginM.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -18,7 +17,7 @@
         <div class="col-12">
             <div class="col-12 header_area">
                 <div class="col-2">
-                    <img src="../Logo/meds-removebg-preview_1.png" class="logo">
+                    <img src="../../Logo/meds-removebg-preview_1.png" class="logo">
                 </div>
             </div>
         </div>
@@ -101,7 +100,7 @@
             </div>
         </div>
     </main>
-    <script src="login.js"></script>
+    <script src="loginM.js"></script>
     <script>
         // Declara uma função para processar o formulário de login
         function processaFormLogin(event) {
@@ -115,7 +114,7 @@
             // Valida login e se estiver ok, redireciona para tela inicial da aplicação
             resultadoLogin = loginUser(username, password);
             if (resultadoLogin) {
-                window.location.href = "../Tela Paciente/paciente.html";
+                window.location.href = "../../Tela Medico/medico.html";
             }
             else { // Se login falhou, avisa ao usuário
                 alert('Usuário ou senha incorretos');
