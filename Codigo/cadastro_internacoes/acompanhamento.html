@@ -46,22 +46,7 @@
 
                 <form id="form-internado">
                     <div class="form-group row">
-                        <div class="col-sm-4">
-                            <select name="filtro_sangue" id="filtro_sangue" onchange="Listainternados()"
-                                class="form-control">
-                                <option value="">Selecione o Tipo Sanguíneo</option>
-                                <option value="A+">A+</option>
-                                <option value="A-">A-</option>
-                                <option value="B+">B+</option>
-                                <option value="B-">B-</option>
-                                <option value="AB+">AB+</option>
-                                <option value="AB-">AB-</option>
-                                <option value="O+">O+</option>
-                                <option value="O-">O-</option>
-                                <option value="Não identificado">Não identificado</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-12">
                             <select name="filtro_categoria" id="filtro_categoria" onchange="Listainternados()"
                                 class="form-control">
                                 <option value="">Selecione a Classificação de Risco</option>
@@ -105,7 +90,6 @@
             function Listainternados() {
 
                 // Obtem os dados informados pelo usuário nos filtros
-                let fc = document.getElementById('filtro_sangue').value;
                 let fcg = document.getElementById('filtro_categoria').value;
 
                 // limpa a lista de internados apresentados
@@ -116,8 +100,7 @@
                     const internado = db.data[index];
 
                     // Verifica se os dados do internado batem com os filtros
-                    if (((internado.sangue == fc) || (fc == '')) &&
-                        ((internado.categoria == fcg) || (fcg == ''))) {
+                    if ((internado.categoria == fcg) || (fcg == '')) {
 
                         // Inclui o internado na tabela    
                         $("#table-internados").append(`<tr><td scope="row">${internado.id}</td>
