@@ -36,14 +36,14 @@ const dadosIniciais = {
 // Inicializa o usuarioCorrente e banco de dados de usuários da aplicação de Login
 function initLoginApp () {
     // PARTE 1 - INICIALIZA USUARIOCORRENTE A PARTIR DE DADOS NO LOCAL STORAGE, CASO EXISTA
-    usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+    usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrenteP');
     if (usuarioCorrenteJSON) {
         usuarioCorrente = JSON.parse (usuarioCorrenteJSON);
     }
     
     // PARTE 2 - INICIALIZA BANCO DE DADOS DE USUÁRIOS
     // Obtem a string JSON com os dados de usuários a partir do localStorage
-    var usuariosJSON = localStorage.getItem('db_usuarios');
+    var usuariosJSON = localStorage.getItem('loginPaciente');
 
     // Verifica se existem dados já armazenados no localStorage
     if (!usuariosJSON) {  // Se NÃO há dados no localStorage
@@ -55,7 +55,7 @@ function initLoginApp () {
         db_usuarios = dadosIniciais;
 
         // Salva os dados iniciais no local Storage convertendo-os para string antes
-        localStorage.setItem('db_usuarios', JSON.stringify (dadosIniciais));
+        localStorage.setItem('loginPaciente', JSON.stringify (dadosIniciais));
     }
     else  {  // Se há dados no localStorage
         
@@ -81,7 +81,7 @@ function loginUser (login, senha) {
             usuarioCorrente.nome = usuario.nome;
             
             // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
-            sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+            sessionStorage.setItem ('usuarioCorrenteP', JSON.stringify (usuarioCorrente));
 
             // Retorna true para usuário encontrado
             return true;
@@ -95,7 +95,7 @@ function loginUser (login, senha) {
 // Apaga os dados do usuário corrente no sessionStorage
 function logoutUser () {
     usuarioCorrente = {};
-    sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
+    sessionStorage.setItem ('usuarioCorrenteP', JSON.stringify (usuarioCorrente));
     window.location = "../Tela inicial/index.html";
 }
 
@@ -108,7 +108,7 @@ function addUser (nome, login, senha, email) {
     db_usuarios.usuarios.push (usuario);
 
     // Salva o novo banco de dados com o novo usuário no localStorage
-    localStorage.setItem('db_usuarios', JSON.stringify (db_usuarios));
+    localStorage.setItem('loginPaciente', JSON.stringify (db_usuarios));
 }
 
 function setUserPass () {

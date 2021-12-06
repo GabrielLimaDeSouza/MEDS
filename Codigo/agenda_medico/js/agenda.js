@@ -78,18 +78,5 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
-
-  let btn = document.getElementById("btnsalvar");
-  btn.addEventListener("click",function(){
-    let nome = document.getElementById("medico").value;
-
-    let conteudo = `
-    <div class="col-12 box">
-      <h1>Olá ${nome}</h1>
-    </div>`;
-    
-    let titulo = document.getElementById("titulo");
-    titulo.innerHTML = conteudo;
-  })
   calendar.render();
 });
