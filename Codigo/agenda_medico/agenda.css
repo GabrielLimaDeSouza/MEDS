@@ -1,3 +1,60 @@
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container{
+    margin:0 !important;
+    border:0 !important;
+    padding:0 !important;
+    max-width: 100% !important;
+}
+
+.header{
+    background-color: #2aac9c;
+    margin-bottom: 0px; 
+}
+
+.header_area{
+    padding: 20px;
+}
+.menu_area{
+    margin-top: 30px;
+}
+.menu_area nav a{
+    background-color: #124A44 !important;
+    color:white !important;
+    border-radius:50px !important;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px black;
+    
+}
+.dropdown button{
+    
+    margin-top: 30px;
+}
+.active{
+    background-color: #124A44 !important;
+    color:white !important;
+}
+.logo{
+    width: 100px;
+    
+}
+
+.texto h1 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.btnsair {
+    max-width: 60% !important;
+    margin-left: 20%;
+}
+
 .box {
     border-radius: 30px;
     margin-bottom: 5%;

@@ -15,6 +15,7 @@
     <script src="../login/Login Médico/loginM.js"></script>
     <link rel="icon" href="../Logo/image2vector.svg">
 </head>
+
 <!--Menu Inicial-->
 
 <body>
@@ -25,9 +26,8 @@
                     <div class="col-6 col-sm-6 col-md-2 col-lg-1">
                         <img src="imagens/meds-removebg-preview_1.png" class="logo">
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 col-lg-7">
-
-
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-7 texto" id="texto">
+                        <h1></h1>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4 menu_area">
                         <nav class="nav nav-pills flex-column flex-sm-row">
@@ -39,8 +39,8 @@
             </div>
 
         </div>
-
     </header>
+
     <!--Conteudo do Site-->
 
     <main class="container main">
@@ -48,7 +48,6 @@
             <div class="col-12">
                 <!--Duas Colunas Do Carrosel e Botões-->
                 <div class="row">
-
                     <div class="col-12 col-sm-12 col-md-12">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
@@ -75,11 +74,11 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
                     </div>
-
                 </div>
+
                 <!--Cards-->
+
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="card">
@@ -91,7 +90,6 @@
                                     class="btn btn-secondary">Internações</a>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
@@ -103,10 +101,7 @@
                                 <a href="#" class="btn btn-secondary">Consultas</a>
                             </div>
                         </div>
-
-
                     </div>
-
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="card">
                             <img src="imagens/eletrocardiograma-dentro-do-coracao.png" class="card_img"
@@ -114,11 +109,10 @@
                             <div class="card-body">
                                 <h5 class="card-title"></h5>
                                 <p class="card-text"></p>
-                                <a href="../cadastro_internacoes/lista_internados.html"
+                                <a href="../cadastro_internacoes/acompanhamento.html"
                                     class="btn btn-secondary">Acompanhamento</a>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                         <div class="card">
@@ -130,20 +124,9 @@
                                 <a href="../agenda_medico/agenda.html" class="btn btn-secondary">Agenda</a>
                             </div>
                         </div>
-
                     </div>
-
-
-
-
-
-
                 </div>
-
-
             </div>
-
-
     </main>
 
 
@@ -175,6 +158,11 @@
     <script>
         btn = document.getElementById("btnsair");
         btn.addEventListener('click', logoutUser);
+
+        var obj = JSON.parse(sessionStorage.getItem('usuarioCorrenteM'));
+        var textarea = document.getElementById("texto");
+        var texto = `<h1>Olá, ${obj.nome}!</h1>`;
+        textarea.innerHTML = texto;
     </script>
 
 
