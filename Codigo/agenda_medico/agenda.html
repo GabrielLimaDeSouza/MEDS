@@ -10,27 +10,35 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="agenda.css">
+    <link rel="icon" href="../Logo/image2vector.svg">
 </head>
 
 <body>
+    <header class="container header">
+        <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-2 col-lg-1">
+                        <img src="../Logo/meds-removebg-preview_1.png" class="logo">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-7 texto" id="texto">
+                        <h1></h1>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 menu_area">
+                        <nav class="nav nav-pills flex-column flex-sm-row">
+                            <a class="flex-sm-fill text-sm-center nav-link btnsair" id="btnsair"
+                                href="../Tela medico/medico.html">Voltar</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
         <div class="row d-flex justify-content-center" id="titulo">
             <div class="col-2 box">
                 <h1>Agenda</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h2></h2>
-                <label for="medico">Nome do Médico:</label>
-                <select name="medico" id="medico" class="medico">
-                    <option>João Marcelo da Silva</option>
-                    <option>Carlos Augusto Machado</option>
-                    <option>Isabel Lopes dos Reis</option>
-                    <option>Frederico Alberto dos Santos</option>
-                    <option>Julia de Souza Mendes </option>
-                </select>
-                <button type="button" id="btnsalvar" class="btn">Confirmar</button>
             </div>
         </div>
     </div>

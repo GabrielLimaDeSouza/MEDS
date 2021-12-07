@@ -35,6 +35,16 @@ html{
     
 }
 
+.texto h1 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+
+
 
 .main{
     background-color: #D7FFFA;
@@ -82,10 +92,10 @@ html{
     border-radius: 100px;
 
 }
+
 .footer{
     margin-top: 5px;
     background-color: #369C90;
-    border:4px solid #124A44;
 }
 .logo_pe{
     width: 60px;
