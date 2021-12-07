@@ -101,9 +101,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="internacoes.js"></script>
         <script>
+            function testefoda(nuteste){
+                    localStorage.setItem("ID:",nuteste)
+                    console.log(nuteste);
+                    window.location="../Histórico/historico.html"
+                }
             // função para listar na tabela os internados que estão associados aos filtros 
             function Listainternados() {
-
+                
                 // Obtem os dados informados pelo usuário nos filtros
                 let fc = document.getElementById('filtro_sangue').value;
                 let fcg = document.getElementById('filtro_categoria').value;
@@ -121,7 +126,7 @@
 
                         // Inclui o internado na tabela    
                         $("#table-internados").append(`<tr><td scope="row">${internado.id}</td>
-                                                    <td><a href="../Histórico/historico.html">${internado.nome}</a></td>
+                                                    <td><button onclick=testefoda(${internado.id})>${internado.nome}</button></td>
                                                     <td>${internado.sangue}</td>
                                                     <td>${internado.observacoes}</td>
                                                     <td>${internado.remedio}</td>
@@ -131,6 +136,7 @@
                     }
                 }
 
+                
             }
         </script>
 
