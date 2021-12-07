@@ -1,46 +1,135 @@
 // declara um conjunto inicial de internados
 var db_internados_inicial = {
-    "data": [
+    data: [
         {
             "id": 1,
+            "cpf": "000.000.000.00",
             "nome": "Carlos Almeida",
+            "altura": "1.83",
+            "peso": "81kg",            
             "sangue": "A+",
             "observacoes": "Febre e dor na região do estômago",
             "categoria": "Verde",
             "idade": "36",
             "remedio": "Propanolol 10mg (2 vezes ao dia)",
-            "alergia": ""
+            "alergia": "Dipirona",
+            "documentos": [
+
+            ],
+            "resumo": [
+                "Teste"
+            ],
+            "data": [
+                "07/12/2021"
+            ],
+            "agenda": {
+                "dia": [
+                    "2021-12-02",
+                    "2021-12-02"
+                ],
+                "hora": [
+
+                    ["10:10", "12:12"],
+                    ["55:55", "55:55"]
+                ]
+            }
         },
         {
             "id": 2,
+            "cpf": "111.111.111.11",
             "nome": "João Augusto",
+            "altura": "1.75",
+            "peso": "80kg",            
             "sangue": "B-",
             "observacoes": "Fortes dores de cabeça",
             "categoria": "Laranja",
             "idade": "50",
             "remedio": "",
-            "alergia": "Frutos do mar"
-        },
+            "alergia": "Frutos do mar",
+            "documentos": [
+
+            ],
+            "resumo": [
+                "Teste"
+            ],
+            "data": [
+                "07/12/2021"
+            ],
+            "agenda": {
+                "dia": [
+                    "2021-12-02",
+                    "2021-12-02"
+                ],
+                "hora": [
+
+                    ["10:10", "12:12"],
+                    ["55:55", "55:55"]
+                ]
+        }},
         {
             "id": 3,
+            "cpf": "222.222.222.22",
             "nome": "Julia Maria",
-            "sangue": "O+",
+            "altura": "1.69",
+            "peso": "70kg",            
+            "sangue": "B-",
             "observacoes": "Princípio de intoxicação alimentar",
-            "categoria": "Verde",
+            "categoria": "verde",
             "idade": "28",
             "remedio": "Lorazepam 5 mg (1 vez ao dia)",
-            "alergia": "Amendoim"
-        },
+            "alergia": "Amendoim",
+            "documentos": [
+
+            ],
+            "resumo": [
+                "Teste"
+            ],
+            "data": [
+                "07/12/2021"
+            ],
+            "agenda": {
+                "dia": [
+                    "2021-12-02",
+                    "2021-12-02"
+                ],
+                "hora": [
+
+                    ["10:10", "12:12"],
+                    ["55:55", "55:55"]
+                ]
+        }},
         {
             "id": 4,
+            "cpf": "333.333.333.33",
             "nome": "Eduarda Carvalho",
+            "altura": "1.69",
+            "peso": "70kg",            
             "sangue": "Não identificado",
             "observacoes": "Sintomas de gripe",
             "categoria": "Azul",
             "idade": "15",
             "remedio": "",
-            "alergia": ""
-        }
+            "alergia": "",
+            "documentos": [
+
+            ],
+            "resumo": [
+                "Teste"
+            ],
+            "data": [
+                "07/12/2021"
+            ],
+            "agenda": {
+                "dia": [
+                    "2021-12-02",
+                    "2021-12-02"
+                ],
+                "hora": [
+
+                    ["10:10", "12:12"],
+                    ["55:55", "55:55"]
+                ]
+        }}
     ]
 }
 
