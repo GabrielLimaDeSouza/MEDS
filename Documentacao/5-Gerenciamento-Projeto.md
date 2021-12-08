@@ -35,6 +35,9 @@ As ferramentas empregadas no projeto são:
 ### Controle de Versão
 - GitHub
 #
+### Ferramenta de prototipação
+- Figma
+#
 - Ferramentas de comunicação
 - Ferramentas de diagramação
 
