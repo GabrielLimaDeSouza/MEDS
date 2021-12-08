@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Pacientes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cadastropaciente.css">
+</head>
+
+<body onload="init()">
+    <header class="container header">
+        <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-2 col-lg-1">
+                        <img src="../../Logo/meds-removebg-preview_1.png" class="logo">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-7 texto" id="texto">
+                        <h1>Cadastro de Pacientes</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="form-usuario" class="form-usuario">
+            <div class="formulario d-flex justify-content-center">
+                <div class="form-group row col-md-6">
+                    <div class="col-sm-4">
+                        <label for="inputId">Id</label>
+                        <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputUsuario">Nome de Usuário</label>
+                        <input type="text" class="form-control" id="inputUsuario" required autocomplete="off"
+                            placeholder="Crie um nome de usuário">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputNome">Nome Completo</label>
+                        <input type="text" class="form-control" id="inputNome" required
+                            placeholder="Digite seu nome completo" autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputData">Data de Nascimento</label>
+                        <input type="text" class="form-control" id="inputData" required placeholder="Data de Nascimento"
+                            autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputTelefone">Telefone</label>
+                        <input type="number" class="form-control" id="inputTelefone" required placeholder="Telefone"
+                            autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEmail">E-mail</label>
+                        <input type="text" class="form-control" id="inputEmail" required
+                            placeholder="Preencha com o seu e-mail" autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputCidade">Cidade</label>
+                        <input type="text" class="form-control" id="inputCidade" placeholder="Preencha com sua cidade"
+                            autocomplete="off">
+                    </div>
+                </div>
+                <div class="form-group row col-md-6">
+                    <div class="col-12">
+                        <label for="inputUF">Unidade Federativa</label></br>
+                        <select name="inputUF" id="inputUF">
+                            <option>AC</option>
+                            <option>AL</option>
+                            <option>AP</option>
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MT</option>
+                            <option>MS</option>
+                            <option>MG</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PR</option>
+                            <option>PE</option>
+                            <option>PI</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option>
+                            <option>SC</option>
+                            <option>SP</option>
+                            <option>SE</option>
+                            <option>TO</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputCEP">CEP</label>
+                        <input type="text" class="form-control" id="inputCEP" placeholder="Preencha com o CEP"
+                            autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEndereço">Endereço</label>
+                        <input type="text" class="form-control" id="inputEndereço" required
+                            placeholder="Preencha com o seu endereço" autocomplete="off">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputPassword">Senha</label>
+                        <input type="password" class="form-control" id="inputPassword" required
+                            placeholder="Digite a senha" autocomplete="off">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="inputCPassword">Digite a senha novamente</label>
+                        <input type="password" class="form-control" id="inputCPassword" required
+                            placeholder="Confirme a senha" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12 text-center">
+                    <input type="button" class="btn btn-success btnInsert" id="btnInsert" value="Cadastrar">
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="container footer">
+        <div class="row">
+            <div class="col-12 footer_area">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <img src="../../Logo/meds-removebg-preview_1.png" class="logo_pe">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 footer_area">
+                        <nav class="nav">
+                            <a class="nav-link active" href="#">Fale Conosco</a>
+                            <a class="nav-link" href="#">Serviços</a>
+                            <a class="nav-link" href="#">Intitucional</a>
+                            <a class="nav-link" href="#">Quem Somos?</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="cadastropaciente.js"></script>
+    <script>
+        function init() {
+            $("#btnInsert").click(function () {
+                if (!$('#form-usuario')[0].checkValidity()) {
+                    alert("Preencha todos os espaços.");
+                    return;
+                }
+
+                let campoNome = $("#inputNome").val();
+                let campoData = $("#inputData").val();
+                let campoTelefone = $("#inputTelefone").val();
+                let campoEmail = $('#inputEmail').val();
+                let campoCidade = $("#inputCidade").val();
+                let campoUF = $("#inputUF").val();
+                let campoCEP = $("#inputCEP").val();
+                let campoEndereço = $('#inputEndereço').val();
+                let campoPassword = $('#inputPassword').val();
+                let campoUsuario = $('#inputUsuario').val();
+                let usuario = {
+                    nome: campoNome,
+                    usuario: campoUsuario,
+                    data: campoData,
+                    telefone: campoTelefone,
+                    email: campoEmail,
+                    cidade: campoCidade,
+                    uf: campoUF,
+                    cep: campoCEP,
+                    endereco: campoEndereço,
+                    password: campoPassword
+                };
+
+                insertUsuario(usuario);
+
+                $("#form-usuario")[0].reset();
+            });
+        }
+
+        // Selecionando o campo de cadastro de usuário
+        let usuariocadastroInput = document.querySelector('#inputUsuario');
+
+        // Função que bloqueia caracteres especiais no campo de cadastro de usuário
+        usuariocadastroInput.addEventListener("keypress", function (e) {
+            if (!checkChar(e)) {
+                e.preventDefault();
+            }
+        });
+
+        //Função que confere se o caractere digitado não contém dígitos especiais
+        function checkChar(e) {
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[a-zA-Z0-9_]';
+            if (char.match(caracteresPermitidos)) {
+                return true;
+            }
+        }
+
+        // Selecionando o campo de Nome Completo
+        let nomeInput = document.querySelector('#inputNome');
+
+        function checkChar2(e) {
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[a-zA-Z ]';
+            if (char.match(caracteresPermitidos)) {
+                return true;
+            }
+        }
+
+        // Função que bloqueia caracteres especiais e números no campo de Nome Completo
+        nomeInput.addEventListener("keypress", function (e) {
+            if (!checkChar2(e)) {
+                e.preventDefault();
+            }
+        });
+
+        // Selecionando o campo de CEP
+        let inputCEP = document.querySelector('#inputCEP');
+
+        function checkChar3(e) {
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[0-9--]';
+            if (char.match(caracteresPermitidos)) {
+                return true;
+            }
+        }
+
+        // Função que bloqueia caracteres especiais e letras no campo de CEP
+        inputCEP.addEventListener("keypress", function (e) {
+            if (!checkChar3(e)) {
+                e.preventDefault();
+            }
+        });
+
+        // Selecionando o campo de Data de Nascimento
+        let cinputData = document.querySelector('#inputData');
+
+        function checkChar5(e) {
+            let char = String.fromCharCode(e.keyCode);
+            let caracteresPermitidos = '[0-9-/]';
+            if (char.match(caracteresPermitidos)) {
+                return true;
+            }
+        }
+
+        // Função que bloqueia caracteres especiais e letras no campo de Data de Nascimento
+        cinputData.addEventListener("keypress", function (e) {
+            if (!checkChar5(e)) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>
