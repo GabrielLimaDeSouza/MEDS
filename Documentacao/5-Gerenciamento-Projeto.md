@@ -1,7 +1,6 @@
 # Gerenciamento de Projeto
 
-> Descreva aqui a metodologia de trabalho do grupo para atacar o
-> problema.
+As metodologias utilizadas pela equipe para o desenvolvimento do projeto foram o Design Thinking, que teve papel fundamental no entendimento do problema a ser abordado e na prototipação do projeto, juntamente com o Scrum, em que por meio de 4 Sprints, o projeto foi dividido em partes, distribuídas entre os membros em cada Sprint, e, na Sprint 4 houve a junção de todas as partes dando origem ao projeto final.
 
 ## Divisão de Papéis
 
