@@ -2,20 +2,23 @@ var db_internados_inicial = {
     data: [
         {
             "id": 1,
+            "cpf": "000.000.000.00",
             "nome": "Carlos Almeida",
+            "altura": "1.83",
+            "peso": "81kg",            
             "sangue": "A+",
             "observacoes": "Febre e dor na região do estômago",
             "categoria": "Verde",
             "idade": "36",
             "remedio": "Propanolol 10mg (2 vezes ao dia)",
-            "alergia": "sexo",
+            "alergia": "Dipirona",
             "documentos": [
-               
+
             ],
             "resumo": [
                 "Teste"
             ],
-            "data":[
+            "data": [
                 "07/12/2021"
             ],
             "agenda": {
@@ -32,89 +35,102 @@ var db_internados_inicial = {
         },
         {
             "id": 2,
+            "cpf": "111.111.111.11",
             "nome": "João Augusto",
+            "altura": "1.75",
+            "peso": "80kg",            
             "sangue": "B-",
             "observacoes": "Fortes dores de cabeça",
             "categoria": "Laranja",
             "idade": "50",
             "remedio": "",
-            "alergia": "Frutos do mar"
-        },
+            "alergia": "Frutos do mar",
+            "documentos": [
+
+            ],
+            "resumo": [
+                "Teste"
+            ],
+            "data": [
+                "07/12/2021"
+            ],
+            "agenda": {
+                "dia": [
+                    "2021-12-02",
+                    "2021-12-02"
+                ],
+                "hora": [
+
+                    ["10:10", "12:12"],
+                    ["55:55", "55:55"]
+                ]
+        }},
         {
             "id": 3,
+            "cpf": "222.222.222.22",
             "nome": "Julia Maria",
-            "sangue": "O+",
+            "altura": "1.69",
+            "peso": "70kg",            
+            "sangue": "B-",
             "observacoes": "Princípio de intoxicação alimentar",
-            "categoria": "Verde",
+            "categoria": "verde",
             "idade": "28",
             "remedio": "Lorazepam 5 mg (1 vez ao dia)",
-            "alergia": "Amendoim"
-        },
+            "alergia": "Amendoim",
+            "documentos": [
+
+            ],
+            "resumo": [
+                "Teste"
+            ],
+            "data": [
+                "07/12/2021"
+            ],
+            "agenda": {
+                "dia": [
+                    "2021-12-02",
+                    "2021-12-02"
+                ],
+                "hora": [
+
+                    ["10:10", "12:12"],
+                    ["55:55", "55:55"]
+                ]
+        }},
         {
             "id": 4,
+            "cpf": "333.333.333.33",
             "nome": "Eduarda Carvalho",
+            "altura": "1.69",
+            "peso": "70kg",            
             "sangue": "Não identificado",
             "observacoes": "Sintomas de gripe",
             "categoria": "Azul",
             "idade": "15",
             "remedio": "",
-            "alergia": ""
-        }
-    ]
-}
-
-
-
-
-
-var paciente = [{
-    pessoa: [
-
-        {
-            nome: "Julio Cesar",
-            hospital: "Santa Casa",
-            permitido: "001",
-            documentos: [
+            "alergia": "",
+            "documentos": [
 
             ],
-            resumo: [
-
+            "resumo": [
+                "Teste"
             ],
-            agenda: {
-                dia: [
+            "data": [
+                "07/12/2021"
+            ],
+            "agenda": {
+                "dia": [
                     "2021-12-02",
                     "2021-12-02"
                 ],
-                hora: [
+                "hora": [
 
                     ["10:10", "12:12"],
                     ["55:55", "55:55"]
                 ]
-            }
-
-        },
-        {
-            nome: "Marcos Souza",
-            hospital: "São Judas",
-            permitido: "002",
-            documentos: [
-
-            ],
-            resumo: [
-            ],
-            agenda: {
-                dia: [
-                    "05/06/21",
-                ],
-                hora: [
-                    ["17:30"],
-                    ["10:10", "12:12"]
-                ]
-
-            }
-
-        }]
-}]
+        }}
+    ]
+}
 
 var apdf = [
 
@@ -125,8 +141,32 @@ var selecionado = localStorage.getItem("ID:");
 console.log("id:", selecionado);
 
 function inicializaComboPacientes() {
+    let meusDados1 = `<table class="tabela" cellspacing="20">
+    <thead>
+        <tr class="claro">
+            <td class="pr" id="nome"> <b>${db_internados_inicial.data[selecionado - 1].nome}</b> </td>
+            <td class="pr2" id="idade"><b>IDADE: ${db_internados_inicial.data[selecionado - 1].idade} anos</b></td>
+            <td class="pr1" id="CPF"><b>CPF: ${db_internados_inicial.data[selecionado - 1].cpf}</b></td>
+        </tr>
+    </thead>
+
+    <tr class="escuro">
+        <td class="borda"><b>TIPO SANGUINEO:</b></td>
+        <td class="duplo" colspan="2"><b>${db_internados_inicial.data[selecionado - 1].sangue}</b></td>
+
+    </tr>
+    <tr class="escuro">
+        <td class="borda"><b>ALTURA:</b></td>
+        <td class="duplo" colspan="2"><b>${db_internados_inicial.data[selecionado - 1].altura}</b></td>
+    </tr>
+    <tr class="escuro ultimo">
+        <td class="borda"><b>PESO:</b></td>
+        <td class="duplo" colspan="2"><b>${db_internados_inicial.data[selecionado - 1].peso}</b></td>
+    </tr>
+</table>`
+document.getElementById("tela1").innerHTML = meusDados1;
     if (db_internados_inicial.data[selecionado - 1].documentos.length > 0) {
-        for (let x = 0; x <= db_internados_inicial.data[selecionado - 1].documentos.length -1; x++) {
+        for (let x = 0; x <= db_internados_inicial.data[selecionado - 1].documentos.length - 1; x++) {
             var linha = document.createElement("tr");
             var campo_data = document.createElement("td");
             var campo_resumo = document.createElement("td");
@@ -137,8 +177,8 @@ function inicializaComboPacientes() {
             campo_pdf.className = "pdf"
 
 
-            var texto_data = document.createTextNode(db_internados_inicial.data[selecionado -1].data);
-            var texto_resumo = document.createTextNode(db_internados_inicial.data[selecionado -1].resumo);
+            var texto_data = document.createTextNode(db_internados_inicial.data[selecionado - 1].data);
+            var texto_resumo = document.createTextNode(db_internados_inicial.data[selecionado - 1].resumo);
             var texto_pdf = document.createElement("button");
             texto_pdf.className = "teste";
             texto_pdf.setAttribute("onclick", "demo1(" + db_internados_inicial.data[selecionado - 1].documentos.length + ")");
@@ -190,6 +230,28 @@ function convertToBase64() {
 var b64;
 var indice = 0;
 function baixar() {
+
+}
+var url = "";
+function demo1(indice) {
+    console.log("Este é o indice:", indice)
+    var doc = new jsPDF()
+    doc.addPage();
+    doc.text(20, 20, 'Hello world!');
+    doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.');
+
+    // Making Data URI
+    url = apdf[indice];
+
+    var iframe = "<iframe width='100%' height='100%' src='" + db_internados_inicial.data[selecionado - 1].documentos[indice - 1] + "'></iframe>"
+    var x = window.open();
+    x.document.open();
+    x.document.write(iframe);
+    x.document.close();
+
+}
+function salvar() {
+
     // The Base64 string of a simple PDF file
     b64 = base64;
 
@@ -218,31 +280,13 @@ function baixar() {
     localStorage.setItem('PDF:', b64);
 
 
-}
-var url = "";
-function demo1(indice) {
-    console.log("Este é o indice:", indice)
-    var doc = new jsPDF()
-    doc.addPage();
-    doc.text(20, 20, 'Hello world!');
-    doc.text(20, 30, 'This is client-side Javascript, pumping out a PDF.');
 
-    // Making Data URI
-    url = apdf[indice];
 
-    var iframe = "<iframe width='100%' height='100%' src='" + db_internados_inicial.data[selecionado - 1].documentos[indice - 1] + "'></iframe>"
-    var x = window.open();
-    x.document.open();
-    x.document.write(iframe);
-    x.document.close();
 
-}
-function salvar() {
     db_internados_inicial.data[(selecionado) - 1].documentos.push(b64);
     db_internados_inicial.data[(selecionado) - 1].resumo.push(camporesumo.value);
     db_internados_inicial.data[(selecionado) - 1].data.push(campodata.value)
-    campopaciente = document.getElementById("campopaciente");
-    localStorage.setItem('Paciente:', campopaciente.value);
+    
     camporesumo = document.getElementById('camporesumo');
     localStorage.setItem('Resumo:', camporesumo.value);
     campodata = document.getElementById("campodata");
