@@ -18,21 +18,31 @@ Para o desenvolvimento do protótipo final, foram realizados diversos estudos co
 
 ![WireFrame Página Inicial](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Tela%20Inicial.png)
 
+Tela inicial da aplicação, vista pelo usuário ao entrar no sistema.
+
 ### Página do Médico </br>
 
 ![Wireframe Página do Médico](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/P%C3%A1gina%20do%20M%C3%A9dico.png)
+
+Tela principal destinada aos médicos do sistema, é acessada através do login destinado aos médicos da plataforma, onde são ofericadas funcionalidades para esse profissional.
 
 ### Página do Paciente </br>
 
 ![WireFrame Página do Paciente](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/P%C3%A1gina%20do%20Paciente.png)
 
+Tela principal destinada aos pacientes do sistema, é acessada através do login destinado aos pacientes da plataforma, onde são ofericadas funcionalidades para esse usuário.
+
 ### Cadastro do Sistema </br>
 
 ![WireFrame Cadastro do Sistema](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Cadastro%20do%20Sistema.png)
 
+Tela de cadastro do sistema, onde é possível informar seus dados para poder ter total acesso as funcionalidades destinadas a aquele usuário.
+
 ### Login do Sistema </br>
 
 ![WireFrame Login do Sistema](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Login%20do%20Sistema.png)
+
+Tela de login do sistema, onde é solicitado o nome de usuário e a senha, ambos cadastrados na tela de cadastro.
 
 
 ## Protótipo Interativo:
