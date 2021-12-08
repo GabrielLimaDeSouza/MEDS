@@ -35,8 +35,15 @@ As ferramentas empregadas no projeto são:
 ### Controle de Versão
 - GitHub
 #
+### Ferramenta de anotação,organização e ideação do projeto
+- Miro
+#
 ### Ferramenta de prototipação
 - Figma
+#
+### Ferramentas de comunicação utilizadas pelo grupo
+- Google Meet
+- Discord
 #
 - Ferramentas de comunicação
 - Ferramentas de diagramação
