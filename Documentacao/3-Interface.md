@@ -14,11 +14,22 @@ Após a prototipação do sistema foi montado o fluxo de usuário, com a represe
 
 Para o desenvolvimento do protótipo final, foram realizados diversos estudos com a partipação da equipe,utilizando WireFrames e votações posteriores para decisão de como seria a prototipação do projeto.
 
-![WireFrame Tela Inicial](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/WireFrame%20Tela%20Inicial.png)
+###Página Inicial
 
-![WireFrame Agendamento](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/WireFrame%20Agendamento.png)
+![WireFrame Página Inicial](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Tela%20Inicial.png)
 
-![WireFrame Portal do Médico](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/WireFrame%20Portal%20do%20M%C3%A9dico.jpg)
+###Página do Médico
+![Wireframe Página do Médico](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/P%C3%A1gina%20do%20M%C3%A9dico.png)
+
+###Página do Paciente
+![WireFrame Página do Paciente](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/P%C3%A1gina%20do%20Paciente.png)
+
+###Cadastro do Sistema
+![WireFrame Cadastro do Sistema](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Cadastro%20do%20Sistema.png)
+
+###Login do Sistema
+![WireFrame Login do Sistema](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Login%20do%20Sistema.png)
+
 
 ## Protótipo Interativo:
 
