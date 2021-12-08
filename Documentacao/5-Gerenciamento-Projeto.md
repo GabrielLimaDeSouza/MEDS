@@ -41,7 +41,7 @@ As ferramentas empregadas no projeto são:
 ### Ferramenta de prototipação
 - Figma
 #
-### Ferramentas de comunicação utilizadas pelo grupo
+### Ferramentas de comunicação
 - Google Meet
 - Discord
 #
