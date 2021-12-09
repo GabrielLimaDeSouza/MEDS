@@ -139,9 +139,10 @@ td{
 .footer
 {
     background-color: #2CBCAB;
-    position: sticky !important;
+    position: absolute !important;
     margin-top: 25px !important;
- 
+    bottom: 0px !important;
+  
 }
 .teste{
     background-color: red;
