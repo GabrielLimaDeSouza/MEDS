@@ -14,11 +14,36 @@ Após a prototipação do sistema foi montado o fluxo de usuário, com a represe
 
 Para o desenvolvimento do protótipo final, foram realizados diversos estudos com a partipação da equipe,utilizando WireFrames e votações posteriores para decisão de como seria a prototipação do projeto.
 
-![WireFrame Tela Inicial](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/WireFrame%20Tela%20Inicial.png)
+### Página Inicial </br>
 
-![WireFrame Agendamento](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/WireFrame%20Agendamento.png)
+![WireFrame Página Inicial](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Tela%20Inicial.png)
 
-![WireFrame Portal do Médico](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/WireFrame%20Portal%20do%20M%C3%A9dico.jpg)
+Descrição: Tela inicial da aplicação, vista pelo usuário ao entrar no sistema.
+
+### Página do Médico </br>
+
+![Wireframe Página do Médico](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/P%C3%A1gina%20do%20M%C3%A9dico.png)
+
+Descrição: Tela principal destinada aos médicos do sistema, é acessada através do login destinado aos médicos da plataforma, onde são ofericadas funcionalidades para esse profissional.
+
+### Página do Paciente </br>
+
+![WireFrame Página do Paciente](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/P%C3%A1gina%20do%20Paciente.png)
+
+Descrição: Tela principal destinada aos pacientes do sistema, é acessada através do login destinado aos pacientes da plataforma, onde são ofericadas funcionalidades para esse usuário.
+
+### Cadastro do Sistema </br>
+
+![WireFrame Cadastro do Sistema](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Cadastro%20do%20Sistema.png)
+
+Descrição: Tela de cadastro do sistema, onde é possível informar seus dados para poder ter total acesso as funcionalidades destinadas a aquele usuário.
+
+### Login do Sistema </br>
+
+![WireFrame Login do Sistema](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/Login%20do%20Sistema.png)
+
+Descrição: Tela de login do sistema, onde é solicitado o nome de usuário e a senha, ambos cadastrados na tela de cadastro.
+
 
 ## Protótipo Interativo:
 

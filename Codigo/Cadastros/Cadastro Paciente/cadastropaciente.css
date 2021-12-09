@@ -1,0 +1,84 @@
+html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container{
+    margin-top: 20px;
+    margin:0 !important;
+    border:0 !important;
+    padding:0 !important;
+    max-width: 100% !important;
+}
+
+.header{
+    background-color: #2aac9c;
+    margin-bottom: 0px;
+    border:4px solid #124A44;
+}
+
+.header_area{
+    padding: 20px;
+}
+.menu_area{
+    margin-top: 30px;
+}
+.menu_area nav a{
+    background-color: #124A44 !important;
+    color:white !important;
+    border-radius:50px !important;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px black;
+    
+}
+.dropdown button{
+    margin-top: 30px;
+}
+.active{
+    background-color: #124A44 !important;
+    color:white !important;
+}
+.logo{
+    width: 100px;
+    
+}
+
+.texto h1 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+select {
+    width: 100%;
+}
+
+.form-usuario {
+    margin-top: 5%;
+}
+
+.btnInsert {
+    border-radius: 50px;
+    background-color: #124A44;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.footer{
+    margin-top: 5px;
+    background-color: #369C90;
+}
+.logo_pe{
+    width: 60px;
+}
+.footer_area{   
+    padding: 10px;
+}
+.footer_area nav a{
+    background-color: #369C90!important;
+    color:white !important;
+    margin-right: 80px;
+}
+
