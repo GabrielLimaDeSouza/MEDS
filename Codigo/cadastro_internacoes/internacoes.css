@@ -1,3 +1,65 @@
+html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container{
+    margin:0 !important;
+    border:0 !important; 
+    padding:0 !important;
+    max-width: 100% !important;
+}
+
+.header {
+    background-color: #2aac9c;
+    margin-bottom: 0px;
+}
+
+.header h1 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: -4%;
+}
+
+.header_area{
+    padding: 20px;
+}
+.menu_area{
+    margin-top: 30px;
+}
+
+#btnvoltar{
+    background-color: #124A44 !important;
+    color:white !important;
+    border-radius:50px !important;
+    margin-bottom: 5%;
+}
+
+.btnvoltar {
+    margin-left: 35%;
+    margin-bottom: 2%;
+}
+
+.dropdown button{
+    margin-top: 30px;
+}
+.active{
+    background-color: #124A44 !important;
+    color:white !important;
+}
+.logo{
+    width: 100px;
+}
+
+.box {
+    background-color: #369c90;
+    border-radius: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+}
 
 label {
     font-weight: bolder;
@@ -22,3 +84,26 @@ label {
  #grid-internados tbody {
      cursor: pointer;
  }
+
+.footer{
+    margin:0 !important;
+    border:0 !important; 
+    padding:0 !important;
+    max-width: 100% !important;
+    margin-top: 5px;
+    background-color: #369C90;  
+}
+
+.logo_pe{
+    width: 60px;
+}
+.footer_area{   
+    padding: 10px;
+}
+
+.footer_area nav a{
+    background-color: #369C90!important;
+    color:white !important;
+    margin-right: 80px;
+}
+

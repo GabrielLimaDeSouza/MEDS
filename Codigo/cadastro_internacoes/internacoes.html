@@ -8,136 +8,176 @@
     <title>Cadastro de Internações MEDS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="internacoes.css">
+    <link rel="icon" href="../Logo/image2vector.svg">
 </head>
 
 <body onload="init()">
-    <h1>Cadastro de Internações</h1>
-
+    <header class="container header">
+        <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-2 col-sm-6 col-md-2 col-lg-1">
+                        <img src="../Logo/meds-removebg-preview_1.png" class="logo">
+                    </div>
+                    <div class="btn col-12">
+                        <h1>Cadastro de Internações</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="container">
-        <div class="row">
-            <div id="msg" class="col-sm-10 offset-sm-1 ">
-                <!--<div class="alert alert-warning">internado não encontrado.</div>-->
+        <div class="box">
+            <div class="row">
+                <div id="msg" class="col-sm-10 offset-sm-1 ">
+                    <!--<div class="alert alert-warning">internado não encontrado.</div>-->
+                </div>
             </div>
-        </div>
 
-        <form id="form-internado">
-            <div class="form-group row">
-                <div class="col-sm-4">
-                    <label for="inputId">Id</label>
-                    <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
-                </div>
-                <div class="col-sm-8">
-                    <label for="inputNome">Nome (*)</label>
-                    <input type="text" class="form-control" id="inputNome" required
-                        placeholder="Informe o nome do internado" autocomplete="off">
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-12">
-                    <label for="exampleFormControlSelect1">Tipo sanguíneo</label>
-                    <select class="form-control" id="inputSangue">
-                        <option>A+</option>
-                        <option>A-</option>
-                        <option>B+</option>
-                        <option>B-</option>
-                        <option>AB+</option>
-                        <option>AB-</option>
-                        <option>O+</option>
-                        <option>O-</option>
-                        <option>Não identificado</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-6">
-                    <label for="inputObservacoes">Observações(*)</label>
-                    <input type="text" class="form-control" id="inputObservacoes" required placeholder="Observações"
-                        autocomplete="off">
-                </div>
-                <div class="col-sm-6">
-                    <label for="inputIdade">Idade (*)</label>
-                    <input type="number" class="form-control" id="inputIdade" required placeholder="Idade">
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-6">
-                    <label for="inputRemedio">Faz uso de remédio controlado? (*)</label>
-                    <input type="radio" name="inputRemedio" id="inputRemedioS">Sim
-                    <input type="radio" name="inputRemedio" id="inputRemedioN" checked>Não
-                    <div>
-                        <label for="inputRemedioTextArea">Qual remédio?</label>
-                        <input type="text" name="inputRemedioTextArea" id="inputRemedioTextArea">
+            <form id="form-internado">
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="inputId">Id</label>
+                        <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                    </div>
+                    <div class="col-sm-8">
+                        <label for="inputNome">Nome (*)</label>
+                        <input type="text" class="form-control" id="inputNome" required
+                            placeholder="Informe o nome do internado" autocomplete="off">
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <label for="inpuAlergia">Possui alguma alergia? </label>
-                    <input type="radio" name="inputAlergia" id="inputAlergiaS">Sim
-                    <input type="radio" name="inputAlergia" id="inputAlergiaN" checked>Não
-                    <div>
-                        <label for="inputAlergiaTextArea">Qual?</label>
-                        <input type="text" name="inputAlergiaTextArea" id="inputAlergiaTextArea">
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <label for="exampleFormControlSelect1">Tipo sanguíneo</label>
+                        <select class="form-control" id="inputSangue">
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>Não identificado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputObservacoes">Observações(*)</label>
+                        <input type="text" class="form-control" id="inputObservacoes" required placeholder="Observações"
+                            autocomplete="off">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputIdade">Idade (*)</label>
+                        <input type="number" class="form-control" id="inputIdade" required placeholder="Idade">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputRemedio">Faz uso de remédio controlado? (*)</label>
+                        <input type="radio" name="inputRemedio" id="inputRemedioS">Sim
+                        <input type="radio" name="inputRemedio" id="inputRemedioN" checked>Não
+                        <div>
+                            <label for="inputRemedioTextArea">Qual remédio?</label>
+                            <input type="text" name="inputRemedioTextArea" id="inputRemedioTextArea">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inpuAlergia">Possui alguma alergia? </label>
+                        <input type="radio" name="inputAlergia" id="inputAlergiaS">Sim
+                        <input type="radio" name="inputAlergia" id="inputAlergiaN" checked>Não
+                        <div>
+                            <label for="inputAlergiaTextArea">Qual?</label>
+                            <input type="text" name="inputAlergiaTextArea" id="inputAlergiaTextArea">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <label for="inputCategoria">Classificação de Risco (*)</label>
+                        <select class="form-control" id="inputCategoria" required>
+                            <option>Vermelho</option>
+                            <option>Laranja</option>
+                            <option>Amarelo</option>
+                            <option>Verde</option>
+                            <option>Azul</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <small>(*) Campos obrigatórios</small>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
+                        <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
+                        <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
+                        <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
+                        <a href="lista_internados.html"><input type="button" class="btn btn-warning" id="btnClear"
+                                value="Acompanhamento"></a>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <table id="grid-internados" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Idade</th>
+                                <th scope="col">Tipo Sanguíneo</th>
+                                <th scope="col">Observações</th>
+                                <th scope="col">Remédios</th>
+                                <th scope="col">Alergias</th>
+                                <th scope="col">Risco</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-internados">
+                            <tr>
+                                <td scope="row">1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btnvoltar text-center col-4">
+                <a class="flex-sm-fill text-sm-center nav-link" id="btnvoltar"
+                    href="../Tela medico/medico.html">Voltar</a>
+            </div>
+        </div>
+        <footer class="container footer">
+            <div class="row">
+                <div class="col-12 footer_area">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <img src="../Logo/meds-removebg-preview_1.png" class="logo_pe">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 footer_area">
+                            <nav class="nav">
+                                <a class="nav-link active" href="#">Fale Conosco</a>
+                                <a class="nav-link" href="#">Serviços</a>
+                                <a class="nav-link" href="#">Intitucional</a>
+                                <a class="nav-link" href="#">Quem Somos?</a>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="form-group row">
-                <div class="col-sm-12">
-                    <label for="inputCategoria">Classificação de Risco (*)</label>
-                    <select class="form-control" id="inputCategoria" required>
-                        <option>Vermelho</option>
-                        <option>Laranja</option>
-                        <option>Amarelo</option>
-                        <option>Verde</option>
-                        <option>Azul</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-4">
-                    <small>(*) Campos obrigatórios</small>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-12">
-                    <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
-                    <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
-                    <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
-                    <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
-                    <a href="lista_internados.html"><input type="button" class="btn btn-warning" id="btnClear"
-                            value="Acompanhamento"></a>
-                </div>
-            </div>
-        </form>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <table id="grid-internados" class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Idade</th>
-                            <th scope="col">Tipo Sanguíneo</th>
-                            <th scope="col">Observações</th>
-                            <th scope="col">Remédios</th>
-                            <th scope="col">Alergias</th>
-                            <th scope="col">Risco</th>
-                        </tr>
-                    </thead>
-                    <tbody id="table-internados">
-                        <tr>
-                            <td scope="row">1</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
