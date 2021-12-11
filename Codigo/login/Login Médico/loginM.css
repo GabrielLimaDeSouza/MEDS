@@ -24,14 +24,17 @@ html{
 .menu_area{
     margin-top: 30px;
 }
-.menu_area nav a{
+
+#btnvoltar{
     background-color: #124A44 !important;
     color:white !important;
     border-radius:50px !important;
     margin-right: 10px;
-    box-shadow: 3px 3px 3px black;
-    
+    width: 20%;
+    margin-left: 80%;
+    margin-top: 2%;
 }
+
 .dropdown button{
    
     margin-top: 30px;
@@ -54,7 +57,7 @@ html{
     border-color: white;
     padding-top: 2%;
     padding-left: 2%;
-    margin-top: 5%;
+    margin-top: 6%;
 }
 
 input {
