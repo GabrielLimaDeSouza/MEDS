@@ -102,3 +102,39 @@ input {
     color:white !important;
     margin-right: 80px;
 }
+
+@media screen and (min-width:0px) and (max-width: 405px){
+    .form_area {
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: white;
+        padding-top: 1%;
+        padding-left: 1%;
+        margin-top: 2%;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: -50px;
+    }
+
+    #submit {
+        position: absolute;
+        right: 4px;
+        width: 100px;
+        margin-top: 10%;
+    }
+
+    #btnvoltar{
+        width: 100px;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width:550px) and (max-width: 770px){
+
+    .form_area{
+        margin-top: 1%;
+    }
+}
