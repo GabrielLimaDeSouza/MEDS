@@ -30,6 +30,18 @@ html {
     padding: 1%;
 }
 
+#btnvoltar{
+    background-color: #124A44 !important;
+    color:white !important;
+    border-radius:50px !important;
+    width: 200px;
+}
+
+.btnvoltar {
+    border: none;
+    margin-bottom: 2%;
+}
+
 .btn
 {
     width: 200px;
@@ -79,4 +91,22 @@ html {
 
 p{
     font-size: 30px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 573px){
+    .junto1 {
+        margin-left: 20%;
+        margin-bottom: 5%;
+    }
+
+    .btncontato {
+    }
+
+    .junto {
+        margin-bottom: 0%;
+    }
+    
+    #btnvoltar {
+        margin-bottom: 5%;
+    }
 }

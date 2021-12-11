@@ -14,20 +14,32 @@ html {
     max-width: 100% !important;
     padding: 0% !important;
 }
-.logo
-{
-    max-width: 40%;
-}
-.logoR
-{
-    max-width: 21%;
+.header{
+    background-color: #2aac9c;
+    margin-bottom: 0px;
 }
 
+.header_area{
+    padding: 20px;
+}
+.menu_area{
+    margin-top: 30px;
+}
 
-.header
-{
-    background-color:  #369c90;
-    padding: 1%;
+#btnvoltar{
+    background-color: #124A44 !important;
+    color:white !important;
+    border-radius:50px !important;
+    width: 200px;
+}
+
+.btnvoltar {
+    border: none;
+    margin-bottom: 2%;
+}
+
+.logo{
+    width: 100px;
 }
 
 .btn
@@ -76,4 +88,22 @@ html {
 
 p{
     font-size: 30px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 573px){
+    .junto1 {
+        margin-left: 20%;
+        margin-bottom: 5%;
+    }
+
+    .btncontato {
+    }
+
+    .junto {
+        margin-bottom: 0%;
+    }
+    
+    #btnvoltar {
+        margin-bottom: 5%;
+    }
 }
