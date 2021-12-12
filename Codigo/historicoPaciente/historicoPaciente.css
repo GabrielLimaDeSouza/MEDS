@@ -1,0 +1,149 @@
+html{
+    min-height: 100vh !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body{
+    max-height: 100% !important;
+}
+.container{
+    margin: 0% !important;
+    border: 0% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    padding: 0% !important;
+}
+.header{
+    background-color:  #369c90;
+}
+.logo
+{
+    max-width: 40%;
+}
+.titulo{
+    align-items: center;
+    text-align: center;
+    width: Auto;
+    margin: 0 auto;
+}
+body{
+    background-color: #D7FFFA !important;
+}
+.main2{
+    padding-top: 1%;
+   
+}
+.top{
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+}
+.tabela{
+    align-items: center;
+    text-align: center;
+    width: Auto;
+    margin: 0 auto;
+    border: solid;
+    border: 1px solid white;
+    background-color: #369c90;
+    border-radius: 20px;
+}
+td{
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.borda{
+   border-top: 1px solid rgb(0, 0, 0) ;
+}
+.claro{
+    background-color: #55FAE6;
+    border-bottom: 1px solid white !important;
+    border-radius: 20px;
+}
+.ultimo{
+    border-bottom: 0px !important;
+}
+.duplo{
+    border-top: 1px solid rgb(0, 0, 0) !important;
+    text-align: left;
+}
+.pr{
+    
+    border-top-left-radius: 20px;
+    background-color: #55FAE6;
+}
+.pr1{
+    border-top-right-radius: 20px;
+    background-color: #55FAE6;
+}
+.pr2{
+    background-color: #55FAE6;
+}
+
+.atabela{
+    align-items: center;
+    text-align: center;
+    width: Auto;
+    margin: 0 auto;
+    border: solid;
+    border: 1px solid white;
+    background-color: #369c90;
+    border-radius: 20px;
+    width: 70%;
+    margin-top: 25px;
+}
+td{
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.aborda{
+   border-top: 1px solid rgb(0, 0, 0) ;
+   color: black;
+}
+.aclaro{
+    background-color: #55FAE6;
+    border-bottom: 1px solid white !important;
+    border-radius: 20px;
+    
+}
+.aultimo{
+    border-bottom: 0px !important;
+}
+.aduplo{
+    border-top: 1px solid rgb(0, 0, 0) !important;
+    text-align: left;
+    color: black;
+}
+.apr{
+    
+    border-top-left-radius: 20px;
+    background-color: #55FAE6;
+}
+.apr1{
+    border-top-right-radius: 20px;
+    background-color: #55FAE6;
+}
+.apr2{
+    background-color: #55FAE6;
+}
+.pdf{
+    border-top: 1px solid rgb(0, 0, 0) !important;
+    text-align: center;
+}
+.bpdf{
+    background: none;
+    border: none;
+}
+.footer
+{
+    background-color: #2CBCAB;
+    display: flex !important;
+    margin-top: 0 !important;
+    bottom: 0px !important;
+  
+}
+.teste{
+    background-color: red;
+}
