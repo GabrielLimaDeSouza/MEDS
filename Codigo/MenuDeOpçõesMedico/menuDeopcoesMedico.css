@@ -70,6 +70,22 @@ html {
     margin-right: 100px;
 }
 
+.junto1:hover{
+    background-color: #369C90;
+}
+
+.junto:hover {
+    background-color: #369C90;
+}
+
+.btncontato:hover {
+    background-color: #369C90;
+}
+
+.btnvoltar {
+    background-color: white;
+}
+
 .footer{
     margin-top: 5px;
     background-color: #369C90;
