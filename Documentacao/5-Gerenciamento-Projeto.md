@@ -1,4 +1,4 @@
-# Gerenciamento de Projeto
+b# Gerenciamento de Projeto
 
 As metodologias utilizadas pela equipe para o desenvolvimento do projeto foram o Design Thinking, que teve papel fundamental no entendimento do problema a ser abordado e na prototipação do projeto, juntamente com o Scrum, em que por meio de 4 Sprints, o projeto foi dividido em partes, distribuídas entre os membros em cada Sprint, e, na Sprint 4 houve a junção de todas as partes dando origem ao projeto final.
 
@@ -53,13 +53,13 @@ As ferramentas empregadas no projeto são:
 O Visual Studio Code foi escolhido como editor de código porque ele possui
 um ambiente favorável ao desenvolvimento, além de integração com o
 sistema de versão(Git). O GitHub foi utilizado como ambiente remoto para o 
-controle de versão realizado pelo Git.
+controle de versão realizado pelo Git. </br>
 O Miro foi escolhido para organização e realização do Design Thinking por 
-estimular a criatividade e o trabalho cooperativo. 
+estimular a criatividade e o trabalho cooperativo. </br>
 O Figma foi escolhido como plataforma de prototipação por ser um software web
 gratuito, e pela sua característica de criar, colaborar, prototipar e inspecionar
 dentro da plataforma, o Figma também foi utilizado para realizar testes de usabilidade
-no protótipo com potenciais usuários do sistema. 
+no protótipo com potenciais usuários do sistema. </br>
 O Google Meet e o Discord foram utilizados como ferramentas de comunicação pelos membros 
 do grupo pois já eram conhecidos pelos integrantes e disponibilizavam um ambiente familiar
-para a realização das reuniões.
+para a realização das reuniões. </br>
