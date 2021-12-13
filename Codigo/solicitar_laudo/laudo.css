@@ -53,9 +53,22 @@ html{
 
 .footer{
     margin-top: 5px;
-background-color: #369C90;
-border:4px solid #124A44;
+    background-color: #369C90;
+    border:4px solid #124A44;
+    position: absolute;
+    bottom: 0;
 }
+
+.abtn {
+    text-decoration: none;
+    color: white;
+}
+
+.abtn:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .logo_pe{
     width: 60px;
 }
@@ -68,16 +81,24 @@ border:4px solid #124A44;
     margin-right: 80px;
 }
 
-.btnsubmit {
+.btnsubmit{
     background-color: #124A44 !important;
     color:white !important;
     border-radius:50px !important;
-    width: 50%;
+    width: 30%;
     height: 40px;
     border: none;
     margin-top: 15%;
-    margin-bottom: 123%;
-    margin-left: 25%;
+    margin-left: 35%;
+}
+
+.btnvoltar {
+    background-color: #124A44 !important;
+    color:white !important;
+    border-radius:50px !important;
+    width: 30%;
+    height: 40px;
+    border: none;
 }
 
 #inputmensagem {
@@ -86,4 +107,64 @@ border:4px solid #124A44;
     border-radius: 20px;
     text-align: center;
     margin-bottom: 2%;
+}
+
+.cardg{
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 100px;
+
+}
+
+.cardgr{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin-bottom:  20px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 50px;
+    align-items: center;
+    margin-left: auto !important; 
+    margin-right: auto !important;
+    border:4px solid #369C90;
+    
+}
+
+.buttonfooter{
+    border: none;
+    background-color: #369C90;
+    color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width:527px){
+    .footer {
+        bottom: -150px;
+    }
+
+    .btnsubmit {
+        margin-right: 40%;
+    }
+
+    .btnvoltar {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+
+    #inputmensagem {
+        margin-left: 20%;
+        width: 100px;
+    }
+
+    .labelmensagem {
+        margin-left: 20%;
+    }
+
+    .labelmedico {
+        display: block;
+        margin-left: 20%;
+    }
+
+    #selectmedico {
+        width: 150px;
+    }
 }
