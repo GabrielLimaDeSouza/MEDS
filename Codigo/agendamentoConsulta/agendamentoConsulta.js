@@ -29,7 +29,7 @@ var db_horarios = {
         },
         {
             "nome": "Julia de Souza Mendes",
-            "especialidade": "Ofatamologista",
+            "especialidade": "Oftalmologista",
             "dia": [
                 "2021-12-01",
                 "2021-12-10"
@@ -75,7 +75,6 @@ function inicializaComboMedico() {
 var k = 0;
 
 function adiciona() {
-    console.log("adicionou");
     if (k < db_horarios.data[campomedico.selectedIndex - 1].dia.length - 1) {
         k = k + 1;
     }
@@ -107,7 +106,6 @@ function inicializaComboData() {
             testeE.outerHTML = '';
             qtd--;
         }
-        console.log("Esse é o valor de K", k)
         campodata.options.length = 0;
 
         for (z = 0; z < db_horarios.data.length; z++) {
@@ -129,7 +127,6 @@ function inicializaComboData() {
                     var button = document.createElement('button');
                     button.onclick = function (){
                         horarioSelecionado = a;
-                        console.log (horarioSelecionado)
                     }
                     button.className = "btn btn-primary";
                     button.setAttribute('id', 'exclui')
@@ -174,21 +171,18 @@ function inicializaComboData() {
                 selectdata.appendChild(opt);
 
                 for (let a = 0; a < db_horarios.data[z].horario[k].length; a++) {
-                    console.log("???")
 
 
 
                     var button = document.createElement('button');
                     button.onclick = function (){
                         horarioSelecionado = a;
-                        console.log (horarioSelecionado)
                     }
                     button.className = "btn btn-primary";
                     button.setAttribute('id', 'exclui')
                     button.setAttribute('type', 'button')
                     
                     iteste = iteste + 1;
-                    console.log("hhhh", db_horarios.data[z].horario[k][a])
                     button.appendChild(document.createTextNode(db_horarios.data[z].horario[k][a]));
                     conj.appendChild(button);
 
@@ -208,7 +202,6 @@ function inicializaComboData() {
             testeE.outerHTML = '';
             qtd--;
         }
-        console.log("Esse é o valor de K", k)
         campodata.options.length = 0;
 
         for (z = 0; z < db_horarios.data.length; z++) {
@@ -223,20 +216,17 @@ function inicializaComboData() {
                 selectdata.appendChild(opt);
 
                 for (let a = 0; a < db_horarios.data[z].horario[k].length; a++) {
-                    console.log("???")
 
 
 
                     var button = document.createElement('button');
                     button.onclick = function (){
                         horarioSelecionado = a;
-                        console.log (horarioSelecionado)
                     }
                     button.className = "btn btn-primary";
                     button.setAttribute('id', 'exclui');
                     button.setAttribute('type', 'button');
                     iteste = iteste + 1;
-                    console.log("hhhh", db_horarios.data[z].horario[k][a]);
                     button.appendChild(document.createTextNode(db_horarios.data[z].horario[k][a]));
                     conj.appendChild(button);
                     
@@ -249,16 +239,12 @@ function inicializaComboData() {
     }
 
     campomedico.addEventListener('blur', function () {
-        console.log("Esse é o valor de K", k)
         campodata.options.length = 0;
         for (let i = 0; i < db_horarios.data.length; i++) {
             if (campomedico.value == db_horarios.data[i].nome) {
-                console.log("A data foi né")
                 let data_americana = db_horarios.data[i].dia[i];
                 let data_brasileira = data_americana.split('-').reverse().join('/');
-                console.log(data_brasileira)
                 // Pronto! A data foi convertida.
-                console.log(data_brasileira); // retorna: 30/12/2020
                 var opt = document.createElement('option');
                 opt.value = data_brasileira;
                 opt.innerHTML = data_brasileira;
@@ -290,7 +276,6 @@ function processaForm() {
                 achou = e;
             }
         }
-        console.log("Vamos ve",db_horarios.data[achou].horario[k][horarioSelecionado])
         localStorage.setItem('Especialidade:', campoespecialidade);
         localStorage.setItem('Tipo:', campoTipo);
         localStorage.setItem('Data:', campodata);
@@ -305,7 +290,6 @@ function processaForm() {
 
 
 function init() {
-    console.log("primeiro teste");
     inicializaComboEspecialidades();
     inicializaComboMedico();
     inicializaComboData();

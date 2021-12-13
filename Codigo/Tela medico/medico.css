@@ -30,9 +30,9 @@ html{
     background-color: #124A44 !important;
     color:white !important;
 }
+
 .logo{
     width: 100px;
-    
 }
 
 .texto h1 {
@@ -91,6 +91,18 @@ background-color: #D7FFFA;
     margin-top: 20px;
     border-radius: 100px;
 
+}
+
+.notificacoes {
+    border: none;
+    background-color: #124A44;
+    color: white;
+}
+
+.sair {
+    border: none;
+    background-color: #124A44;
+    color: white;
 }
 
 .footer{

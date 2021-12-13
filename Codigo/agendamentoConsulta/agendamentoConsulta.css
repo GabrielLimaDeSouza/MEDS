@@ -13,23 +13,20 @@ html{
     margin: 0% !important;
     padding: 0% !important;
 }
-.logo
-{
-    max-width: 40%;
+.header{
+    background-color: #2aac9c;
+    margin-bottom: 0px;
 }
 
-.header
-{
-    background-color:  #369c90;
-    padding: 1%;
+.header_area{
+    padding: 20px;
+}
+.menu_area{
+    margin-top: 30px;
 }
 
-.top
-{
-    background-color: #2CBCAB;
-    margin-top: 1%;
-    padding: 10px;
-    padding-left: 20px;
+.logo{
+    width: 100px;
 }
 .form-floating
 {
@@ -146,3 +143,29 @@ html{
   -moz-appearance: none;
   text-indent: 1px;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.footer{
+    margin-top: 5px;
+    background-color: #369C90;
+}
+.logo_pe{
+    width: 60px;
+}
+.footer_area{   
+    padding: 10px;
+}
+.footer_area nav a{
+    background-color: #369C90!important;
+    color:white !important;
+    margin-right: 80px;
+}
+

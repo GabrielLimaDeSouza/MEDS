@@ -31,13 +31,14 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4 menu_area">
                         <nav class="nav nav-pills flex-column flex-sm-row">
-                            <a class="flex-sm-fill text-sm-center nav-link" href="#">Notificações</a>
-                            <a class="flex-sm-fill text-sm-center nav-link" id="btnsair" href="#">Sair</a>
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#"><button class="notificacoes"
+                                    data-bs-toggle="modal" data-bs-target="#modal">Notificações</button></a>
+                            <a class="flex-sm-fill text-sm-center nav-link" id="btnsair" href="#"><button
+                                    class="sair">Sair</button></a>
                         </nav>
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -128,7 +129,21 @@
                 </div>
             </div>
     </main>
-
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Suas Notificações</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Rodapé-->
     <footer class="container footer">

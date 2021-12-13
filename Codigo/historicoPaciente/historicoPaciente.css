@@ -13,19 +13,30 @@ body{
     max-height: 100% !important;
     padding: 0% !important;
 }
+
 .header{
-    background-color:  #369c90;
+    background-color: #2aac9c;
+    margin-bottom: 0px;
 }
-.logo
-{
-    max-width: 40%;
+
+.header_area{
+    padding: 20px;
 }
+.menu_area{
+    margin-top: 30px;
+}
+
+.logo{
+    width: 100px;
+}
+
 .titulo{
     align-items: center;
     text-align: center;
     width: Auto;
     margin: 0 auto;
 }
+
 body{
     background-color: #D7FFFA !important;
 }
@@ -136,14 +147,26 @@ td{
     background: none;
     border: none;
 }
-.footer
-{
-    background-color: #2CBCAB;
-    display: flex !important;
-    margin-top: 0 !important;
-    bottom: 0px !important;
-  
+
+.footer{
+    margin-top: 5px;
+    background-color: #369C90;
 }
+
+.logo_pe{
+    width: 60px;
+}
+
+.footer_area{   
+    padding: 10px;
+}
+
+.footer_area nav a{
+    background-color: #369C90!important;
+    color:white !important;
+    margin-right: 80px;
+}
+
 .teste{
     background-color: red;
 }

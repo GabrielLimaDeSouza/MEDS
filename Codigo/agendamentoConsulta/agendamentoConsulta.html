@@ -3,28 +3,26 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Marcar consulta</title>
+  <title>Agendamento de Consultas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="agendamentoConsulta.css">
-  <script type="text/javascript" src="agendamentoConsulta.js">
-  </script>
+  <script type="text/javascript" src="agendamentoConsulta.js"></script>
+  <link rel="icon" href="../Logo/image2vector.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body onload="init()">
   <header class="container header">
-    <div class="col-12">
+    <div class="row">
       <div class="col-12 header_area">
         <div class="row">
-          <div class="col-2">
-            <img src="img/ficheiro.img.png" class="logo">
+          <div class="col-6 col-sm-6 col-md-2 col-lg-1">
+            <img src="../Logo/meds-removebg-preview_1.png" class="logo">
           </div>
         </div>
       </div>
-    </div>
   </header>
-
   <main class="container">
     <section class="container row global">
       <div class="row">
@@ -39,7 +37,7 @@
                 <option selected>Selecione o tipo</option>
                 <option value="1">Particular</option>
                 <option value="2">Convênio</option>
-                <option value="3">outro</option>
+                <option value="3">Outro</option>
               </select>
               <label for="floatingSelect" class="ladinho">Tipo:</label>
             </div>
@@ -74,36 +72,45 @@
         <div class="d-grid gap-2 d-md-block esse">
           <p><button type="button" class="btn btn-secondary btn-sm" id="diminuiData" onclick="subtrai()">
               < </button>
-                
+
                 <select class="form-select2" id="campodata" name="campodata" aria-label="Floating label select example">
 
-                </select> <button type="button" class="btn btn-secondary btn-sm" id="adicionaData" onclick="adiciona()">></button></p>
+                </select> <button type="button" class="btn btn-secondary btn-sm" id="adicionaData"
+                  onclick="adiciona()">></button></p>
         </div>
         <div class="col-3 d-grid gap-2 d-md-block conj" id="conj">
           <div class="horarios" id="divHA">Horarios disponiveis
             <div class="horarios" id="divH"></div>
           </div>
         </div>
-        
-        <div class="col-12 botoes">
-          <button type="button" class="btn btn-primary btn-sm1">VOLTAR</button>
-          <button type="button" class="btn btn-secondary btn-sm2" id="login" onclick="processaForm()" >MARCAR CONSULTA</button>
-        </div>
 
+        <div class="col-12 botoes">
+          <button type="button" class="btn btn-primary btn-sm1"><a
+              href="../Tela Paciente/paciente.html">Voltar</a></button>
+          <button type="button" class="btn btn-secondary btn-sm2" id="login" onclick="processaForm()"><a>Marcar
+              Consulta</a></button>
+        </div>
       </div>
     </section>
-
-
   </main>
-
-
-
-
-
-
   <footer class="container footer">
-    Todos os direitos reservados por Med's
-  </footer>
+    <div class="row">
+      <div class="col-12 footer_area">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <img src="../Logo/meds-removebg-preview_1.png" class="logo_pe">
+          </div>
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8 footer_area">
+            <nav class="nav">
+              <a class="nav-link active" href="#">Fale Conosco</a>
+              <a class="nav-link" href="#">Serviços</a>
+              <a class="nav-link" href="#">Intitucional</a>
+              <a class="nav-link" href="#">Quem Somos?</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </body>
 
