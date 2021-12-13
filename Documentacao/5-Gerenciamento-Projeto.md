@@ -1,15 +1,10 @@
-b# Gerenciamento de Projeto
+# Gerenciamento de Projeto
 
 As metodologias utilizadas pela equipe para o desenvolvimento do projeto foram o Design Thinking, que teve papel fundamental no entendimento do problema a ser abordado e na prototipação do projeto, juntamente com o Scrum, em que por meio de 4 Sprints, o projeto foi dividido em partes, distribuídas entre os membros em cada Sprint, e, na Sprint 4 houve a junção de todas as partes dando origem ao projeto final.
 
 ## Divisão de Papéis
 
-> Apresente a divisão de papéis entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+
 
 ## Processo
 
