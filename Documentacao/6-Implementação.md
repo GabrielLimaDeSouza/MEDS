@@ -4,10 +4,21 @@
 
 ## Tecnologias Utilizadas
 
+Para a implantação da solução foram usadas as seguintes tecnologias:
+
+Linguagens de marcação: HTML,CSS </br>
+Linguagens de programação: JavaScript </br>
+#
+API: Full Calendar API </br>
+#
+Framework CSS: Bootstrap </br>
+#
+Biblioteca JavaScript: jQuery </br>
+
+
 
 
 ## Arquitetura da solução
-
 
 
 A imagem a seguir ilustra a o fluxo do usuário em nossa solução. Assim
