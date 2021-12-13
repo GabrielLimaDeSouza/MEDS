@@ -10,8 +10,7 @@
 
 ## Personas - Profissionais de Saúde
 ### João Carlos - Profissional da saúde:![João Carlos - Profissional](https://user-images.githubusercontent.com/90854484/145899329-fe2f785d-7cdb-4fe5-9bed-d12ebca1b276.jpg)
-
-### Juliano Moura - Profissional da saúde:![Profissionais de Saúde - Juliano Moura](https://user-images.githubusercontent.com/90854484/145897111-3bc1d16b-ce61-4b16-ad70-6c06b5f416d8.jpg)
+### Juliano Moura - Profissional da saúde:![Juliano Moura - Profissional](https://user-images.githubusercontent.com/90854484/145899614-46ee1809-f77b-4fbe-b0d7-663636e68f64.jpg)
 #
 ## Personas - Visitantes
 ### Vanessa Cristina - Visitante:![Vanessa Cristina - Visitante](https://user-images.githubusercontent.com/90854484/145897929-96feb982-c2c8-41ee-80cf-f0533f306177.jpg)
