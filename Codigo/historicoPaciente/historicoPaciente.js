@@ -3,7 +3,7 @@ var db_internados_inicial = {
         {
             "id": 1,
             "cpf": "000.000.000.00",
-            "nome": "Carlos Almeida",
+            "nome": "João Pinto",
             "altura": "1.83",
             "peso": "81kg",            
             "sangue": "A+",
@@ -13,6 +13,7 @@ var db_internados_inicial = {
             "remedio": "Propanolol 10mg (2 vezes ao dia)",
             "alergia": "Dipirona",
             "documentos": [
+
                  ],
             "resumo": [
                 "Teste"
@@ -135,8 +136,8 @@ var apdf = [
 
 ];
 
-
-var selecionado = 1;
+var usuarioCorrenteP = JSON.parse(sessionStorage.getItem('usuarioCorrenteP'));
+var selecionado = usuarioCorrenteP.id;
 console.log("id:", selecionado);
 
 function inicializaComboPacientes() {
