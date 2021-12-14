@@ -5,11 +5,8 @@ As metodologias utilizadas pela equipe para o desenvolvimento do projeto foram o
 ## Divisão de Papéis
 
 | Gabriel de Souza | Scrum Master |
-| --- | --- |
 | Marcus Vinicius Pinto Viana | Desenvolvedor Front-End |
-| --- | --- |
 | Gabriel Lima de Souza | Desenvolvedor Front-End |
-| --- | --- |
 | Tarcísio Ney| Desenvolvedor Front-End |
 
 
