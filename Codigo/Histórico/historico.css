@@ -139,8 +139,8 @@ td{
 .footer
 {
     background-color: #2CBCAB;
-    position: absolute !important;
-    margin-top: 25px !important;
+    display: flex !important;
+    margin-top: 0 !important;
     bottom: 0px !important;
   
 }
