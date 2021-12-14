@@ -328,6 +328,7 @@ function processaForm() {
         
 
     
+
     var db_consulta_horario = [
             {
                 "medico": campomedico,
