@@ -15,12 +15,11 @@
 
 
 ## Conjunto de Slides (Estrutura)
-> O grupo deve distribuir de forma coerente o conteúdo a ser
-> apresentado, dentro do tempo determinado. Importante ressaltar
-> a importância da descrição clara de todo o andamento do projeto,
-> insumos gerados e requisitos atendidos.
-> 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+![Slide 1](https://user-images.githubusercontent.com/90854062/146051260-50564eac-380b-4585-a399-3e597a4e68e7.png)
+![Slide 2](https://user-images.githubusercontent.com/90854062/146051305-1dea2bd9-2d16-4ee3-a944-027e7c8b6c6a.png)
+![Slide 3](https://user-images.githubusercontent.com/90854062/146051324-acddd74e-acfc-4769-bf5f-997470cb7f57.png)
+![Slide 4](https://user-images.githubusercontent.com/90854062/146051335-5956ed3b-a9ee-48c0-b889-0b514bcacbb5.png)
+![Slide 5](https://user-images.githubusercontent.com/90854062/146051353-77eb9cfb-a9e7-4047-b7ce-671bc428c20c.png)
+![Slide 6](https://user-images.githubusercontent.com/90854062/146051373-a5564e47-fc63-4be1-9e2b-1f8b92a764c5.png)
+![Slide 7](https://user-images.githubusercontent.com/90854062/146051387-cc44d07e-afb8-44d1-ae25-30e275c21ad8.png)
+![Slide 8](https://user-images.githubusercontent.com/90854062/146051401-413a8a94-f90a-4a6c-b935-81bc66358e7f.png)
