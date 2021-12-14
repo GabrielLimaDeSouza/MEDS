@@ -346,7 +346,18 @@ function cria() {
         }
 
     }
-
+    var agendamento_inicial= {
+       data: [
+           {
+               "codigo": "003",
+            "visitado": "Juninho",
+            "dia": "10/10/2021",
+            "horario": "7:00"
+           }
+            
+        ]
+    }
+    var db = JSON.parse(localStorage.getItem('novaVisita'));
     enviar = document.getElementById("login");
     if (enviar) {
         enviar.addEventListener("click", function () {
@@ -361,18 +372,15 @@ function cria() {
                 };
                 let ID = document.getElementById('exampleFormControlInput1').value;
                 let campodata = document.getElementById('campodata').value;
-                let campoTipo = document.getElementById('campoTipo').value;
                 let visitado = document.getElementById('exampleFormControlInput2').value;
                 let achou;
                 for (let e=0; e<db_horarios.data.length; e++){
                     console.log(db_horarios.data[e].nome);
-                    console.log(campomedico)
-                    if (campomedico == db_horarios.data[e].nome)
+                    if (visitado == db_horarios.data[e].nome)
                     {
                         achou = e;
                     }
                 }
-                localStorage.setItem('Visitante:', usuarioCorrenteP.nome);
                 localStorage.setItem('Codigo:', ID);
                 localStorage.setItem('Data:', campodata);
                 localStorage.setItem('Visitado:', visitado);
@@ -382,20 +390,18 @@ function cria() {
                 
         
             
-            var db_visita_horario = [
+                var db_visita_horario = [
                     {
-                        "visitante": usuarioCorrenteP.nome,
-                        "codigo": campoTipo,
+                        "codigo": ID,
                         "visitado": visitado,
                         "dia": campodata,
                         "horario": db_horarios.data[achou].horario[k][horarioSelecionado]
                     }
                 ]
-            db.data.push(db_visita_horario);
-            localStorage.setItem('novaVisita', JSON.stringify(db));
-        
-        
-                sessionStorage.setItem ('novaVisita', JSON.stringify (db_visita_horario));
+
+                db.data.push(db_visita_horario);
+                localStorage.setItem('novavisita', JSON.stringify(db));
+                sessionStorage.setItem ('novavisita', JSON.stringify (db_visita_horario));
                 alert ("Sua visita foi marcada, lembre-se de seguir os protocolos contra o COVID-19")
                 return false;
             }
