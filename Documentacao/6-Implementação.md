@@ -6,7 +6,7 @@
 
 Para a implantação da solução foram usadas as seguintes tecnologias:
 
-Linguagens de marcação: HTML,CSS </br>
+- Linguagens de marcação: HTML,CSS </br>
 Linguagens de programação: JavaScript </br>
 #
 API: Full Calendar API </br>
