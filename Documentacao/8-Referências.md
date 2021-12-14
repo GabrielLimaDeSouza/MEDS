@@ -1,10 +1,10 @@
 # Referências
 
-- Pesquisa utilizada como justificativa do projeto:
-https://www.clientesa.com.br/egov/68137/agilidade-no-agendamento
+- Pesquisa utilizada como justificativa do projeto: </br>
+https://www.clientesa.com.br/egov/68137/agilidade-no-agendamento </br>
 
-- Sites utilizados como referência para o desenvolvimento do projeto:
-https://www.unimed.coop.br/site/
-https://www.hermespardini.com.br/
-https://vibesaude.com/
-https://www.philips.com.br/healthcare/resources/landing/solucao-tasy
+- Sites utilizados como referência para o desenvolvimento do projeto: </br>
+https://www.unimed.coop.br/site/ </br>
+https://www.hermespardini.com.br/ </br>
+https://vibesaude.com/ </br>
+https://www.philips.com.br/healthcare/resources/landing/solucao-tasy </br>
