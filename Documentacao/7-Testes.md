@@ -12,7 +12,7 @@
 ### Testes - Cadastro de Internações:
 ![Testes Cadastro de Internações](https://user-images.githubusercontent.com/90854484/146050406-bc3a783a-b712-4f1b-82f4-cf8fde5207a2.png)
 
-### Testes - Login do Sistema
+### Testes - Login do Sistema:
 ![Testes login](https://user-images.githubusercontent.com/90854484/146053140-60432a71-9fe8-4dde-9c38-4bc3ce4d0f1a.png)
 
 ## Avaliação
