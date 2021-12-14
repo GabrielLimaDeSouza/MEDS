@@ -9,7 +9,9 @@ var cadastroP_inicial = {
             "telefone": "(31)99699-1299",
             "cidade" : "Pedro Leopoldo" ,
             "uf" : "MG" ,
+            "idade": "19",
             "cep" : "94285-456" ,
+            "cpf": "15456845800",
             "endereco": "Rua comendador antonio alves 20",
             "password": "123456"
         },
@@ -38,7 +40,9 @@ function insertUsuario(usuario) {
         "telefone": usuario.telefone,
         "cidade" : usuario.cidade,
         "uf" : usuario.uf,
+        "idade": usuario.idade,
         "cep" : usuario.cep,
+        "cpf": usuario.cpf,
         "endereco": usuario.endereco,
         "password": usuario.password
     };

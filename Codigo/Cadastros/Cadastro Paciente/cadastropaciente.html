@@ -105,6 +105,14 @@
                         </select>
                     </div>
                     <div class="col-12">
+                        <label for="inputIdade">Idade</label>
+                        <input type="number" class="form-control" id="inputIdade">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputCPF">CPF</label>
+                        <input type="text" class="form-control" id="inputCPF" placeholder="Preencha com o seu CPF">
+                    </div>
+                    <div class="col-12">
                         <label for="inputCEP">CEP</label>
                         <input type="text" class="form-control" id="inputCEP" placeholder="Preencha com o CEP"
                             autocomplete="off">
@@ -271,6 +279,8 @@
                 let campoEndereço = $('#inputEndereço').val();
                 let campoPassword = $('#inputPassword').val();
                 let campoUsuario = $('#inputUsuario').val();
+                let campoCPF = $('#inputCPF').val();
+                let campoIdade = $('#inputIdade').val();
                 let usuario = {
                     nome: campoNome,
                     usuario: campoUsuario,
@@ -279,7 +289,9 @@
                     email: campoEmail,
                     cidade: campoCidade,
                     uf: campoUF,
+                    idade: campoIdade,
                     cep: campoCEP,
+                    cpf: campoCPF,
                     endereco: campoEndereço,
                     password: campoPassword
                 };
