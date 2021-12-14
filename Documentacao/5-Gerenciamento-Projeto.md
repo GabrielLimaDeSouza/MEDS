@@ -8,6 +8,7 @@ As metodologias utilizadas pela equipe para o desenvolvimento do projeto foram o
 | Marcus Vinicius Pinto Viana | Desenvolvedor Front-End |
 | Gabriel Lima de Souza | Desenvolvedor Front-End |
 | Tarcísio Ney| Desenvolvedor Front-End |
+| --- | --- |
 
 
 ## Processo
