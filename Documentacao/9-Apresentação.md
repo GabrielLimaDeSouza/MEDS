@@ -8,7 +8,7 @@
 > itens trabalhados nos demais artefatos.
 
 ## Título do Projeto
-> Nome e marca do projeto
+# MEDS
 
 ## Identidade Visual (Marca, Design)
 > O grupo deve ter o cuidado em utilizar figuras, imagens, e
