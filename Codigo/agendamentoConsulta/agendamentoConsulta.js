@@ -42,8 +42,34 @@ var db_horarios = {
         }
     ]
 }
+
+var db_consulta_horario = [
+    
+        {
+            "medico":[
+
+            ],
+            "tipo":[
+                
+            ],
+            "paciente": "",
+            "especialidade":[
+
+            ],
+            "dia":[
+
+            ],
+            "horario":[
+
+            ]
+        }
+    
+    ]
 var horarioSelecionado =-1;
+var usuarioCorrenteP = JSON.parse(sessionStorage.getItem('usuarioCorrenteP'));
+        console.log(usuarioCorrenteP);
 function inicializaComboEspecialidades() {
+        
     var selectEspecialidades = document.getElementById("campoespecialidade");
     for (let i = 0; i < db_horarios.data.length; i++) {
         var opt = document.createElement('option');
@@ -255,11 +281,30 @@ function inicializaComboData() {
 function teste(valor) {
     alert(valor)
 }
+
+var agendamento_inicial = {
+    "data": [
+        {
+            "medico": "Marcus Paulo",
+                "tipo": "1",
+                "paciente": "hhh",
+                "especialidade": "neurologista",
+                "dia": "20/10/2021",
+                "horario": "10:00"
+        },
+    ]
+}
+var db = JSON.parse(localStorage.getItem('db_consulta_horario'));
+
 function processaForm() {
     if (campoTipo.value == 'Selecione o tipo' || campoespecialidade.value == 'Selecione o tipo' || campomedico.value == 'Selecione o tipo') {
         alert("Todos os campos precisam ser respondidos.");
     }
     else {
+        if (!db) {
+            db = agendamento_inicial;
+            localStorage.setItem('db_consulta_horario', JSON.stringify(db));
+        };
         let campoespecialidade = document.getElementById('campoespecialidade').value;
         let campodata = document.getElementById('campodata').value;
         let campoTipo = document.getElementById('campoTipo').value;
@@ -278,7 +323,27 @@ function processaForm() {
         localStorage.setItem('Data:', campodata);
         localStorage.setItem('Medico:', campomedico);
         localStorage.setItem('Horário:', db_horarios.data[achou].horario[k][horarioSelecionado])
-        db_horarios.data[achou].horario[k].splice(horarioSelecionado, 1);
+        
+
+        
+
+    
+
+    var db_consulta_horario = [
+            {
+                "medico": campomedico,
+                "tipo": campoTipo,
+                "paciente": usuarioCorrenteP.nome,
+                "especialidade": campoespecialidade,
+                "dia": campodata,
+                "horario": db_horarios.data[achou].horario[k][horarioSelecionado]
+            }
+        ]
+    db.data.push(db_consulta_horario);
+    localStorage.setItem('novaConsulta', JSON.stringify(db));
+
+
+        sessionStorage.setItem ('novaConsulta', JSON.stringify (db_consulta_horario));
         alert ("Sua consulta foi marcada, lembre-se de seguir os protocolos contra o COVID-19")
         return false;
     }
