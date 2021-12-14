@@ -1,7 +1,7 @@
 # Documentação do Projeto
 
 ## Controle de Entregas Parciais
-<p align="justify">![Resumo Sprints](https://user-images.githubusercontent.com/90854484/146041827-2e52f3f8-6680-4860-b9b2-8a6a214b7fc4.png)</p>
+![Resumo Sprints](https://user-images.githubusercontent.com/90854484/146041827-2e52f3f8-6680-4860-b9b2-8a6a214b7fc4.png)
 
 Figma: <br /> https://www.figma.com/proto/rLNA7dIsmdDKxKtnMkOuvc/TIAW-MEDS?node-id=3%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2 <br />
 Google Docs: <br /> https://docs.google.com/document/d/1N_cFKcnyWKZvMoQAJ53iQRDm1KgXB8ncTHGBH0Eka8E/edit?usp=sharing <br />
