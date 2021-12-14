@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Marcar visita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="agendamentoVisita.css">
+    <script type="text/javascript" src="agendamentoVisita.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="init()">
+    <header class="container header">
+        <div class="col-12">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/ficheiro.img.png" class="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="container row global">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mb-3 teste">
+                        <label for="exampleFormControlInput1" class="form-label">ID da consulta:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"name="campo" placeholder="EX: 001"></div>
+                        <span id="aviso"></span>
+                    </div>
+                </div> 
+                <div class="col-lg-6">       
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="EX: Tulio Vargas">
+                        <span id="aviso2"></span>
+                      </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="container row meio2">
+            <div class="col-12 meio">
+                <div class="d-grid gap-2 d-md-block esse">
+                    <p><button type="button" class="btn btn-secondary btn-sm" id="diminuiData">
+                            < </button>
+
+                                <select class="form-select2" id="campodata" name="campodata"
+                                    aria-label="Floating label select example">
+
+                                </select> <button type="button" class="btn btn-secondary btn-sm" id="adicionaData"
+                                    >></button></p>
+                </div>
+                <div class="col-3 d-grid gap-2 d-md-block conj" id="conj">
+                    <div class="horarios" id="divHA">Horarios disponiveis
+                        <div class="horarios" id="divH"></div>
+                    </div>
+                </div>
+
+                <div class="col-12 botoes">
+                    <button type="button" class="btn btn-primary btn-sm1">VOLTAR</button>
+                    <button type="button" class="btn btn-secondary btn-sm2" id="login">MARCAR
+                        CONSULTA</button>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="container footer">
+            Todos os direitos reservados por Med's
+        </footer>
+    </main>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
