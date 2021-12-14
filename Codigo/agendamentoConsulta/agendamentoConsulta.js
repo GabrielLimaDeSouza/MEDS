@@ -294,7 +294,7 @@ var agendamento_inicial = {
         },
     ]
 }
-var db = JSON.parse(localStorage.getItem('db_consulta_horario'));
+var db = JSON.parse(localStorage.getItem('novaConsulta'));
 
 function processaForm() {
     if (campoTipo.value == 'Selecione o tipo' || campoespecialidade.value == 'Selecione o tipo' || campomedico.value == 'Selecione o tipo') {
@@ -303,7 +303,7 @@ function processaForm() {
     else {
         if (!db) {
             db = agendamento_inicial;
-            localStorage.setItem('db_consulta_horario', JSON.stringify(db));
+            localStorage.setItem('novaConsulta', JSON.stringify(db));
         };
         let campoespecialidade = document.getElementById('campoespecialidade').value;
         let campodata = document.getElementById('campodata').value;
@@ -328,18 +328,17 @@ function processaForm() {
         
 
     
-    var db_consulta_horario = [
-            {
-                "medico": campomedico,
-                "tipo": campoTipo,
-                "paciente": usuarioCorrenteP.nome,
-                "especialidade": campoespecialidade,
-                "dia": campodata,
-                "horario": db_horarios.data[achou].horario[k][horarioSelecionado]
-            }
-        ]
-    db.data.push(db_consulta_horario);
-    localStorage.setItem('novaConsulta', JSON.stringify(db));
+        var db_consulta_horario = {
+            "medico": campomedico,
+            "tipo": campoTipo,
+            "paciente": usuarioCorrenteP.nome,
+            "especialidade": campoespecialidade,
+            "dia": campodata,
+            "horario": db_horarios.data[achou].horario[k][horarioSelecionado]
+        };
+        
+        db.data.push(db_consulta_horario);
+        localStorage.setItem('novaConsulta', JSON.stringify(db));
 
 
         sessionStorage.setItem ('novaConsulta', JSON.stringify (db_consulta_horario));
