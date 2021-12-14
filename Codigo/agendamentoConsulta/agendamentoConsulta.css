@@ -202,10 +202,4 @@ a:hover {
     border:4px solid #124A44;
 }
 
-@media screen and (min-width:0px) and (max-width:390px){
-    .footer {
-        position: absolute;
-        bottom: -500px;
-    }
-}
 

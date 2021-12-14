@@ -155,8 +155,6 @@ function inicializaComboData() {
             testeE.outerHTML = '';
             qtd--;
         }
-
-        console.log("Esse é o valor de K", k)
         campodata.options.length = 0;
 
         for (z = 0; z < db_horarios.data.length; z++) {
@@ -209,7 +207,6 @@ function inicializaComboData() {
                 var opt = document.createElement('option');
                 let data_americana = db_horarios.data[z].dia[k];
                 let data_brasileira = data_americana.split('-').reverse().join('/');
-                console.log(data_brasileira)
 
                 opt.value = data_brasileira;
                 opt.innerHTML = data_brasileira;
