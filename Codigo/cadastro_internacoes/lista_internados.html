@@ -8,6 +8,7 @@
     <title>Acompanhamento Médico</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="acompanhamento.css">
+    <link rel="icon" href="../Logo/image2vector.svg">
 </head>
 
 <body onload="Listainternados()">
@@ -60,7 +61,7 @@
                                 <option value="O-">O-</option>
                                 <option value="Não identificado">Não identificado</option>
                             </select>
-                        </div> 
+                        </div>
                         <div class="col-sm-8">
                             <select name="filtro_categoria" id="filtro_categoria" onchange="Listainternados()"
                                 class="form-control">
@@ -101,14 +102,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="internacoes.js"></script>
         <script>
-            function testefoda(nuteste){
-                    localStorage.setItem("ID:",nuteste)
-                    console.log(nuteste);
-                    window.location="../Histórico/historico.html"
-                }
+            function testefoda(nuteste) {
+                localStorage.setItem("ID:", nuteste)
+                console.log(nuteste);
+                window.location = "../Histórico/historico.html"
+            }
             // função para listar na tabela os internados que estão associados aos filtros 
             function Listainternados() {
-                
+
                 // Obtem os dados informados pelo usuário nos filtros
                 let fc = document.getElementById('filtro_sangue').value;
                 let fcg = document.getElementById('filtro_categoria').value;
@@ -136,7 +137,7 @@
                     }
                 }
 
-                
+
             }
         </script>
 

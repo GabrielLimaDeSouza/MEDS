@@ -4,25 +4,25 @@ As metodologias utilizadas pela equipe para o desenvolvimento do projeto foram o
 
 ## Divisão de Papéis
 
-> Apresente a divisão de papéis entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+
 
 ## Processo
 
-> Coloque  informações sobre detalhes da implementação do Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+- Sprint 1: 
+
+O grupo utilizou o Miro como plataforma de gerenciamento e realizou reuniões constantes pelo Google Meet, de forma a implantar o Design Thinking como forma de ideação para a proposta de solução.
+
+- Sprint 2:
+
+O grupo fez reuniões no Discord para realizar a divisão de tarefas entre os membros da equipe. Cada membro ficou responsável por uma funcionalidade JavaScript ou três templates do site utilizando HTML/CSS. 
+
+- Sprint 3:
+
+O grupo fez reuniões no Discord para realizar a divisão de tarefas entre os membros da equipe. Cada membro ficou responsável por uma funcionalidade JavaScript.
+
+- Sprint 4:
+
+O grupo fez reuniões no Discord para avaliar o processo das Sprints anteriores, realizamos o agrupamento das partes realizadas individualmente no GitHub, subdividimos as partes restantes do projeto, realizamos a conexão do sistema, preparamos a apresentação do projeto e confeccionamos a documentação do website.
 
 ## Ferramentas
 
@@ -44,22 +44,17 @@ As ferramentas empregadas no projeto são:
 - Google Meet
 - Discord
 #
-- Ferramentas de comunicação
-- Ferramentas de diagramação
 
 O Visual Studio Code foi escolhido como editor de código porque ele possui
-um ambiente favorável ao desenvolvimento além de integração com o
-sistema de versão(Git). As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-> Liste quais ferramentas foram empregadas no desenvolvimento do
-> projeto, justificando a escolha delas, sempre que possível.
-> 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [![Slack](images/slack.jpg)](https://slack.com/)
-> - [![Trello](images/trello.png)](https://trello.com/)
-> 
-> - [![Microsof Project](images/project.png)](https://products.office.com/pt-br/project/project-and-portfolio-management-software)
-> - [![Redbooth](images/redbooth.png)](https://redbooth.com/)
+um ambiente favorável ao desenvolvimento, além de integração com o
+sistema de versão(Git). O GitHub foi utilizado como ambiente remoto para o 
+controle de versão realizado pelo Git. </br>
+O Miro foi escolhido para organização e realização do Design Thinking por 
+estimular a criatividade e o trabalho cooperativo. </br>
+O Figma foi escolhido como plataforma de prototipação por ser um software web
+gratuito, e pela sua característica de criar, colaborar, prototipar e inspecionar
+dentro da plataforma, o Figma também foi utilizado para realizar testes de usabilidade
+no protótipo com potenciais usuários do sistema. </br>
+O Google Meet e o Discord foram utilizados como ferramentas de comunicação pelos membros 
+do grupo pois já eram conhecidos pelos integrantes e disponibilizavam um ambiente familiar
+para a realização das reuniões. </br>

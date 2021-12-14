@@ -5,7 +5,6 @@ function loginUser () {
     // Verifica todos os itens do banco de dados de usuarios 
     // para localizar o usuário informado no formulario de login
     var db_usuario = JSON.parse(localStorage.getItem('cadastroP'));
-    console.log(db_usuario);
     for (var i = 0; i < db_usuario.data.length; i++) {
         var usuario = db_usuario.data[i];
         login = document.getElementById('username').value;
