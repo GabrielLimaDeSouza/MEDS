@@ -9,15 +9,9 @@
 
 ## Plano de Testes
 
-> Enumere quais cenários de testes foram selecionados para teste. Neste
-> tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
-> de usuários que foi escolhido para participar do teste e as
-> ferramentas utilizadas.
-> 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
+### Testes - Cadastro de Internações:
+![Testes Cadastro de Internações](https://user-images.githubusercontent.com/90854484/146050406-bc3a783a-b712-4f1b-82f4-cf8fde5207a2.png)
+
 
 ## Avaliação
 
