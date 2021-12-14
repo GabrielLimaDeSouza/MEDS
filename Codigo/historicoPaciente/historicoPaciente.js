@@ -3,7 +3,6 @@ var db_internados_inicial = {
         {
             "id": 1,
             "cpf": "000.000.000.00",
-            "nome": "João Pinto",
             "altura": "1.83",
             "peso": "81kg",            
             "sangue": "A+",
@@ -144,7 +143,7 @@ function inicializaComboPacientes() {
     let meusDados1 = `<table class="tabela" cellspacing="20">
     <thead>
         <tr class="claro">
-            <td class="pr" id="nome"> <b>${db_internados_inicial.data[selecionado - 1].nome}</b> </td>
+            <td class="pr" id="nome"> <b>${usuarioCorrenteP.nome}</b> </td>
             <td class="pr2" id="idade"><b>IDADE: ${db_internados_inicial.data[selecionado - 1].idade} anos</b></td>
             <td class="pr1" id="CPF"><b>CPF: ${db_internados_inicial.data[selecionado - 1].cpf}</b></td>
         </tr>
