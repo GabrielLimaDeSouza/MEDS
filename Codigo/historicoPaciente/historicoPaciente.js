@@ -144,23 +144,23 @@ function inicializaComboPacientes() {
     <thead>
         <tr class="claro">
             <td class="pr" id="nome"> <b>${usuarioCorrenteP.nome}</b> </td>
-            <td class="pr2" id="idade"><b>IDADE: ${db_internados_inicial.data[selecionado - 1].idade} anos</b></td>
-            <td class="pr1" id="CPF"><b>CPF: ${db_internados_inicial.data[selecionado - 1].cpf}</b></td>
+            <td class="pr2" id="idade"><b>IDADE: ${usuarioCorrenteP.idade} anos</b></td>
+            <td class="pr1" id="CPF"><b>CPF: ${usuarioCorrenteP.cpf}</b></td>
         </tr>
     </thead>
 
     <tr class="escuro">
         <td class="borda"><b>TIPO SANGUINEO:</b></td>
-        <td class="duplo" colspan="2"><b>${db_internados_inicial.data[selecionado - 1].sangue}</b></td>
+        <td class="duplo" colspan="2"><b>-</b></td>
 
     </tr>
     <tr class="escuro">
         <td class="borda"><b>ALTURA:</b></td>
-        <td class="duplo" colspan="2"><b>${db_internados_inicial.data[selecionado - 1].altura}</b></td>
+        <td class="duplo" colspan="2"><b>-</b></td>
     </tr>
     <tr class="escuro ultimo">
         <td class="borda"><b>PESO:</b></td>
-        <td class="duplo" colspan="2"><b>${db_internados_inicial.data[selecionado - 1].peso}</b></td>
+        <td class="duplo" colspan="2"><b>-</b></td>
     </tr>
 </table>`
 document.getElementById("tela1").innerHTML = meusDados1;
