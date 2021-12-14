@@ -3,9 +3,16 @@
 ## Controle de Entregas Parciais
 ![Resumo Sprints](https://user-images.githubusercontent.com/90854484/146041827-2e52f3f8-6680-4860-b9b2-8a6a214b7fc4.png)
 
-Figma: <br /> https://www.figma.com/proto/rLNA7dIsmdDKxKtnMkOuvc/TIAW-MEDS?node-id=3%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2 <br />
-Google Docs: <br /> https://docs.google.com/document/d/1N_cFKcnyWKZvMoQAJ53iQRDm1KgXB8ncTHGBH0Eka8E/edit?usp=sharing <br />
-Miro: <br /> https://miro.com/welcomeonboard/RmVuY3hWbU9NQkFvdXQ4M0JBRmZmVUo5eWdVNDNSR2ZLNzdRdm1Yc3I0c1NzVTREUDkxRko2TnRZMEZvSEZMWHwzMDc0NDU3MzYzNDUwOTA0ODQ4?invite_link_id=862526136324 <br />
+#
+
+## Figma: </br> 
+https://www.figma.com/proto/rLNA7dIsmdDKxKtnMkOuvc/TIAW-MEDS?node-id=3%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2 </br>
+## Google Docs: </br> 
+https://docs.google.com/document/d/1N_cFKcnyWKZvMoQAJ53iQRDm1KgXB8ncTHGBH0Eka8E/edit?usp=sharing </br>
+## Miro: </br> 
+https://miro.com/welcomeonboard/RmVuY3hWbU9NQkFvdXQ4M0JBRmZmVUo5eWdVNDNSR2ZLNzdRdm1Yc3I0c1NzVTREUDkxRko2TnRZMEZvSEZMWHwzMDc0NDU3MzYzNDUwOTA0ODQ4?invite_link_id=862526136324 </br>
+
+#
 
 As entrevistas foram realizadas de maneira presencial e virtual, as respostas foram agrupadas no Google Forms. <br />
 
