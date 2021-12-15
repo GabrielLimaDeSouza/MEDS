@@ -20,7 +20,7 @@ Para o desenvolvimento do protótipo final, foram realizados diversos estudos co
 Descrição: Tela inicial da aplicação, vista pelo usuário ao entrar no sistema.
 
 ### Agendamento de Visitas </br>
-![Agendamento de Visitas](https://user-images.githubusercontent.com/90854484/146230379-bc7551eb-8eb0-4be8-9809-fce708741762.png)
+![Agendamento de Visitas](https://user-images.githubusercontent.com/90854484/146233142-f7ba1f32-8b9c-416d-9148-e112cce40b16.png)
 
 Descrição: Tela onde os familiares de um paciente internado, podem agendar suas visitas.
 
