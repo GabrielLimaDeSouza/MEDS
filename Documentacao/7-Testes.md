@@ -8,8 +8,11 @@
 ### Testes - Login do Sistema:
 ![Testes login](https://user-images.githubusercontent.com/90854484/146053140-60432a71-9fe8-4dde-9c38-4bc3ce4d0f1a.png)
 
-### Testes - Histórico médico:
+### Testes - Histórico Médico:
 ![Testes histórico](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/f7f47f67c3a278b303d01c40d4495f43bcbf5d26/Documentacao/images/Testes%20dos%20hist%C3%B3ricos.png)
+
+### Testes - Agenda Médica:
+![Agenda Médica](https://user-images.githubusercontent.com/90854484/146268116-8706540c-e050-4fcf-bc36-88afb89da975.png)
 
 ## Testes de Usabilidade
 O projeto final do site foi enviado para potenciais usuários e algumas pessoas que tinham sido entrevistadas anteriormente durante o processo de Design Thinking: </br>
