@@ -180,7 +180,7 @@ document.getElementById("tela1").innerHTML = meusDados1;
             var texto_data = document.createTextNode(db_internados_inicial.data[selecionado - 1].data);
             var texto_resumo = document.createTextNode(db_internados_inicial.data[selecionado - 1].resumo);
             var texto_pdf = document.createElement("button");
-            texto_pdf.className = "teste";
+            texto_pdf.className = "Exame de Sangue";
             texto_pdf.setAttribute("onclick", "demo1(" + db_internados_inicial.data[selecionado - 1].documentos.length + ")");
             console.log("Este é o indice:", indice)
 
