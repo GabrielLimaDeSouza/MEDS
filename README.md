@@ -19,3 +19,5 @@
 ## Instruções de utilização
 
 Clique [aqui](https://icei-puc-minas-pples-ti.github.io/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/Codigo/Tela%20Inicial/index.html) para acessar o MEDS.
+
+Ao clicar no link acima, o MEDS será aberto em seu navegador e você poderá utilizar todos os recursos disponíveis.
