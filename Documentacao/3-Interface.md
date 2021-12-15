@@ -6,7 +6,8 @@ A interface foi desenhada levando em consideração os requisitos funcionais,nã
 ## User Flow
 
 Após a prototipação do sistema foi montado o fluxo de usuário, com a representação das principais funcionalidades:
-![Meds USer](https://user-images.githubusercontent.com/90854062/146242531-5f93a4fa-4739-498f-8af2-aece7ee114f1.jpg)
+![Meds USer  ok](https://user-images.githubusercontent.com/90854062/146243762-85979d30-8e5d-4a11-999d-b205a1eb6aab.jpg)
+
 
 
 
