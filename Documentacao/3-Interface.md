@@ -15,7 +15,7 @@ Após a prototipação do sistema foi montado o fluxo de usuário, com a represe
 Para o desenvolvimento do protótipo final, foram realizados diversos estudos com a partipação da equipe,utilizando WireFrames e votações posteriores para decisão de como seria a prototipação do projeto.
 
 ### Página Inicial </br>
-![Página principal](https://user-images.githubusercontent.com/90854484/146228022-5e043dee-149b-40fd-9515-54707c8e2448.png)
+![Tela Inicial1](https://user-images.githubusercontent.com/90854484/146232842-591047fd-b5fa-4c05-b976-73c895411389.png)
 
 Descrição: Tela inicial da aplicação, vista pelo usuário ao entrar no sistema.
 
@@ -35,12 +35,12 @@ Descrição: Tela principal destinada aos médicos do sistema, é acessada atrav
 Descrição: Tela principal destinada aos pacientes do sistema, é acessada através do login destinado aos pacientes da plataforma, onde são ofericadas funcionalidades para esse usuário.
 
 ### Cadastro de Médicos </br>
-![Cadastro de Médico](https://user-images.githubusercontent.com/90854484/146228809-33775554-42ef-4a23-a09e-17e9703f173b.png)
+![Cadastro de Médicos](https://user-images.githubusercontent.com/90854484/146232621-739a1dfa-9812-4c7e-99cd-2c8b42a50ced.png)
 
 Descrição: Tela de cadastro de médicos, que fornecem todas as funcionalidades atribuídas a ele.
 
 ### Cadastro de Pacientes </br>
-![Cadastro de Paciente](https://user-images.githubusercontent.com/90854484/146228883-b1aa058c-a2f6-4420-ac65-6e4a53428a51.png)
+![Cadastro de Pacientes](https://user-images.githubusercontent.com/90854484/146232404-996eaf7b-39a3-4d3a-bafa-711da8a080a7.png)
 
 Descrição: Tela de cadastro de pacientes, que fornecem todas as funcionalidades atribuídas a ele.
 
