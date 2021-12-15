@@ -1,7 +1,8 @@
 # Documentação do Projeto
 
 ## Controle de Entregas Parciais
-![Resumo Sprints](https://user-images.githubusercontent.com/90854484/146041827-2e52f3f8-6680-4860-b9b2-8a6a214b7fc4.png)
+Segue imagem abaixo mostrando as entregas parciais atribuídas a cada membro do grupo:
+![Entregas Parciais](https://user-images.githubusercontent.com/90854484/146264118-5b5e438c-c923-487a-937b-757f57cc7ab3.png)
 
 #
 
