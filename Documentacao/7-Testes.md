@@ -1,7 +1,5 @@
 # Avaliação da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="6-Implementação.md"> Projeto da Solução</a></span>
-
 ## Plano de Testes
 
 ### Testes - Cadastro de Internações:
