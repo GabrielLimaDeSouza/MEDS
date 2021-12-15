@@ -12,7 +12,7 @@ https://miro.com/welcomeonboard/RmVuY3hWbU9NQkFvdXQ4M0JBRmZmVUo5eWdVNDNSR2ZLNzdR
 
 #
 
-As entrevistas foram realizadas de maneira presencial e virtual, as respostas foram agrupadas no Google Forms. <br />
+Para a obtenção dos requisitos, foram realizadas entrevistas de maneira presencial e virtual, as respostas foram agrupadas no Google Forms. <br />
 
 Entrevista destinada a pacientes e visitantes: https://docs.google.com/forms/d/1iPV3tx6offCLAxV7niM50LCxU3VyUN_tudA0FQ2feKk/edit <br />
 Entrevista destinada a profissionais da saúde: https://docs.google.com/forms/d/1TFyPE8RkIfQYX616z6qga84h5HrjM7_kDqHZrX1dAUQ/edit <br />
