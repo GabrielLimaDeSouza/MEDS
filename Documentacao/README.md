@@ -2,6 +2,7 @@
 
 ## Controle de Entregas Parciais
 Segue imagem abaixo mostrando as entregas parciais atribuídas a cada membro do grupo:
+</br>
 ![Entregas Parciais](https://user-images.githubusercontent.com/90854484/146264118-5b5e438c-c923-487a-937b-757f57cc7ab3.png)
 
 #
