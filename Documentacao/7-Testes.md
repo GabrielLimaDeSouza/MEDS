@@ -26,6 +26,7 @@ Os pontos positivos citados foram:
 - As cores do site remetem a saúde </br>
 - A interface é amigável e intuitiva </br>
 - As funcionalidades implantadas atendem as necessidades dos usuários </br>
+</br>
 As sugestão citadas foram: </br>
 - Implantar uma funcionalidade para ver o andamento e evolução do tratamento do paciente </br>
 - Implantar a parte administrativa do hospital no sistema </br>
