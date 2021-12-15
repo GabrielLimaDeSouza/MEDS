@@ -1,5 +1,8 @@
 # Documentação do Projeto
 
+## Vídeo do Projeto
+https://www.youtube.com/watch?v=3KCSN0LwAIQ
+
 ## Controle de Entregas Parciais
 Segue imagem abaixo mostrando as entregas parciais atribuídas a cada membro do grupo:</br>
 </br>
