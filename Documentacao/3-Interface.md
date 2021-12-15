@@ -60,8 +60,7 @@ Descrição: Página onde os médicos, podem inserir, alterar ou excluir interna
 Descrição: Página onde o médico podem ver todas as suas consultas agendadas.
 
 ### Tela de Acompanhamento </br>
-![Acompanhamento](https://user-images.githubusercontent.com/90854484/146229404-ebba404b-1a3b-409a-98cd-a8ee9661cddc.png)
-
+![Acompanhamento Médico](https://user-images.githubusercontent.com/90854484/146232107-bec9619d-ab57-42ff-8e72-bd97a5632227.png)
 Descrição: Página onde o médico podem ver a listagem de todos os internados e realizar uma filtragem por tipo sanguíneo e categoria de risco.
 
 ### Histórico Médico </br>
@@ -70,8 +69,7 @@ Descrição: Página onde o médico podem ver a listagem de todos os internados 
 Descrição: Página acessada ao clicar em um nome de um paciente no acompanhamento, a tela mostra o histórico médico do paciente, com a opção de inserção de datas,observações e arquivos de exames.
 
 ### Agenda Médica </br>
-![Agenda](https://user-images.githubusercontent.com/90854484/146229531-8f491c5a-9a4e-40e5-a28d-01a371c24d39.png)
-
+![Agenda Médica](https://user-images.githubusercontent.com/90854484/146231774-98f5d828-2bfd-4f18-ae15-65006a236284.png)
 Descrição: Página onde o médico pode cadastrar e ver sua agenda no sistema.
 
 ### Agendamento de Consultas </br>
