@@ -18,4 +18,4 @@
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Clique [aqui](https://icei-puc-minas-pples-ti.github.io/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/Codigo/Tela%20Inicial/index.html) para acessar o MEDS.
