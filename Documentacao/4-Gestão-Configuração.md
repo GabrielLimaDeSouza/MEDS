@@ -19,7 +19,7 @@ Branchs criadas:
 
 O repositório foi clonado localmente na máquina dos integrantes pelo editor de código Visual Studio Code, que realizou a integração do Git ao GitHub e auxiliou na resolução de conflitos entre as partes do projeto.
 
-A página principal do projeto está localizado na pasta [pasta codigo](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/tree/master/Codigo), as outras páginas/funcionalidades estão divididas em pastas com o seu respectivo nome dentro dessa mesma pasta de código do repositório.
+A página principal do projeto está localizado na [pasta código](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/tree/master/Codigo), as outras páginas/funcionalidades estão divididas em pastas com o seu respectivo nome dentro dessa mesma pasta.
 
 ## Hospedagem
 
