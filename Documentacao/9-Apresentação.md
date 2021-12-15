@@ -11,7 +11,7 @@
 ## Conjunto de Slides (Estrutura)
 ![Slide 1](https://user-images.githubusercontent.com/90854062/146051260-50564eac-380b-4585-a399-3e597a4e68e7.png)
 ![Slide 2](https://user-images.githubusercontent.com/90854062/146051305-1dea2bd9-2d16-4ee3-a944-027e7c8b6c6a.png)
-![slide medico](https://user-images.githubusercontent.com/90854062/146251016-8fa3f8fb-4907-4d24-ba2a-84278c6b56b9.jpg)
+![Slides](https://user-images.githubusercontent.com/90854062/146251453-4711f625-f2b8-4271-b9bb-fa4bdaef3bd4.png)
 ![Slide 3](https://user-images.githubusercontent.com/90854062/146051324-acddd74e-acfc-4769-bf5f-997470cb7f57.png)
 ![Slide 4](https://user-images.githubusercontent.com/90854062/146051335-5956ed3b-a9ee-48c0-b889-0b514bcacbb5.png)
 ![Slide 5](https://user-images.githubusercontent.com/90854062/146051353-77eb9cfb-a9e7-4047-b7ce-671bc428c20c.png)
