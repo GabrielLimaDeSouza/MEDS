@@ -229,9 +229,7 @@ function convertToBase64() {
 }
 var b64;
 var indice = 0;
-function baixar() {
 
-}
 var url = "";
 function demo1(indice) {
     console.log("Este é o indice:", indice)
@@ -251,8 +249,11 @@ function demo1(indice) {
 
 }
 function salvar() {
-
-    // The Base64 string of a simple PDF file
+    if (camporesumo.value == '' || campodata.value == ''){
+        alert ("Todos os campos devem ser preenchidos corretamente")
+    }
+    else{
+        // The Base64 string of a simple PDF file
     b64 = base64;
 
     // Decode Base64 to binary and show some information about the PDF file (note that I skipped all checks)
@@ -291,6 +292,9 @@ function salvar() {
     localStorage.setItem('Resumo:', camporesumo.value);
     campodata = document.getElementById("campodata");
     localStorage.setItem('Data:', campodata.value);
+    criaTabela();
+    }
+    
 }
 
 function criaTabela() {
