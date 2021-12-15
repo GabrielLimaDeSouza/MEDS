@@ -25,13 +25,11 @@ Descrição: Tela inicial da aplicação, vista pelo usuário ao entrar no siste
 Descrição: Tela onde os familiares de um paciente internado, podem agendar suas visitas.
 
 ### Página do Médico </br>
-![Tela do Médico](https://user-images.githubusercontent.com/90854484/146228196-148395e9-6c15-4764-85f9-5189b852e95e.png)
-
+![Página do Médico](https://user-images.githubusercontent.com/90854484/146233523-327280ea-4e18-4062-850b-71141cac7481.png)
 Descrição: Tela principal destinada aos médicos do sistema, é acessada através do login destinado aos médicos da plataforma, onde são ofericadas funcionalidades para esse profissional.
 
 ### Página do Paciente </br>
-![Tela do Paciente](https://user-images.githubusercontent.com/90854484/146228270-6ac739d5-2e58-42c1-b687-7b89674a7a81.png)
-
+![Página do Paciente](https://user-images.githubusercontent.com/90854484/146233435-f6e468d5-0263-4d19-b580-a6d6f39cbda4.png)
 Descrição: Tela principal destinada aos pacientes do sistema, é acessada através do login destinado aos pacientes da plataforma, onde são ofericadas funcionalidades para esse usuário.
 
 ### Cadastro de Médicos </br>
