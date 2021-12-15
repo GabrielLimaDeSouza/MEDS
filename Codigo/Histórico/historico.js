@@ -81,7 +81,7 @@ var db_internados_inicial = {
 
             ],
             "resumo": [
-                "Teste"
+                "Exame de sangue"
             ],
             "data": [
                 "07/12/2021"
