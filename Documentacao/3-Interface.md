@@ -10,10 +10,6 @@ Após a prototipação do sistema foi montado o fluxo de usuário, com a represe
 ![User Flow](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/master/Documentacao/images/USER%20FLOW%20MEDS.png)
 
 
-## Wireframes
-
-Para o desenvolvimento do protótipo final, foram realizados diversos estudos com a partipação da equipe,utilizando WireFrames e votações posteriores para decisão de como seria a prototipação do projeto.
-
 ### Página Inicial </br>
 ![Tela Inicial1](https://user-images.githubusercontent.com/90854484/146232842-591047fd-b5fa-4c05-b976-73c895411389.png)
 
