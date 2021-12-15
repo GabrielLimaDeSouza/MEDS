@@ -2,7 +2,7 @@
 
 
 ## Título do Projeto
-# MEDS
+## MEDS
 ## Identidade Visual (Marca, Design)
 ![Meds id 1](https://user-images.githubusercontent.com/90854062/146047523-d5c50061-70be-4fe5-9543-b52acc096a47.jpg)
 ![Meds id 2](https://user-images.githubusercontent.com/90854062/146047547-f6a16cde-5d58-4414-a410-1ded5229c49f.jpg)

@@ -151,6 +151,18 @@ td{
 .footer{
     margin-top: 5px;
     background-color: #369C90;
+    position: absolute;
+    bottom: 0;
+}
+
+#btnvoltar{
+    background-color: #124A44 !important;
+    color:white !important;
+    border-radius:50px !important;
+    margin-right: 10px;
+    width: 20%;
+    margin-left: 80%;
+    margin-top: 2%;
 }
 
 .logo_pe{

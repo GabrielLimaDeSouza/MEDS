@@ -329,18 +329,16 @@ function processaForm() {
 
     
 
-    var db_consulta_horario = [
-            {
-                "medico": campomedico,
-                "tipo": campoTipo,
-                "paciente": usuarioCorrenteP.nome,
-                "especialidade": campoespecialidade,
-                "dia": campodata,
-                "horario": db_horarios.data[achou].horario[k][horarioSelecionado]
-            }
-        ]
-    db.data.push(db_consulta_horario);
-    localStorage.setItem('novaConsulta', JSON.stringify(db));
+        var db_consulta_horario = {
+                    "medico": campomedico,
+                    "tipo": campoTipo,
+                    "paciente": usuarioCorrenteP.nome,
+                    "especialidade": campoespecialidade,
+                    "dia": campodata,
+                    "horario": db_horarios.data[achou].horario[k][horarioSelecionado]
+        }
+        db.data.push(db_consulta_horario);
+        localStorage.setItem('novaConsulta', JSON.stringify(db));
 
 
         sessionStorage.setItem ('novaConsulta', JSON.stringify (db_consulta_horario));
