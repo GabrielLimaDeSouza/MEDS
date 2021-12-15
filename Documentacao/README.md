@@ -7,8 +7,6 @@
 
 ## Figma: </br> 
 https://www.figma.com/proto/rLNA7dIsmdDKxKtnMkOuvc/TIAW-MEDS?node-id=3%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A2 </br>
-## Google Docs: </br> 
-https://docs.google.com/document/d/1N_cFKcnyWKZvMoQAJ53iQRDm1KgXB8ncTHGBH0Eka8E/edit?usp=sharing </br>
 ## Miro: </br> 
 https://miro.com/welcomeonboard/RmVuY3hWbU9NQkFvdXQ4M0JBRmZmVUo5eWdVNDNSR2ZLNzdRdm1Yc3I0c1NzVTREUDkxRko2TnRZMEZvSEZMWHwzMDc0NDU3MzYzNDUwOTA0ODQ4?invite_link_id=862526136324 </br>
 
