@@ -27,7 +27,7 @@ Os pontos positivos citados foram:
 - A interface é amigável e intuitiva </br>
 - As funcionalidades implantadas atendem as necessidades dos usuários </br>
 </br>
-As sugestão citadas foram:
+As sugestão citadas foram: </br>
 - Implantar uma funcionalidade para ver o andamento e evolução do tratamento do paciente </br>
 - Implantar a parte administrativa do hospital no sistema </br>
 - Associar o sistema com um banco de dados </br>
