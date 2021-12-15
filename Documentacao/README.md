@@ -1,7 +1,5 @@
 # Documentação do Projeto
 
-## Clique [aqui](https://icei-puc-minas-pples-ti.github.io/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/Codigo/Tela%20Inicial/index.html) para acessar o MEDS.
-
 ## Controle de Entregas Parciais
 ![Resumo Sprints](https://user-images.githubusercontent.com/90854484/146041827-2e52f3f8-6680-4860-b9b2-8a6a214b7fc4.png)
 
