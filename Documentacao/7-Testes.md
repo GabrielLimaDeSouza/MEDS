@@ -30,6 +30,7 @@ As sugestão citadas foram: </br>
 - Implantar uma funcionalidade para ver o andamento e evolução do tratamento do paciente </br>
 - Implantar a parte administrativa do hospital no sistema </br>
 - Associar o sistema com um banco de dados </br>
+- Integrar o sistema a um laboratório médico para receber exames e dados externamente </br>
 
 ## Avaliação
 
