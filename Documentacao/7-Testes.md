@@ -19,16 +19,17 @@
 ![Testes histórico](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/blob/f7f47f67c3a278b303d01c40d4495f43bcbf5d26/Documentacao/images/Testes%20dos%20hist%C3%B3ricos.png)
 
 ## Testes de Usabilidade
-O projeto final do site foi enviado para potenciais usuários e algumas pessoas que tinham sido entrevistadas anteriormente durante o processo de Design Thinking:
+O projeto final do site foi enviado para potenciais usuários e algumas pessoas que tinham sido entrevistadas anteriormente durante o processo de Design Thinking: </br>
+</br>
 Os pontos positivos citados foram:
-- Os informativos na tela inicial ajudam na conscientização
-- As cores do site remetem a saúde
-- A interface é amigável e intuitiva
-- As funcionalidades implantadas atendem as necessidades dos usuários
-As sugestão citadas foram:
-- Implantar uma funcionalidade para ver o andamento e evolução do tratamento do paciente
-- Implantar a parte administrativa do hospital no sistema
-- Associar o sistema com um banco de dados 
+- Os informativos na tela inicial ajudam na conscientização </br>
+- As cores do site remetem a saúde </br>
+- A interface é amigável e intuitiva </br>
+- As funcionalidades implantadas atendem as necessidades dos usuários </br>
+As sugestão citadas foram: </br>
+- Implantar uma funcionalidade para ver o andamento e evolução do tratamento do paciente </br>
+- Implantar a parte administrativa do hospital no sistema </br>
+- Associar o sistema com um banco de dados </br>
 
 ## Avaliação
 
