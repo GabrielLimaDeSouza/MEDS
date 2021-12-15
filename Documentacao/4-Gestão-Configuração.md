@@ -25,5 +25,5 @@ A página principal do projeto está localizado na [pasta código](https://githu
 
 O GitHub Pages foi escolhido para realizar a hospedagem do sistema pela sua facilidade de se integrar a hospedagem com a master do nosso projeto.
 
-Link para acessar o site hospedado no GitHub Pages:
+Link para acessar o site hospedado no GitHub Pages: </br>
 https://icei-puc-minas-pples-ti.github.io/PLF-ES-2021-2-TI1-7924100-sistema-hospitalar/Codigo/Tela%20Inicial/index.html
