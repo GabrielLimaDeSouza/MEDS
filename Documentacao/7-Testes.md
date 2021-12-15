@@ -25,8 +25,7 @@ Os pontos positivos citados foram:
 - Os informativos na tela inicial ajudam na conscientização </br>
 - As cores do site remetem a saúde </br>
 - A interface é amigável e intuitiva </br>
-- As funcionalidades implantadas atendem as necessidades dos usuários </br>
-</br>
+- As funcionalidades implantadas atendem as necessidades dos usuários </br> </br>
 As sugestão citadas foram: </br>
 - Implantar uma funcionalidade para ver o andamento e evolução do tratamento do paciente </br>
 - Implantar a parte administrativa do hospital no sistema </br>
@@ -34,7 +33,4 @@ As sugestão citadas foram: </br>
 
 ## Avaliação
 
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
+Com os testes de usabilidade realizados, pode-se concluir que a aplicação concluiu os objetivos propostos inicialmente, mas existindo a possibilidade de se tornar cada vez mais completo para atender as futuras demandas. As sugestões citadas foram anotadas e posteriormente, serão implantadas em novas atualizações ao sistema.
