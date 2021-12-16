@@ -2,7 +2,7 @@ testeDeControle = "";
 var db_horarios = {
     "data": [
         {
-            "nome": "João Marcelo da Silva",
+            "nome": "Joao Marcelo da Silva",
             "especialidade": "Neurologista",
             "dia": [
                 "2021-12-01",
